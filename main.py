@@ -1846,6 +1846,213 @@
 # sales[person][region] = new_data
 # print(sales[person])
 
+# d = {
+#     'emp1': {'name': 'John', 'salary': 7500},
+#     'emp2': {'name': 'Emma', 'salary': 8000},
+#     'emp3': {'name': 'Brad', 'salary': 6500},
+# }
+#
+# print(d['emp3'])
+# print(d['emp3']['salary'])
+# d['emp3']['salary'] = 8500
+# #
+# # for i in d:
+# #     print(i)
+# #     for j in d[i]:
+# #         print("\t", j, ":", d[i][j])
+# for i in d:
+#     print(i)
+#     for j, v in d[i].items():
+#         print("\t", j, ":", v)
+
+
+# # zip
+# a = ['Dec', 'Jan', 'Feb']
+# b = [12, 1, 2]
+# c = (2.9, 3.7, 9.2)
+# # d = dict(zip(a, b))
+# d = list(zip(a, b))
+# d = list(zip(b, a, c))
+# print(d)
+# one = {'name': "Igor", 'surname': 'Doe', 'job': 'Consultant'}
+# two = {'name': "Irina", 'surname': 'Smith', 'job': 'Manager'}
+# for (k1, v1), (k2, v2) in zip(one.items(), two.items()):
+#     print(k1, '->', v1)
+#     print(k2, '->', v2)
+
+# lt = [('Dec', 12), ('Jan', 1), ('Feb', 2)]
+# a, b = zip(*lt)
+# print(a)
+# print(b)
+
+# a = [1, 2, 3]
+# b = [4, *a, 5, 6]
+# print(b)
+# print(len(b))
+
+# first = {'one': 1, 'two': 2}
+# second = {'three': 3, 'four': 4}
+# print({**first, **second})
+# for k, v in {**first, **second}.items():
+#     print(k, "=>", v)
+
+
+# colors = ['red', 'green', 'blue']
+# i = 1
+# for color in colors:
+#     print(i, ") ", color, sep="")
+#     i += 1
+# print()
+# for num, val in enumerate(colors, 1):
+#     print(num, ") ", val, sep="")
+
+
+# studs = {}
+# n = int(input("Количество студентов: "))
+# s = 0
+#
+# for i in range(n):
+#     name = input(str(i + 1) + "-й студент: ")
+#     point = int(input("Балл: "))
+#     studs[name] = point
+#     # s += point
+#
+# s = sum(studs.values())
+# avg = s / n
+# print(studs)
+# print(s)
+# print("средний балл: ", avg)
+#
+# for i in studs:
+#     if studs[i] > avg:
+#         print(i)
+#
+# for k, v in studs.items():
+#     if v > avg:
+#         print(k)
+
+
+# def func(*args):
+#     return args
+#
+#
+# print(func(5))
+# print(func(5, 6, 7, 8, "abc"))
+# print(func())
+
+# def summa(*params):
+#     print(params)
+#     print(*params)
+#     res = 0
+#     for n in params:
+#         res += n
+#     return res
+#
+#
+# print(summa(1, 2, 3))
+# print(summa(1, 2, 3, 4, 5, 6, 7, 8, 9))
+
+# def ch(*args):
+#     avg = sum(args) / len(args)
+#     print(avg)
+#     res = []
+#     for num in args:
+#         if num < avg:
+#             res.append(num)
+#     return res
+#
+#
+# print(ch(1, 2, 3, 4, 5, 6, 7, 8, 9))
+# print(ch(3, 6, 1, 9, 5))
+# s = 1, 2, 3, 4, 5, 6, 7, 8, 9
+# print(type(s))
+# print(s)
+
+# def func(a, *args):
+#     return a, args
+#
+#
+# print(func(5))
+# print(func(1, 2, 3, 5, "abc"))
+
+# def print_scores(student, *scores):
+#     print("Student name:", student, end=", оценки: ")
+#     for score in scores:
+#         print(score, end=" ")
+#     print()
+#
+#
+# print("Jonathan", 100, 95, 88, 92, 99, 84)
+# print_scores("Rick", 96, 20, 33, 66)
+
+# def func(**kwargs):
+#     return kwargs
+#
+#
+# print(func(a=1, b=2, c=3))
+# print(func())
+# print(func(one="один"))
+
+# def intro(**data):
+#     for k, v in data.items():
+#         print(k, "is", v)
+#     print()
+#
+#
+# intro(name="Irina", surname="Sharma", age=22)
+# intro(name="Igor", surname="Word", email="igor@.ru", counry="russia", age=22, phone=3333333)
+
+
+# def func(a, b,*args, y=0, x=9, **kwargs):
+#     return a, b, args, kwargs, y, x
+#
+#
+# print(func(5, 1, 2, 3, 4, 6, 7, n=9, y=100, m=10))
+
+# my_dict = {'one': 'first'}
+#
+#
+# def db(**kwargs):
+#     my_dict.update(kwargs)
+#
+#
+# print("my_dict =", my_dict)
+# db(k1=22, k2=31, k3=11, k4=91)
+# print("my_dict =", my_dict)
+# db(name='Bob', age=31, weight=61, eyes_color='grey')
+# print("my_dict =", my_dict)
+
+# name = "Tom"
+# surname = ""
+#
+#
+# def hi():
+#     global name, surname
+#     name = "Sam"
+#     surname = "Johnson"
+#     print("Hello", name, surname)
+#
+#
+# def bye():
+#     print("Good bye", name)
+#
+#
+# print(name)
+# hi()
+# bye()
+# print(name)
+# print(surname)
+
+# sum = 5
+#
+# lst = [9, 8, 7, 6, 5]
+# print(sum(lst))
+
+# print = "hello"
+#
+#
+# print("Python")
+
 
 # def add(a):
 #     x = 2
@@ -1860,12 +2067,6 @@
 #
 # print(add(5))
 
-# x = 25
-# t = 0
-#
-#
-# def fn():
-#     global t
 
 # x = 25
 # t = 0
@@ -1874,11 +2075,11 @@
 # def fn():
 #     global t
 #     a = 30
-#
-#     def inner():
+
+# def inner():
 #         nonlocal a
 #         a = 35
-#
+
 #     inner()
 #     print('a =', a)
 #     t = a
@@ -1943,10 +2144,10 @@
 # print(item2(10))
 #
 # print(outer(7)(10))
-#
 # def func(a):
 #     return a * 2
-#
+
+
 # x = func(5)
 # print(x)
 
@@ -2061,14 +2262,14 @@
 # lst = list(d.items())
 # # print(lst)
 # # lst.sort(key=lambda i: i[1])
-# lst.sort(key=func)
+# # lst.sort(key=func)
 # print(lst)
 # print(dict(lst))
 
 
 # players = [
 #     {"name": "Антон", "last_name": "Бирюков", "rating": 9},
-#     {"name": "Алексей", "last_name": "Бодня", "rating": 10},
+#     {"name": "Алексей", "last_name": "Боня", "rating": 10},
 #     {"name": "Федор", "last_name": "Сидоров", "rating": 4},
 #     {"name": "Михаил", "last_name": "Семенов", "rating": 6},
 # ]
@@ -2123,16 +2324,43 @@
 # print(outer(1, 6, 8))
 
 
+# s - глобальная переменная
+# s = 0
+#
+#
 # def outer(a, b, c):
 #     def inner(i, j):
 #         return i * j
 #
+#     global s
 #     s = 2 * (inner(a, b) + inner(a, c) + inner(b, c))
 #     return s
 #
-# outer(2, 4, 6))
+#
+# outer(2, 4, 6)
+# print(s)
+# outer(5, 8, 2)
+# print(s)
+# outer(1, 6, 8)
+# print(s)
+
+
+# нелокальная переменная
+# def outer(a, b, c):
+#     s = 0
+#
+#     def inner(i, j):
+#         nonlocal s
+#         s += i * j
+#
+#     inner(a, b)
+#     inner(a, c)
+#     inner(b, c)
+#     return 2 * s
+#
+#
+# print(outer(2, 4, 6))
 # print(outer(5, 8, 2))
 # print(outer(1, 6, 8))
-
 
 print("вносим изменения")
