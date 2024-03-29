@@ -1,6 +1,6 @@
 # first_name = "nikolai"  # комментарий
 # print("hello, " + first_name + "!")
-
+import re
 # a = 30
 # b = "hello"
 # c = 2.8
@@ -2923,4 +2923,68 @@
 # reg = r"\АИ я"
 # reg = r"году.\Z"
 # reg = r"\Вния"
+# reg = r"\w+"
+# reg = r"\d+"
+# reg = r"20*"
 # print(re.findall(reg, s))
+# кол-во повторений
+# + - от 1 до бесконечности
+# * - от 0 до бесконечности
+# ? - от 0 до 1
+
+# d = "Цифры: 7, +17, --42, 0013, 0.3456"
+# print(re.findall(r"[+-]?\d+[.\d]*", d))
+
+# st = "05-06-1987 # Дата рождения"
+# print("Дата рождения:", re.sub(r"\s#.*", "", st))
+# # Дата рождения: 05-06-1987 => Дата рождения: 05.06.1987
+# print("Дата рождения:", re.sub(r"-", ".", re.sub(r"\s#.*", "", st)))
+
+# st = "author=Пушкин А.C.; title = Евгений Онегин; price =200; year= 1831"
+# # pattern = r"\w+\s*=\s*[\w\s.]+"
+# pattern = r"\w+\s*=\s*[^;]+"
+# print(re.findall(pattern, st))
+
+
+# s1 = "12 сентября 2024 года 4567897"
+# reg1 = r"\d{2,4}"
+# print(re.findall(reg1, s1))
+
+
+# s = "Я ищу совпадения в 2024 году. И я их найду в 2 счё_та."
+# # reg = r"^\w+\s\w+"
+# reg = r"^\w+\s\w+\.$"
+# print(re.findall(reg, s))
+
+# def valid_login(name):
+#     return re.findall("^[A-Za-z0-9_-]{3,16}$", name)
+#
+#
+# print(valid_login("Python_master"))
+# print(valid_login("Python"))
+
+
+# print(re.findall(r"\w+", "12 + й"))
+# print(re.findall(r"\w+", "12  + й", flags=re.ASCII))
+
+# text = "Hello World"
+# print(re.findall(r"\w\+", text, re.DEBUG))
+
+
+# s = "Я ищу совпадения в 2024 году. И я их найду в 2 счёта."
+# reg = "я"
+# print(re.findall(reg, s, re.IGNORECASE))
+
+# text = """one # Комментарий two"""
+#
+# # print(re.findall(r"one.\w+", text))
+# # print(re.findall(r"one.\w+", text, re.DOTALL))
+# print(re.findall(r"one.\w+", text, re.MULTILINE))
+
+# print(re.findall("""
+# [a-z.-]+  # part 1
+# @         # @
+# [a-z.-]+  # part 2
+# """, "test@mail.ru", re.VERBOSE))
+
+
