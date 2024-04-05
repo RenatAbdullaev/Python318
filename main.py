@@ -2987,4 +2987,134 @@ import re
 # [a-z.-]+  # part 2
 # """, "test@mail.ru", re.VERBOSE))
 
+# import re
+#
+# text = """Python,
+# python,
+# PYTHON"""
+# reg = "(?im)^python"
+# print(re.findall(reg, text))
+
+
+# text = "<body>Пример жадного соответствия регулярных выражений</body>"
+# print(re.findall("<.*?>", text))
+
+
+# *?, +?, ??
+# {m,n}?, {,n}?, {m,}?
+
+# s1 = "12 сентября 2024 года 4567897"
+# reg1 = r"\d{3,}?"
+# reg1 = r"\d{3}"
+# print(re.findall(reg1, s1))
+
+# s = "петр и виталий отлично учатся"
+# reg = r"ольга|виталий"
+# print(re.findall(reg, s))
+
+
+# s = "int = 4, float = 4.0f, double = 8.0, float"
+# # reg = r"int\s*=\s*[.\w+]*|float\s*=\s*[.\w+]*"
+# # reg = r"(?:int|float)\s*=\s*[.\w+]*"
+# reg = r"((?:int|float)\s*=\s*([.\w+]*))"
+# print(re.findall(reg, s))
+# # print(re.search(reg, s))
+
+# (?:...) - обозначает, что эта группирующая скобка является не сохраняющей
+
+# s = "5 + 7*2 - 4"
+# reg = r"\s*([+*-])\s*"
+# print(re.split(reg, s))
+
+# a = "28-08-2021"
+# pattern = r"(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(19\d\d|20[0-9][0-9])"
+# print(re.findall(pattern, a))
+# print(re.search(pattern, a).group(2))
+# m = re.search(pattern, a)
+# print(m[0])
+# print(m[1])
+# print(m[2])
+# print(m[3])
+
+
+# s = "самолет прилетает 10/23/2024. будем рады вас видеть после 10/24/2024."
+# reg = r"(\d{2})/(\d{2})/(\d{4})"
+# print(re.sub(reg, r"\2.\1.\3", s))
+
+# s = "yandex-98.ru.com and yandex.ru"
+# reg = r"(([a-z0-9-]{2,}\.)+[a-z]{2,4})"
+# print(re.sub(reg, r"http://\1", s))
+
+# Рекурсия
+
+# def elevator(n):
+#     if n == 0:
+#         print("вы в подвале")
+#         return
+#     print("=>", n)
+#     elevator(n - 1)
+#     print(n, end=" ")
+#
+#
+# n1 = int(input("на каком вы этаже: "))
+# elevator(n1)
+# elevator(n1)
+
+
+# def sum_list(lst):
+#     res = 0
+#     for i in lst:
+#         res += 1
+#     return res
+
+# def sum_list(lst):
+#     if len(lst) == 1:
+#         print(lst, "=> lst[0]:", lst[0])
+#         return lst[0]
+#     else:
+#         print(lst, "=>[0]:", lst[0])
+#         return lst[0] + sum_list(lst[1:])
+#
+#
+# print(sum_list([1, 3, 5, 7, 9]))
+
+# def to_str(n, base):
+#     convert = "0123456789ABCDEF"
+#     if n < base:
+#         return convert[n]
+#     else:
+#         return to_str(n // base, base) + convert[n % base]
+#
+#
+# print(to_str(17, 16))
+
+# def count_items(item_list):
+#     count = 0
+#     for item in item_list:
+#         if isinstance(item, list):
+#             count += count_items(item)
+#         else:
+#             count += 1
+#     return count
+#
+#
+# names = ['Adam', ['Bob', ['Chat', 'Cat'], 'Bard', 'Bert'], 'Alex', ['Bea', 'Bill'], "Ann"]
+# print(names)
+# print(len(names))
+# # print(isinstance(names, list))
+# # print(isinstance(names[0], list))
+# # print(isinstance(names[1][1][0], list))
+# print(count_items(names))
+
+
+# def remove(text):
+#     if not text:
+#         return ""
+#     if text[0] == "\n" or text[0] == " ":
+#         return remove(text[1:])
+#     else:
+#         return text[0] + remove(text[1:])
+#
+#
+# print(remove(" Hello\nWorld "))
 
