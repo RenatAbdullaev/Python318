@@ -3346,28 +3346,28 @@ import re
 #     f3.writelines(c)
 
 
-file = "text2.txt"
-
-f = open(file, "w")
-f.write("замена строки в текстовом файле:\nизменить строку в списке:\nзаписать список в файл;")
-f.close()
-
-f = open(file, 'r')
-read_line = f.readlines()
-f.close()
-
-print(read_line)
-pos1 = int(input("pos1 = "))
-pos2 = int(input("pos2 = "))
-if 0 <= pos1 < len(read_line) and 0 <= pos2 < len(read_line):
-    read_line[pos1], read_line[pos2] = read_line[pos2], read_line[pos1]
-else:
-    print("такой строки нет")
-print(read_line)
-
-f = open(file, "w")
-f.writelines(read_line)
-f.close()
+# file = "text2.txt"
+#
+# f = open(file, "w")
+# f.write("замена строки в текстовом файле:\nизменить строку в списке:\nзаписать список в файл;")
+# f.close()
+#
+# f = open(file, 'r')
+# read_line = f.readlines()
+# f.close()
+#
+# print(read_line)
+# pos1 = int(input("pos1 = "))
+# pos2 = int(input("pos2 = "))
+# if 0 <= pos1 < len(read_line) and 0 <= pos2 < len(read_line):
+#     read_line[pos1], read_line[pos2] = read_line[pos2], read_line[pos1]
+# else:
+#     print("такой строки нет")
+# print(read_line)
+#
+# f = open(file, "w")
+# f.writelines(read_line)
+# f.close()
 
 # file = "text2.txt"
 #
@@ -3491,28 +3491,215 @@ import os
 # print(os.path.isdir(r"D:\Python318\318\nested1\nested2\nested3"))
 # print(os.path.isfile(r"D:\Python318\318\nested1\nested2\nested3\text.txt"))
 
-class Point:
-    """Класс для представления координат точек на плоскости"""
-    x = 1
-    y = 1
+# class Point:
+#     """Класс для представления координат точек на плоскости"""
+#     x = 1
+#     y = 1
+#
+#
+# p1 = Point()
+# p1.x = 5
+# p1.y = 10
+# p1.z = 30
+# print(p1.x)
+# print(p1.y)
+# print(p1.__dict__)
+#
+# p2 = Point()
+# print(p2.x)
+# print(p2.y)
+# print(p2.__dict__)
+#
+# print(id(Point))
+# print(id(p1))
+# print(id(p2))
+#
+# print(Point.__dict__)
+# print(Point.__doc__)
 
 
-p1 = Point()
-p1.x = 5
-p1.y = 10
-p1.z = 30
-print(p1.x)
-print(p1.y)
-print(p1.__dict__)
+# import os
+#
+# dir_name = "nected1"
+#
+# objs = os.listdir(dir_name)
+# print(objs)
+#
+# for obj in objs:
+#     p = os.path.join(dir_name, obj)
+#     print(p)
+#     if os.path.isdir(p):
+#         print(f"{obj} - file - {os.path.getsize(p)} bytes")
+#     elif os.path.isdir(p):
+#         print(f"{obj} - dir")
 
-p2 = Point()
-print(p2.x)
-print(p2.y)
-print(p2.__dict__)
 
-print(id(Point))
-print(id(p1))
-print(id(p2))
+# class Point:
+#     x = 1
+#     y = 1
+#
+#     def set_coord(self, x, y):
+#         self.x = x
+#         self.y = y
+#         print(self.__dict__)
+#
+#
+# p1 = Point()
+# # p1.x = 5
+# # p1.y = 10
+# p1.set_coord(5, 10)
+# Point.set_coord(p1, 2, 4)
+#
+# p2 = Point()
+# # p2.x = 3
+# # p2.y = 7
+# p2.set_coord(3, 7)
+# print()
 
-print(Point.__dict__)
-print(Point.__doc__)
+
+# class Human:
+#     name = "name"
+#     birthday = "00.00.0000"
+#     phone = "00-00-00"
+#     country = "country"
+#     city = "city"
+#     address = "street, house"
+#
+#     def print_info(self):
+#         print("Персональные данные ".center(40, "*"))
+#         print(f"Имя: {self.name}\nДата рождения: {self.birthday}\nНомер телефона: {self.phone}\n"
+#               f"Страна: {self.country}\nГород: {self.city}\nДомашний адрес: {self.address}")
+#         print("=" * 40)
+#
+#     def input_info(self, first_name, birthday, phone, country, city, address):
+#         self.name = first_name
+#         self.birthday = birthday
+#         self.phone = phone
+#         self.country = country
+#         self.city = city
+#         self.address = address
+#
+#     def set_name(self, name):
+#         self.name = name
+#
+#     def get_name(self):
+#         return self.name
+#
+#     def set_birthday(self, value):
+#         self.birthday = value
+#
+#     def get_birthday(self):
+#         return self.birthday
+#
+#
+# h1 = Human()
+# h1.print_info()
+# h1.input_info("Юля", "23.05.1986", "45-46-98", "россия", "Москва", "Чистопрудный бульвар, 1А")
+# h1.print_info()
+# h1.set_name("Юлия")
+# print(h1.get_name())
+# h1.set_birthday("25.05.1986")
+# print(h1.get_birthday())
+
+
+# class Person:
+# #     skill = 10
+# #
+# #     def __init__(self, name, surname):
+# #         self.name = name
+# #         self.surname = surname
+# #         print("инициализатор Person:")
+# #
+# #     def __del__(self):
+# #         print("удаление экземпляра класса")
+# #
+# #     def print_info(self):
+# #         print("данные сотрудника", self.name, self.surname)
+# #
+# #     def add_skill(self, k):
+# #         self.skill += k
+# #         print("квалификация сотрудника", self.skill, end="\n\n")
+# #
+# #
+# # p1 = Person("Виктор", "Резник")
+# # p1.print_info()
+# # p1.add_skill(3)
+# #
+# # # del p1
+# # p1 = 5
+# #
+# # p2 = Person("Анна", "Долгих")
+# # p2.print_info()
+# # p2.add_skill(2)
+
+
+# class Point:
+#     count = 0
+#
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#         Point.count += 1
+#
+#     def get_coord(self):
+#         print(self.__dict__)
+#
+#
+# p1 = Point(5, 10)
+# p1.get_coord()
+#
+# p2 = Point(3, 7)
+# p2.get_coord()
+#
+# p3 = Point(8, 16)
+# p3.get_coord()
+#
+# print(p1.count)
+# print(p2.count)
+# print(p3.count)
+#
+# print(Point.count)
+
+
+class Robot:
+    k = 0
+
+    def __init__(self, name):
+        self.name = name
+        print("Инициализация робота:", self.name)
+        Robot.k += 1
+
+    def __del__(self):
+        print(self.name, "выключается!")
+        Robot.k -= 1
+
+        if Robot.k == 0:
+            print(self.name, "был последним")
+        else:
+            print("Работающих роботов осталось:", Robot.k)
+
+    def say_hi(self):
+        print(f"Приветствую! Меня зовут:", self.name)
+
+
+droid1 = Robot("R2-D2")
+droid1.say_hi()
+print("Численность роботов:", Robot.k)
+
+droid2 = Robot("C-3PO")
+droid2.say_hi()
+print("Численность роботов:", Robot.k)
+
+droid3 = Robot("TO-P30")
+droid3.say_hi()
+print("Численность роботов:", Robot.k)
+
+print("\nЗдесь роботы могут проделать какую-то работу.\n")
+
+print("Роботы закончили свою работу. Давайте их выключим.")
+
+del droid1
+del droid2
+del droid3
+
+print("Численность роботов:", Robot.k)
