@@ -3661,45 +3661,296 @@ import os
 # print(Point.count)
 
 
-class Robot:
-    k = 0
+# class Robot:
+#     k = 0
+#
+#     def __init__(self, name):
+#         self.name = name
+#         print("Инициализация робота:", self.name)
+#         Robot.k += 1
+#
+#     def __del__(self):
+#         print(self.name, "выключается!")
+#         Robot.k -= 1
+#
+#         if Robot.k == 0:
+#             print(self.name, "был последним")
+#         else:
+#             print("Работающих роботов осталось:", Robot.k)
+#
+#     def say_hi(self):
+#         print(f"Приветствую! Меня зовут:", self.name)
+#
+#
+# droid1 = Robot("R2-D2")
+# droid1.say_hi()
+# print("Численность роботов:", Robot.k)
+#
+# droid2 = Robot("C-3PO")
+# droid2.say_hi()
+# print("Численность роботов:", Robot.k)
+#
+# droid3 = Robot("TO-P30")
+# droid3.say_hi()
+# print("Численность роботов:", Robot.k)
+#
+# print("\nЗдесь роботы могут проделать какую-то работу.\n")
+#
+# print("Роботы закончили свою работу. Давайте их выключим.")
+#
+# del droid1
+# del droid2
+# del droid3
+#
+# print("Численность роботов:", Robot.k)
 
-    def __init__(self, name):
-        self.name = name
-        print("Инициализация робота:", self.name)
-        Robot.k += 1
 
-    def __del__(self):
-        print(self.name, "выключается!")
-        Robot.k -= 1
+# class Point:
+#     def __init__(self, x, y):
+#         self.__x = self.__y + 0
+#         if Point.__check_value(x) and Point.__check_value(y):
+#             self.__x = x
+#             self.__y = y
+#
+#     def __check_value(s):
+#         if isinstance(s, int) or isinstance(s, float):
+#             return True
+#         return False
+#
+#     def set_coord(self, x, y):
+#         if Point.__check_value(x) and Point.__check_value(y):
+#             self.__x = x
+#             self.__y = y
+#         else:
+#             print("Координаты должны быть числами")
+#
+#     def get_coord(self):
+#         return self.__x, self.__y
+#
+#     def set_x(self, x):
+#         if Point.__check_value(x):
+#             self.__x = x
+#         else:
+#             print("Координата Х должна быть числом")
+#
+#     def set_y(self, y):
+#         if Point.__check_value(y):
+#             self.__y = y
+#         else:
+#             print("Координата Y должна быть числом")
+#
+#
+# p1 = Point(5, "abc")
+# print(p1.__dict__)
+# # # p1.set_coord(100, "abc")
+# # p1.set_coord(100, "500")
+# print(p1.get_coord())
+# # # print(p1.__x, p1.__y)
+# # # p1.__x = 100
+# # # p1.__y = "abc"
+# # # print(p1.__x, p1.__y)
+# # print(p1.__dict__)
+# # # print(Point.__check_value())
+# # print(p1.__dict__)
+# p1.set_x(50)
+# p1.set_y("abc")
+# print(p1.__dict__)
 
-        if Robot.k == 0:
-            print(self.name, "был последним")
-        else:
-            print("Работающих роботов осталось:", Robot.k)
+# import math
+#
+#
+# class Rectangle:
+#     def __init__(self, length, width):
+#         self.__length = length
+#         self.__width = width
+#
+#     def __check_value(s):  # _Rectangle__check_value
+#         if isinstance(s, int) or isinstance(s, float):
+#             return True
+#         return False
+#
+#     def set_width(self, value):
+#         if Rectangle.__check_value(value):
+#             self.__width = value
+#
+#     def set_length(self, value):
+#         if Rectangle.__check_value(value):
+#             self.__length = value
+#
+#     def get_width(self):
+#         return self.__width
+#
+#     def get_length(self):
+#         return self.__length
+#
+#     def get_area(self):
+#         return self.__length * self.__width
+#
+#     def get_perimeter(self):
+#         return 2 * (self.__length + self.__width)
+#
+#     def get_hypotenuse(self):
+#         return round(math.sqrt(self.__length ** 2 + self.__width ** 2), 2)
+#
+#     def draw(self):
+#         print(("*" * self.__width + "\n") * self.__length)
+#
+#
+# a = Rectangle(4, 12)
+# a.set_length(3)
+# a.set_width(9)
+# print("Длина прямоугольника:", a.get_length())
+# print("Ширина прямоугольника:", a.get_width())
+# print("Площадь прямоугольника:", a.get_area())
+# print("Периметр прямоугольника:", a.get_perimeter())
+# print("Гипотенуза прямоугольника:", a.get_hypotenuse())
+# a.draw()
 
-    def say_hi(self):
-        print(f"Приветствую! Меня зовут:", self.name)
+# class Point:
+#     __slots__ = ["__x", "__y", "z"]
+#
+#     def __init__(self, x, y, z):
+#         self.__x = x
+#         self.__y = y
+#         self.z = z
+#
+#
+# p1 = Point(5, 10, 15)
+# # p1.z = 15
+# # print(p1.__dict__)
+# print(p1.z)
 
 
-droid1 = Robot("R2-D2")
-droid1.say_hi()
-print("Численность роботов:", Robot.k)
+# class Point:
+#     def __init__(self, x, y):
+#         self.__x = x
+#         self.__y = y
+#
+#     def __set_x(self, x):
+#         self.__x = x
+#         print("__set_x")
+#
+#     def __get_x(self):
+#         print("__get_x")
+#         return self.__x
+#
+#     x = property(__get_x, __set_x)
+#
+#
+# p1 = Point(5, 10)
+# # p1.x = 9
+# print(p1.x)
+# print(p1.__dict__)
 
-droid2 = Robot("C-3PO")
-droid2.say_hi()
-print("Численность роботов:", Robot.k)
 
-droid3 = Robot("TO-P30")
-droid3.say_hi()
-print("Численность роботов:", Robot.k)
+# class Point:
+#     def __init__(self, x, y):
+#         self.__x = x
+#         self.__y = y
+#
+#     @property
+#     def x(self):
+#         return self.__x
+#
+#     @x.setter
+#     def x(self, x):
+#         if Point.__check_value(x):
+#             self.__x = x
+#         else:
+#             print("Координата X должны быть числом")
+#
+#     def __check_value(s):
+#         if isinstance(s, int) or isinstance(s, float):
+#             return True
+#         return False
+#
+#     # x = property(__get_x, __set_x)
+#
+#
+# p1 = Point(5, 10)
+# p1.x = 9
+# # print(p1.x)
+# print(p1.__dict__)
 
-print("\nЗдесь роботы могут проделать какую-то работу.\n")
+# class KgToPounds:
+#     def __init__(self, kg):
+#         self.__kg = kg
+#
+#     @property
+#     def kg(self):
+#         return self.__kg
+#
+#     @kg.deleter
+#     def kg(self):
+#         print("удаление свойства")
+#         del self.__kg
+#
+#     @kg.setter
+#     def kg(self, new_kg):
+#         if isinstance(new_kg, (int, float)):
+#             self.__kg = new_kg
+#         else:
+#             print("килограммы задаются только числами")
+#
+#     def to_pounds(self):
+#         return self.__kg * 2.205
+#
+#
+# weight = KgToPounds(12)
+# print(weight.kg, "кг =>", end=" ")
+# print(weight.to_pounds(), "фунтов")
+# weight.kg = 41
+# print(weight.kg, "кг =>", end=" ")
+# print(weight.to_pounds(), "фунтов")
+# del weight.kg
+# weight.kg = 'десять'
 
-print("Роботы закончили свою работу. Давайте их выключим.")
 
-del droid1
-del droid2
-del droid3
+# class Point:
+#     __count = 0
+#
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#         Point.__count += 1
+#
+#     # @staticmethod
+#     def get_count():
+#         return Point.__count
+#
+#     get_count = staticmethod(get_count)
+#
+#
+# p1 = Point(5, 10)
+# p2 = Point(5, 10)
+# p3 = Point(5, 10)
+#
+# print(Point.get_count())
+# print(p1.get_count())
+import math
+import random
 
-print("Численность роботов:", Robot.k)
+
+# class Change:
+#     @staticmethod
+#     def inc(x):
+#         return x + 1
+#
+#     @staticmethod
+#     def dec(x):
+#         return x - 1
+#
+#
+# print(Change.inc(10), Change.dec(10))
+#
+#
+# def inc(x):
+#     return x + 1
+#
+#
+# def dec(x):
+#     return x - 1
+#
+#
+# print(inc(10), dec(10))
+
