@@ -1,15 +1,14 @@
-import requests
-import json
-import csv
 
-response = requests.get("https://jsonplaceholder.typicode.com/todos")
-
-todos = json.loads(response.text)
-print(todos)
+from parsers import Parser
 
 
-with open("response.csv", "w") as f:
-    writer = csv.DictWriter(f, delimiter=";", lineterminator="\r", fieldnames=list(todos[0].keys()))
-    writer.writeheader()
-    for t in todos:
-        writer.writerow(t)
+def main():
+    for s in range(1, 3):
+        url = f"https://www.ixbt.com/live/index/news/page{s}/"
+        path = f"news_page_{s}.txt"
+        pars = Parser(url, path)
+        pars.run()
+
+
+if __name__ == '__main__':
+    main()
