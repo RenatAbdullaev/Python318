@@ -1,0 +1,21 @@
+{
+    "name": "ольга",
+    "age": 20,
+    "20": null,
+    "1": true,
+    "false": 0,
+    "hobbies": [
+        "running",
+        "singing"
+    ],
+    "children": {
+        "first_name": [
+            "алиса",
+            "боб"
+        ],
+        "age": [
+            6,
+            12
+        ]
+    }
+}
