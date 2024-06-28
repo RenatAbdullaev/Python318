@@ -6569,8 +6569,8 @@ import csv
 
 
 import sqlite3
-#
-#
+
+
 # con = sqlite3.connect("profile.db")
 # cur = con.cursor()
 #
@@ -6578,8 +6578,8 @@ import sqlite3
 # """)
 #
 # con.close()
-
-
+#
+#
 with sqlite3.connect("profile.db") as con:
     cur = con.cursor()
 
@@ -6590,20 +6590,20 @@ with sqlite3.connect("profile.db") as con:
     date BLOB)""")
 
     # cur.execute("DROP TABLE users")
-
-
-import sqlite3
-
-with sqlite3.connect("users.db") as con:
-    cur = con.cursor()
-
-    cur.execute("""CREATE TABLE IF NOT EXISTS users
-    (id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    phone BLOB NOT NULL DEFAULT "+79090000000"
-    age INTEGER CHECK(age > 0 AND age < 100)
-    email TEXT UNIQUE
-    )""")
+#
+#
+# import sqlite3
+#
+# with sqlite3.connect("users.db") as con:
+#     cur = con.cursor()
+#
+#     cur.execute("""CREATE TABLE IF NOT EXISTS users
+#     (id INTEGER PRIMARY KEY AUTOINCREMENT,
+#     name TEXT NOT NULL,
+#     phone BLOB NOT NULL DEFAULT "+79090000000"
+#     age INTEGER CHECK(age > 0 AND age < 100)
+#     email TEXT UNIQUE
+#     )""")
 
     # переименовать таблицу
     # cur.execute("""
@@ -6630,9 +6630,9 @@ with sqlite3.connect("users.db") as con:
     # """)
 
     # удаление таблицы
-    cur.execute("""
-    DROP TABLE person_table
-    """)
+    # cur.execute("""
+    # DROP TABLE person_table
+    # """)
 
 
 
