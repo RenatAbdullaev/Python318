@@ -1,6 +1,106 @@
-# first_name = "nikolai"  # комментарий
-# print("hello, " + first_name + "!")
-import re
+# first name= "Nikolay"  # комментарий
+# print("Hello, " + first_name + "!")  #
+
+# a = 30
+# b = "Hello"
+# c = 2.8
+# print(type(a))
+# print(type(c))
+# print(type(b))
+
+# a = 5
+# print(a, type(a))
+# b = "Hello"
+# print(b, type(b))
+# print(str(a) + b)
+
+# a = 5
+# print(a, id(a))  # 5
+# b = 4
+# print(b, id(b))  # 4
+# a = b  # 4
+# print(a, id(a))
+
+# a = b = c = 4
+# print(a, b, c)
+
+# a, b, c = 5, "Hello", 9.2
+# print(a, b, c)
+
+# PI = 3.14
+# print(PI)
+# PI = 2  # нарушение соглашения
+# print(PI)
+
+# a = 21
+# b = 512
+# print("a:", a)
+# print("b:", b)
+# a, b = b, a
+# # c = a  # c = 1
+# # a = b  # a = 2
+# # b = c  # b = 1
+# print("a:", a)  # 2
+# print("b:", b)  # 1
+
+# print("строка \t\tсимволов строка символов строка символов строка \
+# символов строка символов \
+# строка символов строка символов \
+# строка символов строка символов строка символов \
+# строка символов строка символов строка символов строка символов")
+# print('ст     рока \nсимволов')
+
+# print("Документ \"file.txt\" \nнаходится по пути \rD:\\folder\\file.txt")
+
+# s1 = "Hello"
+# s2 = "Python"
+# s3 = s1 + ", " + s2 + "!"
+# print(s3)  # Hello, Python!
+# print(s1 * 5)
+
+# print(4664878748645159886548667486)
+# print(4.664878748645159886548667486)
+
+# print(6 + 2)
+# print(6 - 2)
+# print(6 * 2)
+# print(6 / 2)  # 3.0
+# print(6 / 4)  # 1.5
+#
+# print(6 // 2)  # 3
+# print(6 // 4)  # 1
+#
+# print(6 ** 3)
+# print(6 % 4)
+
+# number = (6 + 4) * (5 ** 2 + 7)
+# print(number)  # 113
+
+# num = 10
+# num += 5  # num = num + 5
+# print(num)  # 15
+#
+# num -= 3  # num = num - 3
+# print(num)  # 12
+
+# num = 4321  # 43
+# print(num)
+# a = num % 10
+# print("a:", a)
+# num = num // 10
+# # print(num)
+# b = num % 10
+# print("b:", b)
+# num = num // 10
+# # print(num)
+# c = num % 10
+# print("c:", c)
+# num = num // 10
+# # print(num)
+# d = num % 10
+# print("d:", d)
+# print(a * 1000 + b * 100 + c * 10 + d)
+
 
 # num = 4321  # 432
 # print(num)
@@ -17,8 +117,9 @@ import re
 # num2 = 3
 # # res = num1 + str(num2)  # 23
 # # print(res)
-# res = float(num1) + num2  # 5
+# res = float(num1) + num2  # 5.5
 # print(res)
+
 
 # print(int(2.5))
 # print(round(2.51))
@@ -30,31 +131,33 @@ import re
 # c = round(a, 2)
 # print(c, type(c))
 
-# name = "виктор"
-# age = 28
-# print("меня зовут", name, ". мне", age, "лет.")
-# print("меня зовут " + name + ". мне " + str(age) + "лет.")
-# print("меня зовут ", name, ". мне ", age, " лет.", end="\n\n", sep="")
-# print("hello")
 
-# name = input("введите имя: ")
+# name = "Виктор"
+# age = 28
+# print("Меня зовут", name, ". Мне", age, "лет.")
+# print("Меня зовут " + name + ". Мне " + str(age) + " лет.")
+# print("Меня зовут ", name, ". Мне ", age, " лет.", sep="", end="\n\n")
+# print("Hello")
+
+# name = input("Введите имя: ")
 # print("Hello,", name)
 
-# num = int(input("введите число: "))  # '5'
-# power = int(input("введите степень: "))  # 2
+# num = int(input("Введите число: "))  # '5'
+# power = int(input("Введите степень: "))  # 2
 #
 # # num = int(num)
 # # power = int(power)
 #
 # res = num ** power  # 5 ** 2
-# print("число", num, "в степени", power, "равно:", res)
+# print("Число", num, "в степени", power, "равно:", res)
 
-# print("введите четыре числа: ")
+
+# print("Введите четыре числа: ")
 # num1 = int(input("1: "))
 # num2 = int(input("2: "))
 # num3 = int(input("3: "))
 # num4 = int(input("4: "))
-# print("результат: ", round((num1 + num2) / (num3 + num4), 2))
+# print("Результат:", round((num1 + num2) / (num3 + num4), 2))
 
 # b1 = True
 # b2 = False
@@ -64,16 +167,15 @@ import re
 
 # print(bool("python"))
 # print(bool(""))  # False
-# print((bool(" ")))
-# print((bool(4564)))
-# print((bool(-4)))
-# print((bool(4.2)))
-# print((bool(0)))  # False
-# print((bool(0.0)))  # False
+# print(bool(" "))
+# print(bool(4564))
+# print(bool(-4))
+# print(bool(4.2))
+# print(bool(0))  # False
+# print(bool(0.0))  # False
 # print(bool(False))  # False
 # print(bool(None))  # False
-#
-#
+
 # test = None
 # print(test)
 # test = 5
@@ -86,10 +188,10 @@ import re
 # print(8 < 5)
 # print(8 >= 8)
 # print(8 <= 8)
-# print("привет" >  "Привет")  # 1087 >  1055
+# print("привет" > "Привет")  # 1087 > 1055
 
-# print(2 < 4 < 9)
-# print(2 * 5 > 7 >= 4 + 3)  # True && True = True
+# print(2 < 4 < 9)  # True && True => True
+# print(2 * 5 > 7 >= 4 + 3)  # True && True => True
 # print(3 * 3 <= 7 >= 2)  # False && True => False
 
 # a = 10
@@ -97,14 +199,15 @@ import re
 # c = a == b
 # print(a, b, c)  # 10, 5, False
 
+
 # print(5 - 3 == 2 and 1 + 3 == 4)  # True : True => True
 # print(5 - 3 == 2 and 1 + 3 < 4)  # True : False => False
-# print(5 - 3 == 2 and 1 + 3 == 4)  # False : True => False
+# print(5 - 3 > 2 and 1 + 3 == 4)  # False : True => False
 # print(5 - 3 > 2 and 1 + 3 < 4)  # False : False => False
 
 # print(5 - 3 == 2 or 1 + 3 == 4)  # True : True => True
 # print(5 - 3 == 2 or 1 + 3 < 4)  # True : False => True
-# print(5 - 3 == 2 or 1 + 3 == 4)  # False : True => True
+# print(5 - 3 > 2 or 1 + 3 == 4)  # False : True => True
 # print(5 - 3 > 2 or 1 + 3 < 4)  # False : False => False
 
 
@@ -120,14 +223,15 @@ import re
 # age = int(input("Введите свой возраст: "))
 # if age >= 18:
 #     print("Доступ на сайт разрешен")
-#     # pass
-#     # ...
 # else:
 #     print("Доступ запрещен")
 
+# pass
+# ...
+
 
 # a = 35
-# b = 35
+# b = 25
 # if a > b:
 #     print("a > b")
 # if b > a:
@@ -135,9 +239,8 @@ import re
 # if a == b:
 #     print("a == b")
 
-
-# a = 35
-# b = 35
+# a = 25
+# b = 25
 # if a > b:
 #     print("a > b")
 # elif b > a:
@@ -145,19 +248,19 @@ import re
 # else:
 #     print("a == b")
 
-# a = input('введите первую сторону: ')
-# b = input('введите вторую строну: ')
-# c = input('введите третью сторону: ')
-# if a == b == c:
-#     print('треугольник равносторонний')
+# a = input('Введите первую сторону: ')
+# b = input('Введите вторую сторону: ')
+# c = input('Введите третью сторону: ')
+# if a == b == c:  # '10' == '10' == '10'
+#     print('Треугольник равносторонний')
 # elif a == b or a == c or b == c:
-#     print('треугольник равнобедренный')
+#     print('Треугольник равнобедренный')
 # else:
-#     print('треугольник разносторонний')
+#     print('Треугольник разносторонний')
 
-# day = int(input("введите день недели (цифрой): "))
+# day = int(input("Введите день недели (цифрой): "))
 # if 1 <= day <= 5:  # (day >= 1) and (day <= 5)
-#     print("рабочий день -", end=" ")
+#     print("Рабочий день -", end=" ")
 #     if day == 1:
 #         print("понедельник")
 #     if day == 2:
@@ -169,27 +272,15 @@ import re
 #     if day == 5:
 #         print("пятница")
 # elif day == 6 or day == 7:
-#     print("выходной день -", end=" ")
+#     print("Выходной день -", end=" ")
 #     if day == 6:
 #         print("суббота")
 #     if day == 7:
 #         print("воскресенье")
 # else:
-#     print("такого дня недели не существует!")
+#     print("Такого дня недели не существует!")
 
-# a = int(input("введите месяц (цифрой): "))
-# if 1 <= a <= 12:
-#     if 1 <= a <= 2 or a == 12:
-#         print("зима")
-#     if 3<= a <= 5:
-#         print("весна")
-#     if 6 <= a <= 8:
-#         print("лето")
-#     if 9 <= a <= 11:
-#         print("осень")
-# else:
-#     print("ошибка ввода данных")
-#
+
 # a = int(input("Введите номер месяца: "))
 # if 1 <= a <= 12:
 #     if 3 <= a <= 5:
@@ -201,31 +292,43 @@ import re
 #     else:
 #         print("Зима")
 # else:
-#     print("Ошибка ввода данных
+#     print("Ошибка ввода данных")
+
+# month = int(input("Введите номер месяца: "))
+# if 3 <= month <= 5:
+#     print("Весна")
+# elif 6 <= month <= 8:
+#     print("Лето")
+# elif 9 <= month <= 11:
+#     print("Осень")
+# elif 1 <= month <= 2 or month == 12:
+#     print("Зима")
+# else:
+#     print("Такого месяца не существует")
 
 
-# n = int(input("введите кол-во ворон: "))
+# n = int(input("Введите кол-во ворон: "))
 # if 0 <= n <= 9:
-#     print("на ветке", end=" ")
+#     print("На ветке", end=" ")
 #     if n == 1:
 #         print(n, "ворона")
-#     elif 2 <= n <= 4:  # if
+#     if 2 <= n <= 4:
 #         print(n, "вороны")
-#     else:  # if 5 <= n <= 9 or == 0
+#     if 5 <= n <= 9 or n == 0:
 #         print(n, "ворон")
 # else:
-#     print("ошибка ввода данных")
+#     print("Ошибка ввода данных")
 
 
 # password = "qwerty"
 #
 # match password:
 #     case 'admin':
-#         print("администратор")
+#         print("Администратор")
 #     case 'user':
-#         print("пользователь")
+#         print("Пользователь")
 #     case _:
-#         print("такого пользователя не существует")
+#         print("Такого значения не существует")
 
 
 # day = "четверг"
@@ -247,43 +350,43 @@ import re
 # print("a == b" if a == b else "a > b" if a > b else "b > a")
 
 
-# a, b = 20, 10
+# a, b = 20, 0
 # print('на ноль делить нельзя' if b == 0 else a / b)
-
+# print(a / b)
 
 # a = 5
 # b = 0
 # print(a / b)
 
 # try:
-#     n = int(input("введите целое число"))
+#     n = int(input("Введите целое число: "))
 #     print(n * 2)
 # except ValueError:
-#     print("что то пошло не так")
+#     print("Что-то пошло не так")
 
 # try:
-#     n = int(input("введите делимое: "))
-#     m = int(input("введите делитель: "))
+#     n = int(input("Введите делимое: "))
+#     m = int(input("Введите делитель: "))
 #     print(n / m)
 # except ValueError:
-#     print("нельзя делить строки")
+#     print("Нельзя вводить строки")
 # except ZeroDivisionError:
-#     print("нельзя делить на ноль")
+#     print("Нельзя делить на ноль")
 
-#
+
 # try:
-#     n = int(input("введите делимое: "))
-#     m = int(input("введите делитель: "))
+#     n = int(input("Введите делимое: "))
+#     m = int(input("Введите делитель: "))
 #     print(n / m)
 # except (ValueError, ZeroDivisionError):
-#     print("нельзя делить строки или нельзя делить на ноль")
-# else:  # когда в блоке tru не возникло исключения
-#     print("все нормально . вы ввели числа", n, "и", m)
+#     print("Нельзя вводить строки или нельзя делить на ноль")
+# else:  # когда в блоке try не возникло исключения
+#     print("Все нормально. Вы ввели числа", n, "и", m)
 # finally:  # выполнится в любом случае
-#     print("конец программы")
+#     print("Конец программы")
 
-# n = input("введите первое число: ")
-# m = input("введите второе число: ")
+# n = input("Введите первое число: ")
+# m = input("Введите второе число: ")
 #
 # try:
 #     n = int(n)  # 9
@@ -291,11 +394,11 @@ import re
 # except ValueError:
 #     n = str(n)
 # finally:
-#     print(n + m)
+#     print(n + m)  #
 
 
-# n = input("введите первое число: ")
-# m = input("введите второе число: ")
+# n = input("Введите первое число: ")
+# m = input("Введите второе число: ")
 #
 # try:
 #     print(int(n) + int(m))
@@ -303,12 +406,12 @@ import re
 #     print(n + m)
 
 
-# циклы
+# Циклы
 
 # i = 0
 # while i < 5:
 #     print("i =", i)
-#     i += 1  # i = i + i
+#     i += 1  # i = i + 1
 
 # i = 10
 # while i > 0:
@@ -322,28 +425,28 @@ import re
 #         print("i =", i)
 #     i += 1
 
-# n = int(input("укажите количество символов: "))  # 5
-# print(n * "+-")  # +-+-+
+# n = int(input("Укажите количество символов: "))  # 5
+# print(n * "+-")   # +-+-+
 # print(n * "+" if n % 2 == 0 else n * "-")
 #
 # i = 0
 # while i < n:
 #     print("+" if i % 2 == 0 else "-", end="")
-#     # if i % 2 == 0
-#     #      print("*", end="")
-#     #  else:
-#     #   print("_", end="")
+#     # if i % 2 == 0:
+#     #     print("+", end="")
+#     # else:
+#     #     print("-", end="")
 #     i += 1
-#
-#     while n > 0:
-#         print("*")
-#         n -= 1
 
-# a = int(input("введите начало диапазона: "))
-# b = int(input("введите конец диапазона: "))
+# while n > 0:
+#     print("*")
+#     n -= 1
 
-# n = int(input("введите начало диапазона: "))  # 1
-# m = int(input("введите конец диапазона: "))  # 5
+# a = int(input("Введите начало диапазона: "))
+# b = int(input("Введите конец диапазона: "))
+
+# n = int(input("Введите начало диапазона: "))  # 1
+# m = int(input("Введите конец диапазона: "))  # 5
 # sum1 = 0
 # while n <= m:  # 1 <= 5
 #     if n % 2:  # n % 2 != 0
@@ -352,20 +455,20 @@ import re
 #     n += 1
 # print(sum1)
 
-# n = input("введите целое число: ")
+# n = input("Введите целое число: ")
 #
 # while type(n) != int:
 #     try:
-#         n= int(n)
+#         n = int(n)
 #     except ValueError:
-#         print("число не целое")
-#         n = input("введите целое число")
+#         print("Число не целое")
+#         n = input("Введите целое число: ")
 #
 #
 # if n % 2 == 0:
-#     print("четное")
+#     print("Четное")
 # else:
-#     print("нечетное")
+#     print("Нечетное")
 
 # i = 0
 # while i < 10:
@@ -378,13 +481,13 @@ import re
 #     i += 1
 # print("\nЦикл завершен!")
 
+
 # i = 0
 # while True:
 #     print(i)
 #     if i == 5:
 #         break
 #     i += 1
-
 
 # while True:
 #     n = int(input("Введите положительное число: "))
@@ -393,7 +496,7 @@ import re
 
 # summ = 1
 # while True:
-#     n = int(input("введите число: "))
+#     n = int(input("Введите число: "))
 #     if n == 0:
 #         break
 #     summ *= n
@@ -409,14 +512,14 @@ import re
 #     print(i)
 #     i += 1
 # else:
-#     print("цикл окончен, i =", i)
+#     print("Цикл окончен, i =", i)
 #
-# print("код ниже")
+# print("Код ниже")
 
-# i = 1
+# i = 1  # 5
 # while i < 5:
-#     print("внешний цикл: i =", i)
-#     j = 1
+#     print("Внешний цикл: i =", i)
+#     j = 1  # 4
 #     while j < 4:
 #         print("\tВнутренний цикл: j =", j)
 #         j += 1
@@ -426,7 +529,7 @@ import re
 # while i < 10:
 #     j = 1
 #     while j < 10:
-#         print(i, "*", j, "=", i*j, end="\t\t")
+#         print(i, "*", j, "=", i * j, end="\t\t")
 #         j += 1
 #     print()
 #     i += 1
@@ -435,7 +538,7 @@ import re
 # while i < 5:
 #     j = 0
 #     while j < 16:
-#         if i % 2 == 0:
+#         if j % 2 == 0:
 #             print("+", end="")
 #         else:
 #             print("-", end="")
@@ -444,31 +547,31 @@ import re
 #     i += 1
 
 
-# i = 0
+# i = 0  # 5
 # while i < 5:
-#     j = 0
-#     while j < i:
+#     j = 0  # 4
+#     while j < i:  # 4 < 4
 #         print(" ", end="")
 #         j += 1
 #     print("*")
 #     i += 1
 # print()
-# i = 0
+# i = 0  # 5
 # while i < 5:
 #     print(" " * i, "*", sep="")
 #     i += 1
 
 # for element in collection:
-#       print(i)
+#     print(element)
 
-# for i in "hello!":
+# for i in "Hello!":
 #     print(i)
 #
 # for color in "red", "blue", "green":
 #     print(color)
-#
+
 # print(range(2, 9, 2))
-# # range(start, stop, step), start = 0
+# # range(start, stop, step), start = 0, step = 1
 #
 # for i in range(100, 0, -10):
 #     print(i, end=" ")
@@ -480,7 +583,7 @@ import re
 #     print(i, end=" ")
 #     i -= 10
 
-# a = int(input("введите целое число: "))
+# a = int(input("Введите целое число: "))
 # for i in range(1, a + 1):
 #     if a % i == 0:
 #         print(i, end=" ")
@@ -495,15 +598,15 @@ import re
 #     if i == 1:
 #         break
 # else:
-#     print("конец цикла")
+#     print("Конец цикла")
 
 # for i in range(3):
 #     print("+++")
 #     for j in range(2):
 #         print("----")
 
-# w = int(input("введите ширину прямоугольника: "))
-# h = int(input("введите высоту прямоугольника: "))
+# w = int(input("Введите ширину прямоугольника: "))
+# h = int(input("Введите высоту прямоугольника: "))
 #
 # for i in range(h):  # 4
 #     for j in range(w):
@@ -521,15 +624,15 @@ import re
 
 # Список (list)
 
-# nums = [8, 3, 9, 4, 1, "hello", True]
+# nums = [8, 3, 9, 4, 1, "Hello", True]
 # print(nums)
-# print(type(nums))
-# print(nums[0])
-# print(nums[2])
-# print(nums[-1])
-# print(nums[6])
-# print(nums[-2])
-# print(nums[-7])
+# # print(type(nums))
+# # print(nums[0])
+# # print(nums[2])
+# # print(nums[-1])
+# # print(nums[6])
+# # print(nums[-2])
+# # print(nums[-7])
 # nums[1] = 256
 # nums[2] += 100
 # print(nums)
@@ -541,7 +644,7 @@ import re
 # print(s)
 # print(type(s))
 #
-# s1 = list("hello")
+# s1 = list("Hello")
 # print(s1)
 # print(type(s1))
 #
@@ -563,7 +666,7 @@ import re
 # a2 = [i * 3 for i in "Python"]
 # print(a2)
 
-# a = [0] * int(input("введите количество элементов списка: "))
+# a = [0] * int(input("Введите количество элементов списка: "))
 # print(a)  # [0, 0]
 # for i in range(len(a)):
 #     a[i] = int(input("-> "))
@@ -585,10 +688,10 @@ import re
 # s = list(range(10, 100, 10))
 # print(s)
 #
-# for i in range(len(s)):
+# for i in range(len(s)):  # 0 1 2 3 4 5 6 7 8
 #     print(s[i], end=" ")
 # print()
-# for i in s:
+# for i in s:  # 10 20 30 40 50 60 70 80 90
 #     print(i, end=" ")
 
 # n = list(range(21, 41))
@@ -600,14 +703,14 @@ import re
 # #     else:
 # #         s += n[i]
 # for i in n:
-#     if n[i] % 2 == 0:
+#     if i % 2 == 0:
 #         count += 1
 #     else:
 #         s += i
-# print("количество четных элементов списка", count)
-# print("сумма нечетных элементов:", s)
+# print("Кол-во четных элементов списка:", count)
+# print("Сумма нечетных элементов:", s)
 
-# n = list(range(21, 41))
+# n = list(range(21, 41, 3))
 # print(n)
 #
 # a = 2
@@ -635,7 +738,7 @@ import re
 # a[0], a[1] = a[1], a[0]
 # print(a)
 
-# срез = список[start:stop:step]
+# Срез = список[start:stop:step]
 # s = [5, 9, 3, 7, 1, 8]
 # print(s, id(s))
 # print(s[1:3])
@@ -653,9 +756,9 @@ import re
 # print(lst[3:4])
 # print(lst[4:])
 # print(lst[4:1:-1])
-# print(lst[2:5]
+# print(lst[2:5])
 
-# st = "hello"
+# st = "Hello"
 # print(st)
 # print(st[::-1])
 #
@@ -665,11 +768,11 @@ import re
 # for i in a:
 #     print(i)
 
-# методы списков dir(list)
+# Методы списков  dir(list)
 # s = [9, 5, 6, 3, 7, 4]
 # print(s)
 # s.append(8)  # добавили элемент в конец списка
-# # s. append("add")
+# # s.append("add")
 # print(s)
 # s.extend([20, 1, 2])  # добавили набор элементов в конец списка
 # # s.extend("add")
@@ -683,29 +786,29 @@ import re
 # print(a)
 #
 # s = []
-# n = int(input("введите количество элементов списка: "))
+# n = int(input("Введите кол-во элементов списка: "))
 # for num in range(n):
-#     x = int(input("введите число: "))
+#     x = int(input("Введите число: "))
 #     if x % 2 == 0:
 #         s.append(x)
-#     # s.insert(0, x)
+#     # s.insert(0, x)  [1, 5, 9]
 # print(s)
 
 # s = []
-# n = int(input("введите количество элементов списка: "))
-# for num in range(n):
-#     x = int(input("введите число: "))
+# n = int(input("Введите кол-во элементов списка: "))
+# for _ in range(n):
+#     x = int(input("Введите число кратное 3: "))
 #     if x % 3 == 0:
 #         s.append(x)
 #     else:
 #         print(x, "не делится на 3 без остатка")
 # print(s)
 
-# a = [5, 9, 2, 1, 4, 3]
+# a = [5, 9, 2, 1, 4, 3, 2, 4]
 # b = [4, 2, 1, 3, 7]
-# c = []
+# c = []  # [2, 1, 4, 3]
 #
-# for i in a:  # 1
+# for i in a:  # 4
 #     for j in b:  # 1
 #         if i in c:
 #             continue
@@ -717,7 +820,7 @@ import re
 # s = []
 # for el in a:
 #     if el in b and el not in s:
-#         s.append(el)
+#         s.append(el)  # [2, 1, 4, 3]
 # print(s)
 
 # a = [1, 2, 3, 44, 55]
@@ -730,18 +833,18 @@ import re
 #     c.append(b[i])
 # for i in range(len(a), len(b)):
 #     c.append(b[i])
-# if len(b) > len(a):
-#     for i in range(len(a)):  # 0 1 2
-#         c.append(a[i])
-#         c.append(b[i])
-#     for i in range(len(a), len(b)):
-#         c.append(b[i])
-# else:
-#     for i in range(len(b)):  # 0 1 2
-#             c.append(a[i])
-#             c.append(b[i])
-#     for i in range(len(b), len(a)):
-#         c.append(a[i])
+# # if len(b) > len(a):
+# #     for i in range(len(a)):  # 0 1 2
+# #         c.append(a[i])
+# #         c.append(b[i])
+# #     for i in range(len(a), len(b)):
+# #         c.append(b[i])
+# # else:
+# #     for i in range(len(b)):  # 0 1 2
+# #         c.append(a[i])
+# #         c.append(b[i])
+# #     for i in range(len(b), len(a)):
+# #         c.append(a[i])
 # print(c)  # [1, 11, 2, 22, 3, 33, 44, 55]
 
 # a = [7, 9, 2, 9, 1, 17, 9]
@@ -755,7 +858,7 @@ import re
 # print(a)
 # a.clear()  # очищает список
 # print(a)
-# num = a.count(9)  # количество заданных значений в списке
+# num = a.count(9)  # кол-во заданных значений в списке
 # print(num)
 # ind = a.index(9)  # возвращает индекс элемента по заданному значению
 # print(ind)
@@ -783,33 +886,33 @@ import re
 # print("b =", b)
 
 
-# Sort - посмотреть
+# sort - посмотреть
 # a = [7, 9, 2, 9, 1, 17, 9]
 # print(a)
-# #  a.sort()  # сортировка элементов списка по возрастанию
-# a.sort(reverse=True)  # сортировка элементов по убыванию
+# # a.sort()  # сортировка элементов списка по возрастанию
+# a.sort(reverse=True)  # сортировка элементов списка по убыванию
 # print(a)
 
 # s = ["Виталий", "Сергей", "Александр", "Анна"]
-# print(s)
-# s.sort(key=len, reverse=True)  # сортировка элементов по алгоритму заданной функции
-# print(s)
-# print(len(s))
-# print(len(s[0]))
-
+# # print(s)
+# # s.sort(key=len, reverse=True)  # сортировка элементов списка по алгоритму заданной функции
+# # print(s)
+# # print(len(s))
+# # print(len(s[0]))
+#
 # lst = sorted(s, key=len, reverse=True)
 # print(lst)
 # print(s)
 
-# генерация случайных данных
+# Генерация случайных данных
 
 # import random
 
 # print(random.random())
-# print(random.randint(0, 9))  # 9 - включительно
+# print(random.randint(2, 9))  # 9 - включительно
 # print(random.randrange(3, 9, 2))  # 9 - не включительно
+# print(random.uniform(10.5, 25.5))
 # print(round(random.uniform(10.5, 25.5), 2))
-# print(round(random.uniform(10.5, 25.5)))
 
 # s = [20, 30, 40, 50, 60, 70, 80, 90, 10]
 # print(s)
@@ -824,7 +927,7 @@ import re
 # s = ['20', '30', '40', '50', '60', '70', '80', '90', '10']
 # print(s)
 # print(len(s))
-# print(sum(s))
+# # print(sum(s))
 # print(max(s))
 # print(min(s))
 
@@ -836,12 +939,12 @@ import re
 # print(res)
 # print(sum(s))
 
-#  import random
+# import random
 #
-# lst=[random.randint(0,100) for i in range(10)]
+# lst = [random.randint(0, 100) for i in range(10)]
 # print(lst)
-# print("Max:",max(lst))
-# s=sorted(lst,reverse=True)
+# print("Max:", max(lst))
+# s = sorted(lst, reverse=True)
 # print(s)
 
 # import random
@@ -858,64 +961,64 @@ import re
 # print(x)
 # print('a' not in x)
 # print('e' not in x)
-# s = 'c'
+# s = 'c1'
 # if s in x:
-#     print("такой элемент в списке есть")
+#     print("Такой элемент в списке присутствует")
 # else:
 #     print(s, "в списке отсутствует")
 
 # lst = []
 # if not lst:  # lst == []  # len(lst) == 0
-#     print("список пустой")
+#     print("Список пустой")
 #
 # print(bool(lst))
 # import random
 
-# n1 = int(input("введите размер первого списка: "))
-# n2 = int(input("введите размер второго списка: "))
+# n1 = int(input("Введите размер первого списка: "))
+# n2 = int(input("Введите размер второго списка: "))
 # a = [random.randint(0, 10) for i in range(n1)]
-# b = [random.randint(0, 10) for i in range(n2)]
-# print("первый список:", a)
-# print("второй список:", b)
-# c = a + b
-# print(c)
-# c = []
-# for i in range(len(a)):
-#     if a[i] not in c:
-#         c.append(a[i])
-# for i in range(len(b)):
-#     if b[i] not in c:
-#         c.append(b[i])
-# print(c)
-
-# c = []
-# for i in range(len(a)):
-#     if a[i] in b and a[i] not in c:
-#         c.append(a[i])
-# print(c)
+# b = [random.randint(0, 10) for j in range(n2)]
+# print("Первый список:", a)
+# print("Второй список:", b)
+# # c = a + b
+# # print(c)
+# # c = []
+# # for i in range(len(a)):
+# #     if a[i] not in c:
+# #         c.append(a[i])
+# # for i in range(len(b)):
+# #     if b[i] not in c:
+# #         c.append(b[i])
+# # print(c)
+#
+# # c = []
+# # for i in range(len(a)):
+# #     if a[i] in b and a[i] not in c:
+# #         c.append(a[i])
+# # print(c)
 # c = [min(a), min(b), max(a), max(b)]
 # print(c)
-# n1 = int(input("размер списка: "))
+# n1 = int(input("Размер списка: "))
 # # a = [random.randint(0, 10) for i in range(n1)]
 # a = []
-# while len(a) != n1:
-#     n = random.randrange(n1)  # от 0 до 10
+# while len(a) != n1:  # 10 != 10
+#     n = random.randrange(n1)  # от 0 до 10  # n = 2
 #     if n not in a:
 #         a.append(n)
-# print(a)
+# print(a)  # [1, 3, 0, 2, 7, 6, 4, 5, 9, 8]
 
 # m = [
-#     [1, 2, 3, 4, 55],
+#     [1, 2, 3, 4, 55],  #
 #     [5, 6, 7, 8],
-#     [9, 10, 11, 12, 33, 44]
+#     [9, 10, 11, 12, 33, 44]  #
 # ]
 # print(m, end="\n\n")
 # # # print(len(m))
 # # print(m[1][2])
 #
-# # s = ["hello", "world"]
-# # print(s[1][0])
-# for row in range(len(m)):
+# # s = ["Hello", "World"]
+# # print(s[1][2])
+# for row in range(len(m)):  # 0 1 2
 #     # print(m[row])
 #     for col in range(len(m[row])):
 #         print(m[row][col], end="\t\t")
@@ -927,13 +1030,13 @@ import re
 #         print(x, end="\t\t")
 #     print()
 
+
 # m = [
-#     [1, 2, 3, 4, 55],
+#     [1, 2, 3, 4],
 #     [5, 6, 7, 8],
-#     [9, 10, 11, 12, 33, 44]
+#     [9, 10, 11, 12]
 # ]
-
-
+#
 # for row in m:
 #     for x in row:
 #         print(x, end="\t\t")
@@ -941,18 +1044,18 @@ import re
 # print()
 # for row in m:
 #     for x in row:
-#         print(x, end="\t\t")
+#         print(x ** 2, end="\t\t")
 #     print()
 
 # w, h = 5, 3
 # # matrix = [[random.randint(1, 20) for x in range(w)] for y in range(h)]
-# # matrix = [[0 for x in range(w)] for y in range(h)]
-# matrix = []  # [[0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0]]
-# for y in range(h):  # 3
-#     new_row = []
-#     for x in range(w):  # 5
-#         new_row.append(0)  # new_row == [0,0,0,0,0]
-#     matrix.append(new_row)
+# matrix = [[0 for x in range(w)] for y in range(h)]
+# # matrix = []  # [[0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0]]
+# # for y in range(h):  # 3
+# #     new_row = []
+# #     for x in range(w):  # 5
+# #         new_row.append(0)  # new_row = [0,0,0,0,0]
+# #     matrix.append(new_row)
 #
 # for row in matrix:
 #     for x in row:
@@ -960,36 +1063,36 @@ import re
 #     print()
 
 # for x, y, z in [[1, 2, 1], [3, 4, 2], [5, 6, 3], [7, 8, 4]]:
-# print(z, ")", x, "+", y, "=", x + y, sep="")
+#     print(z, ") ", x, " + ", y, " = ", x + y, sep="")
 # print(x[2], ") ", x[0], " + ", x[1], " = ", x[0] + x[1], sep="")
 
-# a = int(input("Количество символов: "))
-# b = str(input("Тип символа: "))
-# print(" 0 - горизонтальная\n 1 - вертикальная")
-# c = int(input("Ориентация линии: "))
-#
-# if c == 0:
-#     qwe = b * a
-#     print(qwe)
-# elif c == 1:
-#     for i in range(a):
-#         print(b)
+
+# n = int(input("Кол-во символов: "))
+# sim = input("Тип символа: ")
+# orient = int(input("0 - горизонтальная\n1 - вертикальная\nориентация линии: "))
+# i = 0
+# while i < n:
+#     if orient == 0:
+#         print(sim, end=" ")
+#     if orient == 1:
+#         print(sim)
+#     i += 1
 # else:
-#     print("Вы задали неверную ориентацию")
+#     print("Такой ориентации не предусмотрено")
 
-# Import math
-
-# num1 = math.sqrt(4)
-# num2 = math.pi
-# num3 = math.ceil(3.2)
-# num4 = math.floor(3.8)
+# import geometry
+#
+# num1 = geometry.sqrt(4)
+# num2 = geometry.pi
+# num3 = geometry.ceil(3.2)
+# num4 = geometry.floor(3.8)
 #
 # print(num1)
 # print(num2)
 # print(num3)
 # print(num4)
 
-# import math as m
+# import geometry as m
 #
 # num3 = m.ceil(3.2)
 # num4 = m.floor(3.8)
@@ -997,7 +1100,7 @@ import re
 # print(num3)
 # print(num4)
 
-# from math import *
+# from geometry import *
 #
 # num3 = ceil(3.2)
 # num4 = floor(3.8)
@@ -1006,23 +1109,24 @@ import re
 # print(num4)
 
 
-# from math import ceil, floor
+# from geometry import ceil as c, floor as f
 #
-# num3 = ceil(3.2)
-# num4 = floor(3.8)
+# num3 = c(3.2)
+# num4 = f(3.8)
 #
 # print(num3)
 # print(num4)
 
-# from math import pi
+# from geometry import pi
 #
-# radius = int(input("введите радиус окружности: "))
-# print("длина окружности: ", round(2 * pi * radius, 2))
+# radius = int(input("Введите радиус окружности: "))
+# print("Длина окружности:", round(2 * pi * radius, 2))
 
 # import time
 # import locale
 #
 # locale.setlocale(locale.LC_ALL, "ru")
+
 
 # second = time.time()
 # print(second)
@@ -1032,28 +1136,27 @@ import re
 #
 # res = time.localtime()
 # print(res)
-# print("0" + str(res.tm_mday) if res.tm_mday < 10 else res.tm_mday, ".", res.tm_year, sep="")
+# print("0" + str(res.tm_mday) if res.tm_mday < 10 else res.tm_mday, ".", res.tm_mon, ".",  res.tm_year, sep="")
 #
 # print(time.strftime("%d/%m/%Y, %H:%M:%S", time.localtime(s)))
 #
-# print(time.strftime("Today is %B %d, %Y, %A"))
+# print(time.strftime("Сегодня: %B %d, %Y, %A"))
 
 # start = time.monotonic()
 # pause = 5
-# print("программа запущена...")
+# print("Программа запущена...")
 # time.sleep(pause)
-# print("пауза была", pause, "секунд")
+# print("Пауза была", pause, "секунд")
 # finish = time.monotonic()
 # res = finish - start
 # print(res)
-
 
 # Функции
 # print()
 #
 #
 # def hello(name, age):
-#     print("мне", age, "меня зовут", name)
+#     print("Мне", age, "Меня зовут", name)
 #
 #
 # hello("Irina", 28)
@@ -1061,7 +1164,7 @@ import re
 
 
 # def get_sum(a, b):
-#     print("сумма: ", end="")
+#     print("Сумма: ", end="")
 #     return a + b
 #
 #
@@ -1073,7 +1176,7 @@ import re
 # print(res + 5 - 2)
 # c = 3
 # d = 7
-# # get_sum(c, d)
+# get_sum(c, d)
 
 # def maximum(one, two):
 #     if one > two:
@@ -1082,18 +1185,18 @@ import re
 #         return two
 #
 #
-# print(maximum(9, 6))
-# print(maximum(9, 16))
+# print(maximum(9, 6))  # 9
+# print(maximum(9, 16))  # 16
 
-# def maximum(a, b):
-#     if a > b:
-#         return a - b
+# def maximum(n, m):
+#     if n > m:
+#         return n - m
 #     else:
-#         return a + b
+#         return n + m
 #
 #
-# a = int(input("введите a: "))
-# b = int(input("введите b: "))
+# a = int(input("Ввудите a: "))
+# b = int(input("Ввудите b: "))
 # print(maximum(a, b))
 
 # def cub(a):
@@ -1107,7 +1210,7 @@ import re
 # def change(lst):
 #     # lst[0], lst[-1] = lst[-1], lst[0]
 #     end = lst.pop()  # удалили последний элемент из списка
-#     start = lst.pop(0)  # удалили первый элемент
+#     start = lst.pop(0)  # удалили первый элемент из списка
 #     lst.insert(0, end)  # добавляем в начало списка
 #     lst.append(start)  # добавили элемент в конец списка
 #     return lst
@@ -1129,9 +1232,9 @@ import re
 # print(maximum(9, 16))  # False
 #
 # if maximum(9, 6):
-#     print("первое число больше второго")
+#     print("Первое число больше второго")
 # else:
-#     print("второе число больше первого")
+#     print("Второе число больше первого")
 
 # def check_password(password):
 #     has_lower = False
@@ -1139,9 +1242,9 @@ import re
 #     has_num = False
 #
 #     for ch in password:
-#         if "a" <= ch <= "z":
+#         if "a" <= ch <= "z":  # 97 <= 107 <= 122
 #             has_lower = True
-#         if 'A' <= ch <= "Z":
+#         if "A" <= ch <= "Z":
 #             has_upper = True
 #         if "0" <= ch <= "9":
 #             has_num = True
@@ -1151,14 +1254,14 @@ import re
 #     return False
 #
 #
-# p = input("введите пароль: ")
+# p = input("Введите пароль: ")
 # if check_password(p):
-#     print("это надежный пароль")
+#     print("Это надежный пароль")
 # else:
-#     print("это ненадежный пароль")
+#     print("Это ненадежный пароль")
 
 # from random import randint
-#
+
 # w, h = 3, 4
 # count = 0
 # matrix = [[randint(-20, 10) for y in range(w)] for x in range(h)]
@@ -1171,14 +1274,14 @@ import re
 # print(count)
 
 
-# def get_sum(a, b, c, d):
+# def get_sum(a, b, c=0, d=1):
 #     return a + b + c + d
 #
 #
 # print(get_sum(1, 5, 2, 7))
-# print(get_sum(1, 5, 2))
+# print(get_sum(1, 5, 2))  # 1,5,2,1 = 9
 # print(get_sum(1, 5))
-# print(get_sum(1, 5, d=2))
+# print(get_sum(1, 5, d=2))  # 1,5,0,2 = 8
 
 
 # def set_param(c=20, s="-"):
@@ -1193,7 +1296,7 @@ import re
 # set_param(s="*", c=10)
 
 
-# def digits_sum(n, even=True):
+# def digits_sum(n, even=True):  # even=False
 #     s = 0
 #     while n > 0:
 #         cur_digit = n % 10
@@ -1201,15 +1304,15 @@ import re
 #             s += cur_digit
 #         if not even and cur_digit % 2:  # even=False
 #             s += cur_digit
-#         n //= 10  # n = // 10
+#         n //= 10  # n = n // 10
 #     return s
 #
 #
-# print("сумма четных цифр: ")
+# print("Сумма четных цифр:")
 # print(digits_sum(9874023))
 # print(digits_sum(38271))
 # print(digits_sum(123456789))
-# print("сумма нечетных цифр: ")
+# print("Сумма нечетных цифр:")
 # print(digits_sum(9874023, even=False))
 # print(digits_sum(38271, even=False))
 # print(digits_sum(123456789, even=False))
@@ -1227,8 +1330,8 @@ import re
 
 # lt1 = [1, 2, 3]
 # lt2 = [1, 2, 3]
-# print(lt1 == lt2)
-# print(lt1 is lt2)
+# print(lt1 == lt2)  # True
+# print(lt1 is lt2)  # False
 # print(id(lt1))
 # print(id(lt2))
 #
@@ -1237,37 +1340,37 @@ import re
 #
 # a = a + "_new"
 # print(a)
-# print(a == b)
-# print(a is b)
-# print(id(lt1))
-# print(id(lt2))
+# print(a == b)  # True
+# print(a is b)  # True
+# print(id(a))
+# print(id(b))
 
 # lt1 = [1, 20, 3]
 # print(lt1, id(lt1), id(lt1[0]), id(lt1[1]))
 # lt1[1] = 50
 # print(lt1, id(lt1), id(lt1[0]), id(lt1[1]))
 
-# # неизменяемые типы данных - int, str, float, bool, tuple
-# # изменяемые типы данных - list
+# Неизменяемые типы данных - int, str, float, bool, tuple
+# Изменяемые типы данных - list
 
-# Кортеж (tuple) - неизменяемы список
+# Кортеж (tuple) - неизменяемый список
 
 # lst = [10, 20, 30]
 # tpl = (10, 20, 30)
-# print(lst.__sizeof__())  # 72 104
-# print(tpl.__sizeof__())  # 48 48
+# print(lst.__sizeof__())  # 72  104
+# print(tpl.__sizeof__())  # 48  48
 # print(tpl[2])
 # print(type(tpl))
 
 # a = (5,)
 # print(a, type(a))
-#
+
 # b = tuple("Hello")
-# # b = tuple(["hello", "world"])
+# # b = tuple(["Hello", "World"])
 # print(b, type(b))
 
 # a = (5, 9, 7, 3, 4)
-# print(a[1:3])
+# print(a[0:3])
 # print(a[-1])
 # print(a[4])
 
@@ -1275,7 +1378,7 @@ import re
 #
 # # tpl = tuple(i for i in range(5))
 # # tpl = tuple(input("-> ") for i in range(5))
-# tpl = tuple(randint(1, 100) for i in range(5))
+# # tpl = tuple(randint(1, 100) for i in range(5))
 # tpl = tuple(2 ** i for i in range(1, 13))
 # print(tpl)
 
@@ -1286,31 +1389,31 @@ import re
 # t3 = t1 + t2
 # print(t3)
 # # print(t3 * 2)
-# print(t3.count("l"))
+# # print(t3.count("l"))
 # # print(t3.index('l', 4, -2))
 # sym = "l"
 # # if sym in t3:
 # #     print(t3.index(sym))
 # # else:
-# #     print("такого символа нет")
+# #     print("Такого символа нет")
 #
 # try:
 #     print(t3.index(sym, 4, -2))
 # except ValueError:
-#     print("такого символа нет в заданном диапазоне")
+#     print("Такого символа нет в заданном диапазоне")
 
 
 # def slicer(tpl, el):
 #     if el in tpl:
 #         if tpl.count(el) > 1:
-#             first = tpl.index(el)
-#             second = tpl.index(el, first + 1) + 1
-#             return tpl[first:second]
+#             # first = tpl.index(el)
+#             # second = tpl.index(el, first + 1) + 1
+#             # return tpl[first:second]
 #             return tpl[tpl.index(el):tpl.index(el, tpl.index(el) + 1) + 1]
 #         else:
 #             return tpl[tpl.index(el):]
 #     else:
-#         return tuple()
+#         return tuple()  # ()
 #
 #
 # print(slicer((1, 2, 3), 8))
@@ -1329,7 +1432,7 @@ import re
 # # x = t[0]
 # # y = t[1]
 # # z = t[2]
-# x, y, z = t  # распаковка картежа
+# x, y, z = t  # распаковка кортежа  x, y, z = 1, 2, 3
 # print(x, y, z)
 
 
@@ -1340,7 +1443,7 @@ import re
 #     return name, age, is_married
 #
 #
-# first_name, year, married = get_user()  # first_name, year
+# first_name, year, married = get_user()  # first_name, year, married = name, age, is_married
 # # user = get_user()
 # # first_name, year, married = user
 # # print(user[0])
@@ -1372,7 +1475,7 @@ import re
 # else:
 #     print("ELSE")
 #
-#     print(name)
+# print(name)
 
 # name = "Igor"
 
@@ -1384,8 +1487,8 @@ import re
 # print(name)
 
 # name = "Igor"
-#
-#
+
+
 # def func():
 #     print("Hello")
 #     name = "Marina"
@@ -1409,13 +1512,13 @@ import re
 #
 # for country in countries:
 #     country_name, country_population, cities = country
-#     print("\nСтрана: ", country_name, ", население =", country_population, cities, sep="")
+#     print("\nСтрана: ", country_name, ", население = ", country_population, sep="")
 #     for city in cities:
 #         city_name, city_population = city
 #         print("\tГород: ", city_name, ", население = ", city_population, sep="")
 
 
-# Множество (set) - неупорядоченная коллекция, хранит только уникальные значения (изменяемый тип данных)
+# Множества (set) - неупорядоченная коллекция, которая хранит только уникальные значения (изменяемый тип данных)
 
 # s = {"red", "green", "blue", "red", "green"}
 # print(type(s))
@@ -1431,7 +1534,7 @@ import re
 
 # from random import randint
 # # s = {x * x for x in range(10)}
-# # s = {input("-> ") for x in range(10)}
+# # s = {input("-> ") for x in range(3)}
 # s = {randint(20, 50) for x in range(10)}
 # print(s)
 
@@ -1458,17 +1561,17 @@ import re
 # print(s)
 # s.add("black")  # добавление элемента
 # print(s)
-# s.remove("black")  # удаляет элемент (KeyError)
-# print(s)
-# color = "green"  # KeyError
-# if color in s:
-#     s.remove("color")  # удаляет элемент (KeyError)
-# print(s)
-# s.discard("pink")  # удаляет элемент по значению, не выбрасывает исключение, если элемента не существует
-# print(s)
-# color = s.pop()  # удаляет первый элемент из множества
-# print(s)
-# print(color)
+# # s.remove("black")  # удаляет элемент по значению  (KeyError)
+# # print(s)
+# # color = "green"
+# # if color in s:
+# #     s.remove(color)  # KeyError
+# # print(s)
+# # s.discard("pink")  # удаляет элемент по значению, не выбрасывает исключение, если элемента не существует
+# # print(s)
+# # color = s.pop()  # удаляет первый элемент из множества
+# # print(s)
+# # print(color)
 # s.clear()  # очищает множество
 # print(s)
 
@@ -1501,7 +1604,7 @@ import re
 # s6 = {7, 8}
 # s7 = {9, 8}
 # # s = s1.union(s2, s3, s4, s5, s6, s7)
-# s = s1 | s2 | s3 | s4 | s5 | s6 | s7
+# s = s1 | s2 | s3 | s4 | s4 | s5 | s6 | s7
 # print(s)
 # print(len(s))
 # print(min(s))
@@ -1532,11 +1635,11 @@ import re
 # print(a > b)
 # print(a != b)
 
-# a = [9, 8, 6, 5, 8, 7, 1, 5, 5, 4, 4, 7, 8, 7, 8, 9, 5, 4]
+# a = (9, 8, 6, 5, 8, 7, 1, 5, 5, 4, 4, 7, 8, 7, 8, 9, 5, 4)
 # print(a)
 # s = set(a)
 # print(s)
-# a1 = list(s)
+# a1 = tuple(s)
 # print(a1)
 
 
@@ -1567,68 +1670,68 @@ import re
 # print(d2, type(d2))
 
 
-# d = {0: "text", "one": 45, (1, 2.3): "Кортеж", "список": [2, 3, 6, 7], True: 1, False: 0, 1: "один"}
+# d = {0: "text", "one": 45, (1, 2.3): "Кортеж", "список": [2, 3, 6, 7], True: 1, False: 0, 1: "Один"}
 # print(d)
 #
-# key = "one"
-# if key in d;
+# key = 45
+# if key in d:
 #     del d[key]
 
 # try:
 #     del d[key]
 # except KeyError:
-#     print("элемента с ключом " + str(key) + " нет в словаре")
+#     print("Элемента с ключом " + str(key) + " нет в словаре")
 #
 # print(d)
-# d["ne"] = "новое значение"
+# d["ne"] = "Новое значение"
 # print(d)
 #
 # for key in d:
 #     print(key, ":", d[key])
 
 
+# print("one" in d)
 # print("ne" in d)
 
 # print(d["0"])
-# print(d[0])
 # print(d[(1, 2.3)])
 # print(d[False])
 # print(d[True])
 # print(d[1])
 
 # sl = {
-#    'x1': 3,
-#    'x2': 7,
-#    "x3": 5,
-#    'x4': -1
+#     'x1': 3,
+#     'x2': 7,
+#     "x3": 5,
+#     'x4': -1
 # }
 # a = 1
 # for key in sl:
-#    a *= sl[key]
-#    print(sl[key])
+#     a *= sl[key]
+#     # print(sl[key])
 # print(a)
 
-# d = dict()
+# d = dict()  # {}
 # d[1] = input("-> ")
 # d[2] = input("-> ")
 # d[3] = input("-> ")
 # d[4] = input("-> ")
 # d = {i: input("-> ") for i in range(1, 5)}
 # print(d)
-# dislike = int(input("какой элемент исключить: "))
+# dislike = int(input("Какой элемент исключить: "))
 # del d[dislike]
 # print(d)
 
 # goods = {
 #     '1': ['Core-i3-4330', 9, 4500],
-#     '2': ['Core-i5-4670', 3, 8500],
-#     '3': ['AMD FX-13-4330', 6, 3700],
-#     '4': ['Core-13-4330', 8, 2100],
-#     '5': ['Core-13-4330', 5, 6400],
+#     '2': ['Core i5-4670', 3, 8500],
+#     '3': ['AMD FX-6300', 6, 3700],
+#     '4': ['Pentium G3220', 8, 2100],
+#     '5': ['Core i5-3450', 5, 6400],
 # }
 #
 # for i in goods:
-#     print(i, ") ", goods[i][0], " - ", goods[i][1], "шт. по ", goods[i][2], " руб ", sep="")
+#     print(i, ") ", goods[i][0], " - ", goods[i][1], " шт. по ", goods[i][2], " руб.", sep="")
 #
 # while True:
 #     n = input("№: ")
@@ -1636,18 +1739,18 @@ import re
 #         if n in goods:
 #             while True:
 #                 try:
-#                     count = int(input("количество: "))
+#                     count = int(input("Количество: "))
 #                     goods[n][1] = count
 #                     break
 #                 except ValueError:
-#                     print("значение некорректно. введите число")
+#                     print("Значение некорректно. Введите число")
 #         else:
-#             print("такого ключа не существует")
+#             print("Такого ключа не существует")
 #     else:
 #         break
 #
 # for i in goods:
-#     print(i, ") ", goods[i][0], " - ", goods[i][1], "шт. по ", goods[i][2], " руб ", sep="")
+#     print(i, ") ", goods[i][0], " - ", goods[i][1], " шт. по ", goods[i][2], " руб.", sep="")
 
 # d = {'a': 1, 'b': 2, 'c': 3}
 # print(d)
@@ -1673,14 +1776,14 @@ import re
 
 # d = {'a': 1, 'b': 2, 'c': 3}
 # # print(d['b'])
-# # value = d.get('b1', 'такого ключа не существует')
+# # value = d.get('b', 'Такого ключа не существует')
 # # print(value)
 # item = d.setdefault('c', 5)
 # print(item)
 # print(d)
 
 # d = {'a': 1, 'b': 2, 'c': 3}
-# item = d.pop('b', "такого ключа не существует")
+# item = d.pop('b', "Такого ключа не существует")
 # print(item)
 # print(d)
 # item2 = d.popitem()
@@ -1688,7 +1791,7 @@ import re
 # print(d)
 # d.clear()
 # print(d)
-
+#
 # d = dict.fromkeys(['a', 'b'], 100)
 # print(d)
 
@@ -1718,7 +1821,7 @@ import re
 #
 # print(d)
 
-# d = {'три': 3, 'один': 1, 'два': 2,  'четыре': 4}
+# d = {'три': 3, 'один': 1, 'два': 2, 'четыре': 4}
 # # new_d = {value: key for key, value in d.items()}
 # new_d = {key: value for key, value in d.items() if value <= 2}
 # print(new_d)
@@ -1736,18 +1839,38 @@ import re
 #     for y in sales[x]:
 #         print("\t", y, ":", sales[x][y])
 #
-# person = input("имя: ")
-# region = input("регион: ")
+# person = input("Имя: ")
+# region = input("Регион: ")
 # print(sales[person][region])
-# new_data = int(input("новое значение: "))
+# new_data = int(input("Новое значение: "))
 # sales[person][region] = new_data
 # print(sales[person])
 
-# # zip
-# a = ['Dec', 'Jan', 'Feb']
-# b = [12, 1, 2]
-# c = (2.9, 3.7, 9.2)
-# # d = dict(zip(a, b))
+# d = {
+#     "emp1": {"name": "John", "salary":  7500},
+#     "emp2": {"name": "Emma", "salary":  8000},
+#     "emp3": {"name": "Brad", "salary":  6500},
+# }
+#
+# print(d['emp3'])
+# print(d['emp3']['salary'])
+# d['emp3']['salary'] = 8500
+#
+# # for i in d:
+# #     print(i)
+# #     for j in d[i]:
+# #         print("\t", j, ":", d[i][j])
+# for i in d:
+#     print(i)
+#     for j, v in d[i].items():
+#         print("\t", j, ":", v)
+
+
+# zip
+# a = ('Dec', 'Jan', 'Feb')
+# b = (12, 1, 2)
+# c = (2.9, 3.7)
+# d = dict(zip(a, b))
 # d = list(zip(a, b))
 # d = list(zip(b, a, c))
 # print(d)
@@ -1762,17 +1885,17 @@ import re
 # print(a)
 # print(b)
 
-# a = [1, 2, 3]
+# a = (1, 2, 3)
 # b = [4, *a, 5, 6]
 # print(b)
 # print(len(b))
 
 # first = {'one': 1, 'two': 2}
-# second = {'three': 3, 'four': 4}
-# print({**first, **second})
+# second = {'three': 3, 'four': 4, 'one': 11}
+# print({**first, **second})  # {'one': 1, 'two': 2, 'three': 3, 'four': 4}
 # for k, v in {**first, **second}.items():
 #     print(k, "=>", v)
-
+#
 
 # colors = ['red', 'green', 'blue']
 # i = 1
@@ -1780,16 +1903,16 @@ import re
 #     print(i, ") ", color, sep="")
 #     i += 1
 # print()
-# for num, val in enumerate(colors, 1):
+# for num, val in enumerate(colors, 1):  # start=1
 #     print(num, ") ", val, sep="")
 
 
 # studs = {}
-# n = int(input("Количество студентов: "))
-# s = 0
+# n = int(input("Кол-во студентов: "))  # 5
+# # s = 0
 #
-# for i in range(n):
-#     name = input(str(i + 1) + "-й студент: ")
+# for i in range(n):  # 0
+#     name = input(str(i + 1) + "-й студент: ")  # "1-й студент: "
 #     point = int(input("Балл: "))
 #     studs[name] = point
 #     # s += point
@@ -1798,11 +1921,11 @@ import re
 # avg = s / n
 # print(studs)
 # print(s)
-# print("средний балл: ", avg)
+# print("Средний балл:", avg)
 #
-# for i in studs:
-#     if studs[i] > avg:
-#         print(i)
+# for i in studs:  # i = имена
+#     if studs[i] > avg:  # балл > среднего арифметического
+#         print(i)  # i = имена
 #
 # for k, v in studs.items():
 #     if v > avg:
@@ -1853,13 +1976,13 @@ import re
 # print(func(1, 2, 3, 5, "abc"))
 
 # def print_scores(student, *scores):
-#     print("Student name:", student, end=", оценки: ")
+#     print("Student name:", student, end=", Оценки: ")
 #     for score in scores:
 #         print(score, end=" ")
 #     print()
 #
 #
-# print("Jonathan", 100, 95, 88, 92, 99, 84)
+# print_scores("Jonathan", 100, 95, 88, 92, 99, 84)
 # print_scores("Rick", 96, 20, 33, 66)
 
 # def func(**kwargs):
@@ -1877,14 +2000,14 @@ import re
 #
 #
 # intro(name="Irina", surname="Sharma", age=22)
-# intro(name="Igor", surname="Word", email="igor@.ru", counry="russia", age=22, phone=3333333)
+# intro(name="Igor", surname="Wood", email="igor@mail.ru", country="Russia", age=22, phone=9876543210)
 
 
-# def func(a, b,*args, y=0, x=9, **kwargs):
+# def func(a, b, *args, y=0, x=9, **kwargs):
 #     return a, b, args, kwargs, y, x
 #
 #
-# print(func(5, 1, 2, 3, 4, 6, 7, n=9, y=100, m=10))
+# print(func(5, 1, 2, 3, 4, 5, 6, 7,  n=9, y=100, m=10))
 
 # my_dict = {'one': 'first'}
 #
@@ -1899,14 +2022,14 @@ import re
 # db(name='Bob', age=31, weight=61, eyes_color='grey')
 # print("my_dict =", my_dict)
 
-# name = "Tom"
+# name = "Tom"  # глобальная переменная
 # surname = ""
 #
 #
 # def hi():
-#     global name, surname
+#     # global name, surname
 #     name = "Sam"
-#     surname = "Johnson"
+#     surname = "Johnson"  # локальная переменная
 #     print("Hello", name, surname)
 #
 #
@@ -1914,18 +2037,18 @@ import re
 #     print("Good bye", name)
 #
 #
-# print(name)
+# # print(name)
 # hi()
+# # print(surname)
 # bye()
 # print(name)
-# print(surname)
 
 # sum = 5
 #
 # lst = [9, 8, 7, 6, 5]
 # print(sum(lst))
 
-# print = "hello"
+# print = "Hello"
 #
 #
 # print("Python")
@@ -1935,7 +2058,7 @@ import re
 #     x = 2
 #
 #     def outer():
-#         x = 3
+#         # x = 3
 #         print("x =", x)
 #         return a + x
 #
@@ -1951,29 +2074,29 @@ import re
 #
 # def fn():
 #     global t
-#     a = 30
-
-# def inner():
+#     a = 30  # 35
+#
+#     def inner():
 #         nonlocal a
 #         a = 35
-
+#
 #     inner()
 #     print('a =', a)
 #     t = a
 #
 #
 # fn()
-# c = x + t
+# c = x + t  # 25 + 30 = 55  # 25 + 35 = 60
 # print(c)
 
 # x = 5
 #
 #
-# def fn1():  # 2
-#     x = 25
+# def fn1():
+#     x = 25  # 2  # x = 55
 #
 #     def fn2():
-#         x = 33  # 4
+#         # x = 33  # 4  # x = 55
 #
 #         def fn3():
 #             nonlocal x
@@ -1989,8 +2112,8 @@ import re
 # print(x)
 
 # def outer(a1, b1, a2, b2):
-#     a = 0
-#     b = 0
+#     a = 0  # 1
+#     b = 0  # 7
 #
 #     def inner():
 #         nonlocal a, b
@@ -2002,10 +2125,10 @@ import re
 #     return [a, b]
 #
 #
-# print(outer(2, 3, -1, 4))
+# print(outer(2, 3, -1, 4))  # [1, 7]
 
 
-# замыкание - функция возвращает другую функцию, но не вызывает ее
+# Замыкание - функция возвращает другую функцию, но не вызывает ее
 
 # def outer(n):
 #     def inner(x):
@@ -2019,12 +2142,12 @@ import re
 #
 # item2 = outer(6)
 # print(item2(10))
-#
+
 # print(outer(7)(10))
 # def func(a):
 #     return a * 2
-
-
+#
+#
 # x = func(5)
 # print(x)
 
@@ -2038,7 +2161,7 @@ import re
 #         nonlocal a, b
 #         # global a
 #         c.append(4)
-#         a = a + 1
+#         a = a + 1  # a += 1
 #         b = b + "_new"
 #         return a, b, c
 #
@@ -2076,15 +2199,15 @@ import re
 # lambda - выражения
 
 # print((lambda x, y: x + y)(1, 2))
-# print((lambda x, y: x + y)(10, 20))
+# # print((lambda x, y: x + y)(10, 20))
 #
 #
 # def func(x, y):
 #     return x + y
 #
+#
 # # func = lambda x, y: x + y
 # print(func(1, 2))
-
 
 # print((lambda a, b, c: a + b + c)(10, 20, 30))
 # print((lambda a, b, c=3: a + b + c)(10, 20))
@@ -2127,7 +2250,7 @@ import re
 # print(func3(5))
 #
 # print((lambda n: (lambda x: n + x))(10)(5))
-
+#
 # print((lambda n: (lambda x: (lambda z: n + x + z)))(10)(5)(1))
 
 # def func(i):
@@ -2135,18 +2258,18 @@ import re
 #
 #
 # d = {'a': 15, 'c': 10, 'b': 5}
-# # lst = sorted(d.items(), key=lambda i: i[1])
+# # lst = sorted(d.items(), key=lambda i: i[1])  # [('a', 15), ('b', 5), ('c', 10)]
 # lst = list(d.items())
 # # print(lst)
 # # lst.sort(key=lambda i: i[1])
-# # lst.sort(key=func)
+# lst.sort(key=func)
 # print(lst)
 # print(dict(lst))
 
 
 # players = [
 #     {"name": "Антон", "last_name": "Бирюков", "rating": 9},
-#     {"name": "Алексей", "last_name": "Боня", "rating": 10},
+#     {"name": "Алексей", "last_name": "Бодня", "rating": 10},
 #     {"name": "Федор", "last_name": "Сидоров", "rating": 4},
 #     {"name": "Михаил", "last_name": "Семенов", "rating": 6},
 # ]
@@ -2172,7 +2295,7 @@ import re
 # }
 #
 # d[6]()
-# from math import pi
+# from geometry import pi
 #
 # area = {
 #     "Circle": lambda radius: pi * radius * radius,
@@ -2180,9 +2303,9 @@ import re
 #     "Trapezoid": lambda a, b, h: (a + b) * h / 2
 # }
 #
-# print("площадь окружности:", area["Circle"](2))
-# print("площадь прямоугольника:", area["Rectangle"](10, 13))
-# print("площадь трапеции:", area["Trapezoid"](7, 5, 3))
+# print("Площадь окружности:", area["Circle"](2))
+# print("Площадь прямоугольника:", area["Rectangle"](10, 13))
+# print("Площадь трапеции:", area["Trapezoid"](7, 5, 3))
 
 # print((lambda a, b: a if a > b else b)(5, 10))
 # print((lambda a, b: a if a > b else b)(15, 10))
@@ -2224,39 +2347,39 @@ import re
 
 # нелокальная переменная
 # def outer(a, b, c):
-#     s = 0
+#     s = 0  # 44
 #
-#     def inner(i, j):
+#     def inner(i, j):  # 4, 6
 #         nonlocal s
-#         s += i * j
+#         s += i * j  # s = s + i * j  => s = 20 + 24
 #
-#     inner(a, b)
-#     inner(a, c)
-#     inner(b, c)
-#     return 2 * s
+#     inner(a, b)  # 2, 4
+#     inner(a, c)  # 2, 6
+#     inner(b, c)  # 4, 6
+#     return 2 * s  # 2 * 44 => 88
 #
 #
 # print(outer(2, 4, 6))
 # print(outer(5, 8, 2))
 # print(outer(1, 6, 8))
 
-# print("вносим изменения")
+# print("Вносим изменения")
 
 # print("Данные переносим на GitHub")
 
-# map (func, iterable), filter(func, iterable)
+# map(func, iterable), filter(func, iterable)
 
 # def mult(t):
 #     return t * 2
-#
-#
+
+
 # lst = [2, 8, 12, -5, -10]
 #
 # # lst2 = list(map(mult, lst))
 # lst2 = list(map(lambda t: t * 2, lst))
 # print(lst2)
 
-# lst2 = (list(map(lambda t: t * 2, [2, 8, 12, -5, -10])))
+# print(list(map(lambda t: t * 2, [2, 8, 12, -5, -10])))
 
 # t = (2.88, -1.75, 100.55)
 #
@@ -2270,20 +2393,20 @@ import re
 # res = dict(map(lambda x, y: (x, y), num, st))
 # print(res)
 
-# st = [1, 2, 3]
-# num = [1, 2, 3]
+# l1 = [1, 2, 3]
+# l2 = [4, 5, 6]
 #
-# res = list(map(lambda x, y: x + y, st, num))
+# res = list(map(lambda x, y: x + y, l1, l2))
 # print(res)
 
 # def func(s):
 #     return len(s) == 3
 #
 #
-# t = ('abcd', 'abc', 'asdfg', 'def', 'ert')
-#
-# # t2 = tuple(filter(lambda s: len(s) == 3, t))
-# # t2 = tuple(filter(func, t))  # t2 = ('abc', 'def', 'ert'
+# t = ('abcd', 'abc', 'asdfg', 'def', 'ert', '')  # 'abcdabcdabcd'
+
+# t2 = tuple(filter(lambda s: len(s) == 3, t))  # t2 = ('abc', 'def', 'ert')
+# t2 = tuple(filter(func, t))  # t2 = ('abc', 'def', 'ert')
 # print(t2)
 
 # b = [60, 90, 68, 59, 76, 60, 88, 74, 81, 65]
@@ -2337,13 +2460,13 @@ import re
 #
 # def func_test():
 #     print("Hello, I am func 'func_test'")
-
-
+#
+#
 # test = my_decorator(func_test)
 # test()
 
 
-# def my_decorator(func):  # декорирующая фуекция
+# def my_decorator(func):  # декорирующая функция
 #     def inner():
 #         print("*" * 40)
 #         func()
@@ -2388,13 +2511,13 @@ import re
 # print(hello())
 
 # def cnt(fn):
-#     count = 0
+#     count = 0  # 3
 #
 #     def wrap():
 #         nonlocal count
 #         count += 1
 #         fn()
-#         print("вызов функции:", count)
+#         print("Вызов функции:", count)
 #
 #     return wrap
 #
@@ -2417,7 +2540,7 @@ import re
 
 # def args_decorator(fn):
 #     def wrap(arg1, arg2):
-#         print("данные:", arg1, arg2)
+#         print("Данные:", arg1, arg2)
 #         fn(arg1, arg2)
 #
 #     return wrap
@@ -2425,10 +2548,10 @@ import re
 #
 # @args_decorator
 # def print_full_name(name, surname):
-#     print("меня зовут", name, surname)
+#     print("Меня зовут", name, surname)
 #
 #
-# print_full_name("ирина", "ветрова")
+# print_full_name("Ирина", "Ветрова")
 
 
 # def args_decorator(fn):
@@ -2491,8 +2614,8 @@ import re
 # @multiply(3)
 # def return_num(num):
 #     return num
-
-
+#
+#
 # print(return_num(5))
 
 # def avg(fn):
@@ -2509,12 +2632,11 @@ import re
 #
 # print(summa(2, 3, 3, 4))
 
-
 # Строки
 
-# print(0x10)
+# print(10)
 # print(bin(18))  # 0b10010 => 0b - двоичная система
-# print(oct(18))  # 0o22 => - восьмеричная
+# print(oct(18))  # 0o22 => 0o - восьмиричная
 # print(hex(18))  # 0x12 => 0x - шестнадцатеричная
 #
 # print(0b10010 + 0o22)
@@ -2524,12 +2646,13 @@ import re
 # q = 'Pyt'
 # w = "hon"
 # e = q + w
-# # print(e)  Python => Pytton
+# print(e)  # Python => Pytton
 # # print(e * 3)
 # # print("y" in e)
 # # print("l" in e)
 # # print(e[1])
 # # print(e[-1])
+# # print(e[1:4])
 # # print(e[::-1])
 # e = e[:3] + 't' + e[4:]
 # print(e)
@@ -2539,55 +2662,55 @@ import re
 
 # print("C:\\folder\\file.txt")
 # print(r"C:\folder\file.txt")
-# print(r"C:\folder\\[:1]")
-# print("C:\\folder" + "\\")
+# print(r"C:\folder\\"[:-1])
+# print(r"C:\folder" + "\\")
 # print("C:\\folder\\")
 
 # name = "Дмитрий"
 # age = 25
 # print("Меня зовут " + name + ". Мне " + str(age) + " лет.")
-# print(f"Меня зовут {name}. Мне {age} лет)"
+# a = f"Меня зовут {name}. Мне {age} лет."
 # print(a)
-# print(f"число: {round(12.2564, 2)}, {5 + 3}")
-# print(f"число: {12.2564:.2f}")
+# print(f"Число: {round(12.2564, 2)}, {5 + 3}")
+# print(f"Число: {12.2564:.2f}")
 
 # x = 10
 # y = 5
-# print(f"{x=}, {y=}")
+# print(f"{x = }, {y = }")
 # print(f"{x} x {y} / 2 = {x * y / 2}")
 
 # dir_name = "folder"
 # file_name = "file.txt"
 # print(fr"home\{dir_name}\{file_name}")
-# print("home"+ "\\" + dir_name + "\\" + file_name)
+# print("home\\" + dir_name + "\\" + file_name)
 
-# s = """стр  ока
+
+# s = """Строка
 # символов"""
 # print(s)
-# s1 = '''стр ока
+# s1 = '''Строка
 # символов'''
 # print(s1)
-# s2 = ("стро ка "
-#       "символов")
+# s2 = "Строка символов"
 # print(s2)
 
 # def square(n):
-#     """Принимаем число n, возвращает число n"""
-#     print("hello")
+#     """Принимает число n, возвращает число n"""
+#     print("Hello")
 #     return n ** 2
 #
 #
 # print(square(5))
 
-# from math import pi
+# from geometry import pi
 #
 #
 # def cylinder(r, h):
 #     """
-#     Вычисляет площадь цилиндра
+#     Вычисляет площадь цилиндра.
 #
-#     Вычисляет площадь на основании заданной высоты и радиуса основания
-
+#     Вычисляет площадь цилиндра на основании заданной высоты и радиуса основания
+#
 #     :param r: положительное число, радиус основания цилиндра
 #     :param h: положительное число, высота цилиндра
 #     :return: положительное число, площадь цилиндра
@@ -2596,17 +2719,17 @@ import re
 #
 #
 # print(cylinder(2, 4))
-# # print(cylinder.__doc__)
+# print(cylinder.__doc__)
 # print(sum.__doc__)
 # print(len.__doc__)
 # print(int.__doc__)
 # print(type.__doc__)
 
-# print(ord('а'))
+# print(ord('a'))
 # print(ord('й'))
 
 # while True:
-#     n = input("->")
+#     n = input("-> ")
 #     if n != "-1":
 #         print(ord(n))
 #     else:
@@ -2628,23 +2751,23 @@ import re
 # print(chr(35))
 # print(chr(8364))
 
-# a = 122
-# b = 97
-# if a > b:
-#     for i in range(b, a + 1):
-#         print(chr(i), end=" ")
-# else:
-#     for i in range(a, b + 1):
-#         print(chr(i), end=" ")
+# a = 97
+# b = 122
+# # if a > b:
+# #     for i in range(b, a + 1):
+# #         print(chr(i), end=" ")
+# # else:
+# #     for i in range(a, b + 1):
+# #         print(chr(i), end=" ")
 # if b > a:
-#     a, b = b, a
+#     a, b = b, a  # a = 122, b = 97
 #
 # for i in range(b, a + 1):
 #     print(chr(i), end=" ")
 
 
 # print("apple" == "Apple")
-# print("apple" > "Apple")
+# print("apple" > "Apple")  # 97 > 65
 
 # from random import randint
 #
@@ -2656,12 +2779,12 @@ import re
 #
 # def random_password():
 #     res = ""
-#     for i in range(randint(shortest, longest)):
+#     for i in range(randint(shortest, longest)):  # range(0, 6)
 #         res += chr(randint(min_ascii, max_ascii))
 #     return res
 #
 #
-# print("ваш случайный пароль:", random_password())
+# print("Ваш случайный пароль:", random_password())
 
 # Методы строк
 
@@ -2685,7 +2808,7 @@ import re
 # print(s.rfind("h1"))
 # print(s.rindex("h1"))
 
-# st = input("введите два слова через пробел: ")  # "один два"
+# st = input("Введите два слова через пробел: ")  # "один два"  " " -> 4
 # first = st[:st.find(" ")]
 # second = st[st.find(" ") + 1:]
 #
@@ -2696,21 +2819,21 @@ import re
 # print(s)
 #
 # print(s.endswith("on."))  # заканчивается ли строка на заданную подстроку -> (True, False)
-# print(s.startswith("I am", 14))  # заканчивается ли строка на заданную подстроку -> (True, False)
+# print(s.startswith("I am", 14))  # начинается ли строка на заданной подстроки -> (True, False)
 # print(s.find("I am"))
 
 
-# a = input("введите число: ")
+# a = input("Введите число: ")
 # try:
 #     a = int(a)
 #     print(a ** 2)
 # except ValueError:
-#     print("нужно ввести число")
+#     print("Нужно ввести число")
 
-# print('123'.isdigit())  # состоит ли строка только из чисел
+# print('_123'.isdigit())  # состоит ли строка только из чисел
 # print('123a'.isdigit())
 #
-# a = input("введите число: ")
+# a = input("Введите число: ")
 # b = 2
 # if a.isdigit():
 #     a = int(a)
@@ -2719,30 +2842,30 @@ import re
 #     print(a + str(b))
 
 
-# print("abc123".isalnum())  # состоит ли строка только из букв и цифр
+# print("abc123Ф!".isalnum())  # состоит ли строка только из букв и цифр
 # print("ABCabc".isalpha())  # состоит ли строка только из букв
 
 
-# print("abc123!@#".islower())  # определяется, являются ли буквенные символы строки в нижнем регистре
-# print("ACV123!@#".islower())  # определяется, являются ли буквенные символы строки в верхнем регистре
+# print("abc123!@#".islower())  # определяет, являются ли буквенные символы строки в нижнем регистре
+# print("ACV123!@#".isupper())  # определяет, являются ли буквенные символы строки в верхнем регистре
 
-# print('py'. center(10))
-# print('py'. center(10, "-"))
-# print('py'. center(1))
+# print('py'.center(10))
+# print('py'.center(11, "-"))
+# print('py'.center(1))
 
 
-# print("    p   y     ".lstrip())
-# print("    py     ".rstrip())
-# print("    py     ".strip())
+# print("     p   y     ".lstrip())
+# print("     py     ".rstrip())
+# print("     py     ".strip())
 #
-# print("https://www.python.orgw".lstrip("/:pthsw"))
+# print("https://www.python.org".lstrip("/:pths"))
 # print("https://www.python.orgw".strip("/:pthsw"))
 # print("https://www.python.orgw".lstrip("/:pths").rstrip("w"))
 
 # s = "hello, Python! I am learning Python. Python"
 # print(s.replace("Python", "Java", 2))  # поиск и замена
 
-# s = "-"
+# s = ""
 # seq = ("a", "b", "c")
 # print(s.join(seq))
 #
@@ -2758,25 +2881,26 @@ import re
 
 # import re
 
+
 # s = "Я ищу совпадения в 2024 году. И я их найду в 2 счёта."
 # reg = r"\."
 # print(re.findall(reg, s))  # возвращает список, содержащий все совпадения с шаблоном
-# print(re.search(reg, s))  # возвращает первое совпадения с шаблоном
+# print(re.search(reg, s))  # возвращает первое совпадение с шаблоном
 # # print(re.search(reg, s).span())
 # # print(re.search(reg, s).start())
 # # print(re.search(reg, s).end())
 # # print(re.search(reg, s).group())
-# print(re.match(reg, s))  # возвращает по шаблону в начале строки
+# print(re.match(reg, s))  # поиск по шаблону в начале строки
 # print(re.split(reg, s, 3))  # возвращает список, в котором строка разбита по шаблону
 # print(re.sub(reg, "!", s, 1))  # поиск и замена
 
-# s = r"Я ищу совпадения в 2024 году. И я и^х найду в 2 счё_та. [1938765]. Hel-lo"
-# reg = r"[204]"
-# reg = r"[0-9]"
-# reg = r"[А-яЁё]"
-# reg = r"[A-Za-z9.[\]-]"
-# reg = r"[^0-9]"
-# reg = r"[12][0-9][0-9][0-9][0-9]"  # 20[00] 19[00]
+# s = r"Я ищу совпадения в 2024 году. И я и^х найду в 2 счё_та. [1938765]. Hel-lo."
+# # reg = r"[204]"
+# # reg = r"[2-4]"
+# # reg = r"[А-яЁё]"
+# # reg = r"[A-Za-z9.[\]-]"
+# # reg = r"[^0-9]"
+# reg = r"[12][09][0-9][0-9]"  # 20[00] 19[00]
 # print(re.findall(reg, s))
 # print(ord("Ё"))  # 1025
 # print(ord("А"))  # 1040
@@ -2786,28 +2910,28 @@ import re
 # print(ord("ё"))  # 1105
 # print(chr(96))
 
-# st = "Час в 24-часовом формате от 00 до 23. 2021-06-15T21:59. Минуты, в диапазоне от 00 до 59. 2021-06-15T01:09."
+# st = "Час в 24-часовом формате от 00 до 23. 2021-06-15T21:59. Минуты, в диапазоне от 00 до 59. 2021-06-15T04:09."
 # pattern = "[0-2][0-9]:[0-5][0-9]"
 # print(re.findall(pattern, st))
 
-# s = r"Я ищу совпадения в 2024 году. И я и^х найду в 2 счё_та."
+# s = r"Я ищу совпадения в 2024 году. И я их найду в 2 счё_та. Hel-lo 20000000"
 # reg = r"\d"  # [0-9]
 # reg = r"\D"  # [^0-9]
 # reg = r"\s"  # [ ]
 # reg = r"\S"  # [^ ]
-# reg = r"\w"  # [0-9A-zА-я]
-# reg = r"\W"  # [^0-9A-zА-я]
-# reg = r"\АИ я"
+# reg = r"\w"  # [0-9A-zА-я_]
+# reg = r"\W"  # [^0-9A-zА-я_]
+# reg = r"\AИ я"
 # reg = r"году.\Z"
-# reg = r"\Вния"
+# reg = r"\Bния"
 # reg = r"\w+"
 # reg = r"\d+"
 # reg = r"20*"
-# print(re.findall(reg, s))
+# # print(re.findall(reg, s))
 # кол-во повторений
 # + - от 1 до бесконечности
 # * - от 0 до бесконечности
-# ? - от 0 до 1
+# ? - от 0 до 1 повторения
 
 # d = "Цифры: 7, +17, --42, 0013, 0.3456"
 # print(re.findall(r"[+-]?\d+[.\d]*", d))
@@ -2817,11 +2941,10 @@ import re
 # # Дата рождения: 05-06-1987 => Дата рождения: 05.06.1987
 # print("Дата рождения:", re.sub(r"-", ".", re.sub(r"\s#.*", "", st)))
 
-# st = "author=Пушкин А.C.; title = Евгений Онегин; price =200; year= 1831"
+# st = "author=Пушкин А.C.; title  = Евгений Онегин, price =200; year= 1831"
 # # pattern = r"\w+\s*=\s*[\w\s.]+"
-# pattern = r"\w+\s*=\s*[^;]+"
+# pattern = r"\w+\s*=\s*[^;,]+"
 # print(re.findall(pattern, st))
-
 
 # s1 = "12 сентября 2024 года 4567897"
 # reg1 = r"\d{2,4}"
@@ -2830,7 +2953,7 @@ import re
 
 # s = "Я ищу совпадения в 2024 году. И я их найду в 2 счё_та."
 # # reg = r"^\w+\s\w+"
-# reg = r"^\w+\s\w+\.$"
+# reg = r"\w+\s\w+\.$"
 # print(re.findall(reg, s))
 
 # def valid_login(name):
@@ -2842,13 +2965,13 @@ import re
 
 
 # print(re.findall(r"\w+", "12 + й"))
-# print(re.findall(r"\w+", "12  + й", flags=re.ASCII))
+# print(re.findall(r"\w+", "12 + й", flags=re.ASCII))
 
 # text = "Hello World"
 # print(re.findall(r"\w\+", text, re.DEBUG))
 
 
-# s = "Я ищу совпадения в 2024 году. И я их найду в 2 счёта."
+# s = "Я ищу совпадения в 2024 году. И я их найду в 2 счё_та."
 # reg = "я"
 # print(re.findall(reg, s, re.IGNORECASE))
 
@@ -2856,16 +2979,17 @@ import re
 #
 # # print(re.findall(r"one.\w+", text))
 # # print(re.findall(r"one.\w+", text, re.DOTALL))
-# print(re.findall(r"one.\w+", text, re.MULTILINE))
+# print(re.findall(r"one$", text, re.MULTILINE))
 
 # print(re.findall("""
 # [a-z.-]+  # part 1
 # @         # @
 # [a-z.-]+  # part 2
 # """, "test@mail.ru", re.VERBOSE))
-
+# import geometry
 # import re
-#
+
+
 # text = """Python,
 # python,
 # PYTHON"""
@@ -2874,7 +2998,7 @@ import re
 
 
 # text = "<body>Пример жадного соответствия регулярных выражений</body>"
-# print(re.findall("<.*?>", text))
+# print(re.findall("<.*?>", text))  # [<body>, </body>]
 
 
 # *?, +?, ??
@@ -2882,20 +3006,20 @@ import re
 
 # s1 = "12 сентября 2024 года 4567897"
 # reg1 = r"\d{3,}?"
-# reg1 = r"\d{3}"
+# # reg1 = r"\d{3}"
 # print(re.findall(reg1, s1))
 
-# s = "петр и виталий отлично учатся"
-# reg = r"ольга|виталий"
+# s = "Петр и Виталий отлично учатся!"
+# reg = r"Ольга|Виталий"
 # print(re.findall(reg, s))
 
 
 # s = "int = 4, float = 4.0f, double = 8.0, float"
 # # reg = r"int\s*=\s*[.\w+]*|float\s*=\s*[.\w+]*"
 # # reg = r"(?:int|float)\s*=\s*[.\w+]*"
-# reg = r"((?:int|float)\s*=\s*([.\w+]*))"
+# reg = r"((?:int|float)\s*=\s*(?:[.\w+]*))"
 # print(re.findall(reg, s))
-# # print(re.search(reg, s))
+# print(re.search(reg, s))
 
 # (?:...) - обозначает, что эта группирующая скобка является не сохраняющей
 
@@ -2903,7 +3027,7 @@ import re
 # reg = r"\s*([+*-])\s*"
 # print(re.split(reg, s))
 
-# a = "28-08-2021"
+# a = "31-03-1921"
 # pattern = r"(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(19\d\d|20[0-9][0-9])"
 # print(re.findall(pattern, a))
 # print(re.search(pattern, a).group(2))
@@ -2914,7 +3038,7 @@ import re
 # print(m[3])
 
 
-# s = "самолет прилетает 10/23/2024. будем рады вас видеть после 10/24/2024."
+# s = "Самолет прилетает 10/23/2024. Будем рады вас видеть после 10/24/2024."  # 23.10.2024
 # reg = r"(\d{2})/(\d{2})/(\d{4})"
 # print(re.sub(reg, r"\2.\1.\3", s))
 
@@ -2924,49 +3048,48 @@ import re
 
 # Рекурсия
 
-# def elevator(n):
+# def elevator(n):  # 0
 #     if n == 0:
-#         print("вы в подвале")
+#         print("Вы в подвале")
 #         return
 #     print("=>", n)
-#     elevator(n - 1)
+#     elevator(n - 1)  # стек: 5 4 3 2 1
 #     print(n, end=" ")
 #
 #
-# n1 = int(input("на каком вы этаже: "))
-# elevator(n1)
+# n1 = int(input("На каком вы этаже: "))  # 5
 # elevator(n1)
 
 
 # def sum_list(lst):
 #     res = 0
 #     for i in lst:
-#         res += 1
+#         res += i
 #     return res
 
-# def sum_list(lst):
+# def sum_list(lst):  # [9]
 #     if len(lst) == 1:
 #         print(lst, "=> lst[0]:", lst[0])
-#         return lst[0]
+#         return lst[0]  # 9
 #     else:
-#         print(lst, "=>[0]:", lst[0])
-#         return lst[0] + sum_list(lst[1:])
+#         print(lst, "=> lst[0]:", lst[0])
+#         return lst[0] + sum_list(lst[1:])  # 1 + 3 + 5 + 7 +
 #
 #
-# print(sum_list([1, 3, 5, 7, 9]))
+# print(sum_list([1, 3, 5, 7, 9]))  # 25
 
-# def to_str(n, base):
+# def to_str(n, base):  # n = 15
 #     convert = "0123456789ABCDEF"
 #     if n < base:
-#         return convert[n]
+#         return convert[n]  # convert[15] => 'F'
 #     else:
-#         return to_str(n // base, base) + convert[n % base]
+#         return to_str(n // base, base) + convert[n % base]  # convert[14] => 'E'
 #
 #
 # print(to_str(17, 16))
 
-# def count_items(item_list):
-#     count = 0
+# def count_items(item_list):  # ['Adam', ['Bob', ['Chat', 'Cat'], 'Bard', 'Bert'], 'Alex', ['Bea', 'Bill'], "Ann"]
+#     count = 0  # 10
 #     for item in item_list:
 #         if isinstance(item, list):
 #             count += count_items(item)
@@ -2984,13 +3107,13 @@ import re
 # print(count_items(names))
 
 
-# def remove(text):
-#     if not text:
+# def remove(text):  # text = ""
+#     if not text:  # text = ""
 #         return ""
 #     if text[0] == "\n" or text[0] == " ":
 #         return remove(text[1:])
 #     else:
-#         return text[0] + remove(text[1:])
+#         return text[0] + remove(text[1:])  # "HelloWorld"
 #
 #
 # print(remove(" Hello\nWorld "))
@@ -3007,11 +3130,11 @@ import re
 
 # f = open("test.txt", "r")
 # print(f.read(3))
-# print(f.read())
+# # print(f.read())
 # f.close()
 #
 # f = open("test.txt", "r")
-# print(f. read())
+# print(f.read())
 # f.close()
 
 
@@ -3024,8 +3147,8 @@ import re
 
 
 # f = open("test1.txt", "r")
-# print(f.readlines(26))
-# print("count =", (f.readlines()))
+# # print(f.readlines(26))
+# print("count =", len(f.readlines()))
 # f.close()
 
 
@@ -3044,7 +3167,7 @@ import re
 # print("count =", count)
 
 # f = open("xyz.txt", "w")
-# f.write("Hello\nWorld!")
+# f.write("Hello\nWorld!!!!")
 # f.close()
 
 # f = open("xyz1.txt", "a")
@@ -3100,7 +3223,7 @@ import re
 # f.close()
 #
 # print(read_line)
-# read_line[1] = "hello world!\n"
+# read_line[1] = "Hello world!\n"
 # print(read_line)
 #
 #
@@ -3120,42 +3243,43 @@ import re
 # f.close()
 # print(s)
 #
-# pos = int(input("pos ="))
+# pos = int(input("pos = "))
 # if 0 <= pos < len(s):
 #     del s[pos]
 # else:
 #     print("Индекс введен неверно")
 # print(s)
+#
 # f = open(file, "w")
 # f.writelines(s)
 # f.close()
 
 # f = open("test.txt")
 # print(f.read(3))
-# print(f.tell())
-# print(f.seek(1))
+# print(f.tell())  # позиция условного курсора
+# print(f.seek(1))  # перемещение условного курсора в заданную позицию
 # print(f.read())
 # print(f.tell())
 # f.close()
 
 
 # f = open("test.txt", "r+")
-# f.write("I am learning Python")
+# f.write("I am learning Python")  # "I a-new string-m learning Python"
 # print(f.seek(3))
 # f.write("-new string-")
 # f.close()
 
 # f = open("test.txt", "r+")
-# f.write("I am learning Python")
-# print(f.seek(3))
-# f.write("-new string-")
+# f.write("I am learning Python")  # "I a-new string-ython"
+# # print(f.seek(3))
+# # f.write("-new string-")
 # print(f.tell())
 # print(f.read())
 # f.close()
 
 # with open('test.txt', "w") as f:
 #     print(f.write('012\n34567\n89'))
-# # print(f.closed)
+# print(f.closed)
 
 # with open('test.txt', "r") as f:
 #     for line in f:
@@ -3163,7 +3287,7 @@ import re
 
 
 # def longest_words(file):
-#     with open(file, "r", encoding="utf-8") as text:
+#     with open(file, "r") as text:  # , encoding="utf-8"
 #         w = text.read().split()
 #         print(w)
 #         max_length = len(max(w, key=len))
@@ -3179,15 +3303,16 @@ import re
 # one = "one.txt"
 # two = "two.txt"
 # three = "three.txt"
-
-# # text = "Строка №1\nСтрока №2\nСтрока №3\nСтрока №4\nСтрока №5\nСтрока №6\nСтрока №7\nСтрока №8\nСтрока №9\nСтрока №10\n"
+#
+# # text = "Строка №1\nСтрока №2\nСтрока №3\nСтрока №4\nСтрока №5\nСтрока №6\nСтрока №7\n
+# Строка №8\nСтрока №9\nСтрока №10\n"
 # #
-# # with open(one, "w") as f:
+# # with open(one, 'w') as f:
 # #     f.write(text)
 #
 # with open(one, "r") as fr, open(two, "w") as fw:
 #     for line in fr:
-#         line = line.replace("строка", "линия -")
+#         line = line.replace("Строка", "Линия -")
 #         fw.write(line)
 
 
@@ -3196,24 +3321,24 @@ import re
 # three = "three.txt"
 
 # with open(one, "r") as f1:
-#     a = f1.read()
+#     a = f1.readlines()
 # print(a)
 #
 # with open(two, "r") as f2:
-#     b = f2.read()
+#     b = f2.readlines()
 # print(b)
 #
 # c = a + b
 # print(c)
 #
-# with open(two, "w") as f3:
+# with open(three, "w") as f3:
 #     f3.writelines(c)
 
 
 # with open(one, "r") as f1, open(two, "r") as f2, open(three, "w") as f3:
 #     a = f1.readlines()
 #     b = f2.readlines()
-#     c = a + b
+#     c = []
 #     for i in range(len(a)):
 #         c.append(a[i])
 #         c.append(b[i])
@@ -3226,9 +3351,9 @@ import re
 # file = "text2.txt"
 #
 # f = open(file, "w")
-# f.write("замена строки в текстовом файле:\nизменить строку в списке:\nзаписать список в файл;")
+# f.write("Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;\n")
 # f.close()
-#
+
 # f = open(file, 'r')
 # read_line = f.readlines()
 # f.close()
@@ -3236,10 +3361,10 @@ import re
 # print(read_line)
 # pos1 = int(input("pos1 = "))
 # pos2 = int(input("pos2 = "))
-# if 0 <= pos1 < len(read_line) and 0 <= pos2 < len(read_line):
+# if 0 <= pos1 < len(read_line) and 0 <= pos2 < len(read_line):  # a, b = b, a
 #     read_line[pos1], read_line[pos2] = read_line[pos2], read_line[pos1]
 # else:
-#     print("такой строки нет")
+#     print("Такой строки нет")
 # print(read_line)
 #
 # f = open(file, "w")
@@ -3252,8 +3377,8 @@ import re
 # line = 0
 # for i in f:
 #     line += 1
-#     word = 0
-#     flag = 0
+#     word = 0  # 5
+#     flag = 0  # 1
 #     for j in i:
 #         if j != " " and flag == 0:
 #             word += 1
@@ -3266,47 +3391,49 @@ import re
 # print(line, "строки в документе")
 # f.close()
 
-# модуль  OS  и OS.PATH
+# Модуль OS и OS.PATH
 
-import os
+# import os
+
+
 # import os.path
 
-# print(os.getcwd())
-# print(os.listdir())
+# print(os.getcwd())  # путь к рабочей директории
+# print(os.listdir())  # список директорий и файлов
 # print(os.listdir(".."))
-#
-# os.mkdir("folder1")
-# os.makedirs("nested1/nested2/nested3")
-# os.remove("folder1/1.txt")
-# os.rmdir("folder1")
+
+# os.mkdir("folder1")  # создать папку
+# os.makedirs("nested1/nested2/nested3")  # создаст папку с промежуточными папками в пути
+# os.remove("folder1/1.txt")  # удалить файл
+# os.rmdir("folder1")  # удалить папку, но пустую
 
 # os.rename("xyz1.txt", "test2.txt")
-# os.rename("folder", "test")
+# os.rename("folder", "test")  # переименовывает файлы или папки
 
 # os.rename("xyz.txt", "test/xy.txt")
-# os.rename("two.txt", "text/t.txt")
+# os.renames("two.txt", "text/t.txt")  # переименовывает файлы или папки и перемещает их по несуществующему пути,
 # путем его создания
 
 # for root, dirs, files in os.walk("nested1", topdown=False):
 #     print("Root:", root)
-#     print("\tSubdirs", dirs)
+#     print("\tSubdirs:", dirs)
 #     print("\tFiles:", files)
 
 
 # def remove_empty_dirs(root_tree):
-#     print(f"удаление пустых директорий в ветви {root_tree}")
+#     print(f"Удаление пустых директорий в ветви {root_tree}")
 #     print("-" * 50)
 #     for root, dirs, files in os.walk(root_tree):
 #         if not os.listdir(root):
 #             os.rmdir(root)
-#             print(f"директория {root} удалена")
+#             print(f"Директория {root} удалена")
 #     print("-" * 50)
 #
 #
 # remove_empty_dirs("nested1")
 
-# print(os.path.split(r"D:\Python\PythonProject\nested1"))
-# print(os.path.join(r"D:\Python\PythonProject\nested1"))
+# print(os.path.split(r"D:\Python318\318\nested1\nested2\nested3\text.txt"))
+# print(os.path.join(r"D:\Python318", "318", "nested2", "text.txt"))
 
 # dirs = [r'Work\F1', r'Work\F2\F21']
 # for d in dirs:
@@ -3315,7 +3442,7 @@ import os
 # files = {
 #     'Work': ['w.txt'],
 #     r'Work\F1': ['f11.txt', 'f12.txt', 'f13.txt'],
-#     r'Work\F2\F21': ['f211', 'f212.txt']
+#     r'Work\F2\F21': ['f211.txt', 'f212.txt']
 # }
 # for d, f in files.items():
 #     for file in f:
@@ -3324,14 +3451,13 @@ import os
 #
 # files_with_text = [r'Work\w.txt', r'Work\F1\f12.txt', r'Work\F2\F21\f211.txt', r'Work\F2\F21\f212.txt']
 #
-#
 # for file in files_with_text:
 #     with open(file, 'w') as f:
-#         f.write(f"текст для файла {file}")
+#         f.write(f"Текст для файла {file}")
 #
 #
 # def print_tree(root, topdown):
-#     print(f"обход {root} {'сверху вниз' if topdown else 'снизу вверх'}")
+#     print(f"Обход {root} {'сверху вниз' if topdown else 'снизу вверх'}")
 #     for root, dirs, files1 in os.walk(root, topdown):
 #         print(root)
 #         print(dirs)
@@ -3356,14 +3482,14 @@ import os
 # import time
 #
 # path = "main.py"
-# print(os.path.getsize(path) / 1024)
+# print(os.path.getsize(path) / 1024)  # размер файла 81693 байт (79.826171875 KB)
 #
-# print(os.path.getctime(path))
-# print(os.path.getatime(path))
-# print(os.path.getmtime(path))
+# print(os.path.getctime(path))  # время создания файла
+# print(os.path.getatime(path))  # время последнего доступа к файлу
+# print(os.path.getmtime(path))  # время последнего изменения файла (в секундах)
 #
-# print(time.strftime("%d.%m.%Y, %H:%M:%S", time.localtime(os.path.getatime(path))))
-# print(time.strftime("%d.%m.%Y, %H:%M:%S", time.localtime(os.path.getatime(path))))
+# print(time.strftime("%d.%m.%Y, %H:%M:%S", time.localtime(os.path.getctime(path))))
+# print(time.strftime("%d.%m.%Y, %H:%M:%S", time.localtime(os.path.getmtime(path))))
 
 # print(os.path.isdir(r"D:\Python318\318\nested1\nested2\nested3"))
 # print(os.path.isfile(r"D:\Python318\318\nested1\nested2\nested3\text.txt"))
@@ -3397,15 +3523,15 @@ import os
 
 # import os
 #
-# dir_name = "nected1"
+# dir_name = "Work"
 #
 # objs = os.listdir(dir_name)
 # print(objs)
 #
 # for obj in objs:
 #     p = os.path.join(dir_name, obj)
-#     print(p)
-#     if os.path.isdir(p):
+#     # print(p)
+#     if os.path.isfile(p):
 #         print(f"{obj} - file - {os.path.getsize(p)} bytes")
 #     elif os.path.isdir(p):
 #         print(f"{obj} - dir")
@@ -3431,7 +3557,6 @@ import os
 # # p2.x = 3
 # # p2.y = 7
 # p2.set_coord(3, 7)
-# print()
 
 
 # class Human:
@@ -3443,23 +3568,23 @@ import os
 #     address = "street, house"
 #
 #     def print_info(self):
-#         print("Персональные данные ".center(40, "*"))
+#         print(" Персональные данные ".center(40, "*"))
 #         print(f"Имя: {self.name}\nДата рождения: {self.birthday}\nНомер телефона: {self.phone}\n"
 #               f"Страна: {self.country}\nГород: {self.city}\nДомашний адрес: {self.address}")
 #         print("=" * 40)
 #
 #     def input_info(self, first_name, birthday, phone, country, city, address):
-#         self.name = first_name
 #         self.birthday = birthday
 #         self.phone = phone
+#         self.address = address
 #         self.country = country
 #         self.city = city
-#         self.address = address
+#         self.name = first_name
 #
-#     def set_name(self, name):
+#     def set_name(self, name):  # устанавливаем новое имя
 #         self.name = name
 #
-#     def get_name(self):
+#     def get_name(self):  # получаем имя
 #         return self.name
 #
 #     def set_birthday(self, value):
@@ -3471,7 +3596,7 @@ import os
 #
 # h1 = Human()
 # h1.print_info()
-# h1.input_info("Юля", "23.05.1986", "45-46-98", "россия", "Москва", "Чистопрудный бульвар, 1А")
+# h1.input_info("Юля", "23.05.1986", "45-46-98", "Россия", "Москва", "Чистопрудный бульвар, 1А")
 # h1.print_info()
 # h1.set_name("Юлия")
 # print(h1.get_name())
@@ -3480,38 +3605,38 @@ import os
 
 
 # class Person:
-# #     skill = 10
-# #
-# #     def __init__(self, name, surname):
-# #         self.name = name
-# #         self.surname = surname
-# #         print("инициализатор Person:")
-# #
-# #     def __del__(self):
-# #         print("удаление экземпляра класса")
-# #
-# #     def print_info(self):
-# #         print("данные сотрудника", self.name, self.surname)
-# #
-# #     def add_skill(self, k):
-# #         self.skill += k
-# #         print("квалификация сотрудника", self.skill, end="\n\n")
-# #
-# #
-# # p1 = Person("Виктор", "Резник")
-# # p1.print_info()
-# # p1.add_skill(3)
-# #
-# # # del p1
-# # p1 = 5
-# #
-# # p2 = Person("Анна", "Долгих")
-# # p2.print_info()
-# # p2.add_skill(2)
+#     skill = 10  # статическое свойство
+#
+#     def __init__(self, name, surname):  # Инициализатор
+#         self.name = name  # динамические свойства
+#         self.surname = surname
+#         print("Инициализатор Person")
+#
+#     def __del__(self):
+#         print("Удаление экземпляра класса")
+#
+#     def print_info(self):
+#         print("Данные сотрудника:", self.name, self.surname)
+#
+#     def add_skill(self, k):
+#         self.skill += k
+#         print("Квалификация сотрудника:", self.skill, end="\n\n")
+#
+#
+# p1 = Person("Виктор", "Резник")
+# p1.print_info()
+# p1.add_skill(3)
+#
+# # del p1
+# p1 = 5
+#
+# p2 = Person("Анна", "Долгих")
+# p2.print_info()
+# p2.add_skill(2)
 
 
 # class Point:
-#     count = 0
+#     count = 0  # 3
 #
 #     def __init__(self, x, y):
 #         self.x = x
@@ -3567,7 +3692,7 @@ import os
 # droid2.say_hi()
 # print("Численность роботов:", Robot.k)
 #
-# droid3 = Robot("TO-P30")
+# droid3 = Robot("TO-P3O")
 # droid3.say_hi()
 # print("Численность роботов:", Robot.k)
 #
@@ -3575,40 +3700,40 @@ import os
 #
 # print("Роботы закончили свою работу. Давайте их выключим.")
 #
+# del droid3
 # del droid1
 # del droid2
-# del droid3
 #
 # print("Численность роботов:", Robot.k)
 
 
 # class Point:
 #     def __init__(self, x, y):
-#         self.__x = self.__y + 0
+#         self.__x = self.__y = 0
 #         if Point.__check_value(x) and Point.__check_value(y):
-#             self.__x = x
-#             self.__y = y
+#             self.__x = x  # _Point__x
+#             self.__y = y  # _Point__y
 #
-#     def __check_value(s):
+#     def __check_value(s):  # _Point__check_value
 #         if isinstance(s, int) or isinstance(s, float):
 #             return True
 #         return False
 #
-#     def set_coord(self, x, y):
+#     def set_coord(self, x, y):  # установить новые значения
 #         if Point.__check_value(x) and Point.__check_value(y):
 #             self.__x = x
 #             self.__y = y
 #         else:
 #             print("Координаты должны быть числами")
 #
-#     def get_coord(self):
+#     def get_coord(self):  # получаем значения
 #         return self.__x, self.__y
 #
 #     def set_x(self, x):
 #         if Point.__check_value(x):
 #             self.__x = x
 #         else:
-#             print("Координата Х должна быть числом")
+#             print("Координата X должны быть числом")
 #
 #     def set_y(self, y):
 #         if Point.__check_value(y):
@@ -3617,10 +3742,10 @@ import os
 #             print("Координата Y должна быть числом")
 #
 #
-# p1 = Point(5, "abc")
+# p1 = Point(5, 10)
 # print(p1.__dict__)
-# # # p1.set_coord(100, "abc")
-# # p1.set_coord(100, "500")
+# # p1.set_coord(100, "abc")
+# # p1.set_coord(100, 500.5)
 # print(p1.get_coord())
 # # # print(p1.__x, p1.__y)
 # # # p1.__x = 100
@@ -3628,12 +3753,12 @@ import os
 # # # print(p1.__x, p1.__y)
 # # print(p1.__dict__)
 # # # print(Point.__check_value())
-# # print(p1.__dict__)
+# # print(Point.__dict__)
 # p1.set_x(50)
 # p1.set_y("abc")
 # print(p1.__dict__)
 
-# import math
+# import geometry
 #
 #
 # class Rectangle:
@@ -3667,7 +3792,7 @@ import os
 #         return 2 * (self.__length + self.__width)
 #
 #     def get_hypotenuse(self):
-#         return round(math.sqrt(self.__length ** 2 + self.__width ** 2), 2)
+#         return round(geometry.sqrt(self.__length ** 2 + self.__width ** 2), 2)
 #
 #     def draw(self):
 #         print(("*" * self.__width + "\n") * self.__length)
@@ -3684,7 +3809,7 @@ import os
 # a.draw()
 
 # class Point:
-#     __slots__ = ["__x", "__y", "z"]
+#     __slots__ = "__x", "__y", "z"
 #
 #     def __init__(self, x, y, z):
 #         self.__x = x
@@ -3745,7 +3870,7 @@ import os
 #
 #
 # p1 = Point(5, 10)
-# p1.x = 9
+# p1.x = "aaa"
 # # print(p1.x)
 # print(p1.__dict__)
 
@@ -3759,7 +3884,7 @@ import os
 #
 #     @kg.deleter
 #     def kg(self):
-#         print("удаление свойства")
+#         print("Удаление свойства")
 #         del self.__kg
 #
 #     @kg.setter
@@ -3767,7 +3892,7 @@ import os
 #         if isinstance(new_kg, (int, float)):
 #             self.__kg = new_kg
 #         else:
-#             print("килограммы задаются только числами")
+#             print("Килограммы задаются только числами")
 #
 #     def to_pounds(self):
 #         return self.__kg * 2.205
@@ -3779,12 +3904,12 @@ import os
 # weight.kg = 41
 # print(weight.kg, "кг =>", end=" ")
 # print(weight.to_pounds(), "фунтов")
-# del weight.kg
 # weight.kg = 'десять'
+# del weight.kg
 
 
 # class Point:
-#     __count = 0
+#     __count = 0  # _Point__count
 #
 #     def __init__(self, x, y):
 #         self.x = x
@@ -3804,8 +3929,9 @@ import os
 #
 # print(Point.get_count())
 # print(p1.get_count())
-import math
-import random
+# import geometry
+# import random
+
 
 # class Change:
 #     @staticmethod
@@ -3834,13 +3960,13 @@ import random
 # class Numbers:
 #     @staticmethod
 #     def max(a, b, c, d):
-#         mx = a
-#         if b > mx:
-#             mx = b
-#         if c > mx:
-#             mx = c
-#         if d > mx:
-#             mx = d
+#         mx = a  # 3
+#         if b > mx:  # 5 > 3
+#             mx = b  # 5
+#         if c > mx:  # 7 > 5
+#             mx = c  # 7
+#         if d > mx:  # 9 > 7
+#             mx = d  # 9
 #         return mx
 #
 #     @staticmethod
@@ -3863,10 +3989,10 @@ import random
 #         return mul
 #
 #
-# print("максимальное число:", Numbers.max(3, 5, 7, 9))
-# print("минимальное число:", Numbers.min(3, 5, 7, 9))
-# print("среднее число:", Numbers.average(3, 5, 7, 9))
-# print("факториал число:", Numbers.factorial(5))
+# print("Максимальное число:", Numbers.max(3, 5, 7, 9))
+# print("Минимальное число:", Numbers.min(3, 5, 7, 9))
+# print("Среднее арифметическое:", Numbers.average(3, 5, 7, 9))
+# print("Факториал числа:", Numbers.factorial(5))
 # 5! = 1 * 2 * 3 * 4 * 5
 
 
@@ -3877,12 +4003,12 @@ import random
 #         self.year = year
 #
 #     def string_to_db(self):
-#         return f"{self.year}-{self.month}_{self.day}"
+#         return f"{self.year}-{self.month}-{self.day}"
 #
 #     @classmethod
 #     def from_string(cls, date_as_string):
-#         day, month, year = map(int, date_as_string.split('.'))
-#         date = cls(day, month, year)
+#         day, month, year = map(int, date_as_string.split('.'))  # [21, 12, 2023]
+#         date = cls(day, month, year)  # date = Date(21, 12, 2023)
 #         return date
 #
 #     @staticmethod
@@ -3894,30 +4020,30 @@ import random
 #
 # dates = [
 #     "23.10.2024",
-#     "21/12/2023"
-#     "01.01.2022"
+#     "21/12/2023",
+#     "01.01.2022",
 #     "12.31.2021"
 # ]
 #
 # for i in dates:
 #     if Date.is_date_valid(i):
-#         date = Date.from_string
+#         date = Date.from_string(i)
 #         print(date.string_to_db())
 #     else:
-#         print(f"неправильная дата или формат строки с датой")
-#
+#         print(f"Неправильная дата или формат строки с датой")
 
-# # date1 = Date.from_string("23.10.2024")
-# # print(date1.string_to_db())
-# # date2 = Date.from_string("21.12.2023")
-# # print(date2.string_to_db())
-#
-# # data = Data(23, 10, 2024)
-#
-# # string_date = "23.10.2024"
-# # [23, 10, 2024]
-# # Date(23, 10, 2024)
-# # print(date.string_to_db())
+# date1 = Date.from_string("23.10.2024")
+# print(date1.string_to_db())
+
+# date2 = Date.from_string("21/12/2023")
+# print(date2.string_to_db())
+
+# data = Date(23, 10, 2024)
+
+# string_date = "23.10.2024"
+#   # [23, 10, 2024]
+#   # Date(23, 10, 2024)
+# print(date.string_to_db())
 
 
 # class Account:
@@ -3962,18 +4088,6 @@ import random
 #         eur_val = Account.convert(self.value, Account.rate_eur)
 #         print(f"Состояние счета: {eur_val} {Account.suffix_eur}")
 #
-#     def print_balance(self):
-#         print(f"Текущий баланс {self.value} {Account.suffix}")
-#
-#     def print_info(self):
-#         print("Информация о счете:")
-#         print("-" * 20)
-#         print(f"#{self.num}")
-#         print(f"Владелец: {self.surname}")
-#         self.print_balance()
-#         print(f"Проценты: {self.percent:.0%}")
-#         print("-" * 20)
-#
 #     def edit_owner(self, surname):
 #         self.surname = surname
 #
@@ -3994,6 +4108,18 @@ import random
 #         self.value += val
 #         print(f"{val} {Account.suffix} было успешно добавлено!")
 #         self.print_balance()
+#
+#     def print_balance(self):
+#         print(f"Текущий баланс {self.value} {Account.suffix}")
+#
+#     def print_info(self):
+#         print("Информация о счете:")
+#         print("-" * 20)
+#         print(f"#{self.num}")
+#         print(f"Владелец: {self.surname}")
+#         self.print_balance()
+#         print(f"Проценты: {self.percent:.0%}")
+#         print("-" * 20)
 #
 #
 # acc = Account("Долгих", "12345", 0.03, 1000)
@@ -4032,38 +4158,37 @@ import random
 # print()
 
 
-#         self.surname = surname
+# class Person:
+#     def __init__(self, name, old):
+#         self.__name = name
+#         self.__old = old
 #
-#     def add_percents(self):
-#         self.value += self.value * self.percent
-#         print("Проценты были успешно начислены")
-#         self.print_balance()
+#     @property
+#     def name(self):
+#         return self.__name
 #
-#     def withdraw_money(self, val):
-#         if val > self.value:
-#             print(f"К сожалению, у вас нет {val} {Account.suffix}")
+#     @name.setter
+#     def name(self, new_name):
+#         # if isinstance(new_name, str):
+#         #     self.__name = new_name
+#         # else:
+#         #     print("Имя должно быть строкой")
+#         if not isinstance(new_name, str):
+#             raise TypeError("Имя должно быть строкой")
 #         else:
-#             self.value -= val
-#             print(f"{val} {Account.suffix} было успешно снято!")
-#         self.print_balance()
+#             self.__name = new_name
 #
-#     def add_money(self, val):
-#         self.value += val
-#         print(f"{val} {Account.suffix} было успешно добавлено!")
-#         self.print_balance()
+#     @name.deleter
+#     def name(self):
+#         del self.__name
 #
 #
-# acc = Account("Долгих", "12345", 0.03, 1000)
-# acc.print_info()
-# acc.convert_to_usd()
-# acc.convert_to_eur()
-# print()
-#
-# Account.set_usd_rate(2)
-# acc.convert_to_usd()
-# Account.set_eur_rate(3)
-# print()
-# print()
+# p = Person('Irina', 26)
+# print(p.__dict__)
+# p.name = "Igor"
+# p.old = 31
+# print(p.name)
+# print(p.old)
 
 # import re
 #
@@ -4074,41 +4199,6 @@ import random
 #         self.old = old
 #         self.password = ps
 #         self.weight = weight
-#
-#     @staticmethod
-#     def verify_fio(fio):
-#         if not isinstance(fio, str):
-#             raise TypeError("ФИО должно быть строкой")
-#         f = fio.split()
-#         if len(f) != 3:
-#             raise TypeError("Неверный формат ФИО")
-#         # ['В', 'о', 'л', 'к', 'о', 'в', 'И', 'г', 'о', 'р', 'ь', 'Н', 'и', 'к', 'о', 'л', 'а', 'е', 'в', 'и', 'ч']
-#     letters = "".join(re.findall("[a-zа-яё-]", fio, re.IGNORECASE))  # Волков-ПетровИгорьНиколаевич
-#     # print(letters)
-#     for s in f:
-#         if len(s.strip(letters)) != 0:
-#             raise TypeError("В ФИО можно использовать только буквы и дефис")
-#
-#         @staticmethod
-#         def verify_old(old):
-#             if not isinstance(old, int) or old < 14 or old > 120:
-#                 raise TypeError("возраст должен быть числом в диапазоне 14 до 120")
-#
-#     @staticmethod
-#     def verify_weight(w):
-#         if not isinstance(w, float) or w < 20:
-#             raise TypeError("вес должен быть вещественным числом от 20 кг и выше")
-#
-#     @staticmethod
-#     def verify_ps(ps):
-#         if not isinstance(ps, str):
-#             raise TypeError("паспорт должен быть строкой")
-#         s = ps.split()
-#         if len(s) != 2 or len(s[0]) != 4 or len(s[1]) != 6:
-#             raise TypeError("неверный формат паспорта")
-#         for p in s:
-#             if not p.isdigit():
-#                 raise TypeError("серия и номер паспорта должны быть числами")
 #
 #     @property
 #     def fio(self):
@@ -4124,18 +4214,18 @@ import random
 #         return self.__old
 #
 #     @old.setter
-#     def old(self.year):
+#     def old(self, year):
 #         self.verify_old(year)
 #         self.__old = year
 #
-# @property
-# def password(self):
-#     return self.__password
+#     @property
+#     def password(self):
+#         return self.__password
 #
-# @password.setter
-# def password(self, ps):
-#     self.verify_ps(ps)
-#     self.__password = ps
+#     @password.setter
+#     def password(self, ps):
+#         self.verify_ps(ps)
+#         self.__password = ps
 #
 #     @property
 #     def weight(self):
@@ -4146,16 +4236,51 @@ import random
 #         self.verify_weight(w)
 #         self.__weight = w
 #
+#     @staticmethod
+#     def verify_fio(fio):
+#         if not isinstance(fio, str):
+#             raise TypeError("ФИО должно быть строкой")
+#         f = fio.split()  # ['Волков-Петров', 'Игорь', 'Николаевич']
+#         if len(f) != 3:
+#             raise TypeError("Неверный формат ФИО")
+#         # ['В', 'о', 'л', 'к', 'о', 'в', 'И', 'г', 'о', 'р', 'ь', 'Н', 'и', 'к', 'о', 'л', 'а', 'е', 'в', 'и', 'ч']
+#         letters = "".join(re.findall("[a-zа-яё-]", fio, re.IGNORECASE))  # Волков-ПетровИгорьНиколаевич
+#         # print(letters)
+#         for s in f:
+#             if len(s.strip(letters)) != 0:
+#                 raise TypeError("В ФИО можно использовать только буквы и дефис")
+#
+#     @staticmethod
+#     def verify_old(old):
+#         if not isinstance(old, int) or old < 14 or old > 120:
+#             raise TypeError("Возраст должен быть числом в диапазоне от 14 до 120")
+#
+#     @staticmethod
+#     def verify_weight(w):
+#         if not isinstance(w, float) or w < 20:
+#             raise TypeError("Вес должен быть вещественным числом от 20 кг и выше")
+#
+#     @staticmethod
+#     def verify_ps(ps):
+#         if not isinstance(ps, str):
+#             raise TypeError("Паспорт должен быть строкой")
+#         s = ps.split()  # ['1234', '567890']
+#         if len(s) != 2 or len(s[0]) != 4 or len(s[1]) != 6:
+#             raise TypeError("Неверный формат паспорта")
+#         for p in s:
+#             if not p.isdigit():
+#                 raise TypeError("Серия и номер паспорта должны быть числами")
+#
 #
 # p1 = UserData("Волков Игорь Николаевич", 26, "1234 567890", 80.8)
-# p1.fio = "соболев игорь николаевич"
+# p1.fio = "Соболев Игорь Николаевич"
 # print(p1.fio)
 # p1.old = 30
-# p1.password = '0000 000000'
+# p1.password = '0987 654321'
 # p1.weight = 50.5
 # print(p1.__dict__)
 
-# наследование
+# Наследование
 
 # class Point:  # class Point(object)
 #     def __init__(self, x, y):
@@ -4163,10 +4288,9 @@ import random
 #         self.__y = y
 #
 #
+# print(issubclass(Point, object))  # True
 
-# print(issubclass(Point, object))
-
-
+#
 # class Point:
 #     def __init__(self, x, y):
 #         self.__x = x
@@ -4189,7 +4313,7 @@ import random
 #
 # class Line(Prop):
 #     def __init__(self, *args):
-#         print("переопределенный инициализатор line")
+#         print("Переопределенный инициализатор Line")
 #         # Prop.__init__(self, *args)
 #         super().__init__(*args)
 #
@@ -4212,7 +4336,7 @@ import random
 
 # class Figure:
 #     def __init__(self, color):
-#         self.__color = color
+#         self.color = color
 #
 #     @property
 #     def color(self):
@@ -4236,64 +4360,64 @@ import random
 #     @width.setter
 #     def width(self, value):
 #         if value < 0:
-#             raise ValueError(f"значение {value} должно быть положительным числом")
+#             raise ValueError(f"Значение {value} должно быть положительным числом")
 #         self.__width = value
 #
 #     def area(self):
-#         print(f"прямоугольник {self.color}. площадь: ", end="")
+#         print(f"Прямоугольник {self.color}. Площадь: ", end="")
 #         return self.__width * self.__height
 #
 #
-# rect = Rectangle(-10, 20, "green")
-# print("создать защиту, чтобы треугольник существовал")
+# rect = Rectangle(10, 20, "green")
+# print("Создать защиту, чтобы прямоугольник существовал")
 # rect.width = -30
 # print(rect.area())
 
-# class Figure:
-#     def __init__(self, color):
-#         self.__color = color
-#
-#     @property
-#     def color(self):
-#         return self.__color
-#
-#     @color.setter
-#     def color(self, c):
-#         self.__color = c
+# import geometry
 #
 #
-# class Rectangle(Figure):
-#     def __init__(self, width, height, color):
-#         super().__init__(color)
-#         self.__width = width
-#         self.__height = height
+# class Area:
+#     count = 0
 #
-#     def area(self):
-#         print(f"прямоугольник {self.color}. площадь: ", end="")
-#         return self.__width * self.__height
+#     @staticmethod
+#     def triangle_area_1(a, b, c):
+#         p = (a + b + c) / 2
+#         Area.count += 1
+#         return geometry.sqrt(p * (p - a) * (p - b) * (p - c))
+#
+#     @staticmethod
+#     def triangle_area_2(a, h):
+#         Area.count += 1
+#         return 0.5 * a * h
+#
+#     @staticmethod
+#     def square_area(a):
+#         Area.count += 1
+#         return a ** 2
+#
+#     @staticmethod
+#     def rect_area(a, b):
+#         Area.count += 1
+#         return a * b
+#
+#     @staticmethod
+#     def get_count():
+#         return Area.count
 #
 #
-# rect = Rectangle(10, -20, "green")
-# print("создать защиту, чтобы треугольник существовал")
-# print(rect.area())
-#
-# class Figure:
-#     def __init__(self, color):
-#         self.__color = color
-#
-#     @property
-#     def color(self):
-#         return self.__color
-#
-#
-#     @color.setter
-#     def color(self, c):
-#         self.__color = c
+# print(f"Площадь треугольника по формуле Герона: {Area.triangle_area_1(3, 4, 5)}")
+# print(f"Площадь треугольника по формуле Герона: {Area.triangle_area_1(4, 5, 8)}")
+# print(f"Площадь треугольника через основание и высоту: {Area.triangle_area_2(6, 7)}")
+# print(f"Площадь квадрата: {Area.square_area(7)}")
+# print(f"Площадь квадрата: {Area.square_area(8)}")
+# print(f"Площадь квадрата: {Area.square_area(9)}")
+# print(f"Площадь прямоугольника: {Area.rect_area(2, 6)}")
+# print(f"Количество подсчетов пощади: {Area.get_count()}")
 
 
-# наследование от встроенных типов
+# Наследование от встроенных типов
 
-# class Vector(list):
+# class Vector(list):  # [1, 2, 3] => "1 2 3"
 #     def __str__(self):
 #         return " ".join(map(str, self))
 #
@@ -4304,7 +4428,7 @@ import random
 # print(type(v))
 
 
-# перегрузка методов
+# Перегрузка методов
 
 # class Point:
 #     def __init__(self, x, y):
@@ -4334,7 +4458,7 @@ import random
 # print(p1)
 
 
-# абстрактные методы
+# Абстрактные методы
 
 # class Point:
 #     def __init__(self, x, y):
@@ -4353,7 +4477,7 @@ import random
 #         self._width = width
 #
 #     def draw(self):
-#         raise NotImplementedError("в дочернем классе должен быть определен метод draw()")
+#         raise NotImplementedError("В дочернем классе должен быть определен метод draw()")
 #
 #
 # class Line(Prop):
@@ -4381,7 +4505,7 @@ import random
 # for f in figs:
 #     f.draw()
 
-# from math import pi
+# from geometry import pi
 #
 #
 # class Table:
@@ -4422,32 +4546,32 @@ import random
 # print(t2.calc_area())
 
 
-# абстрактный класс - это класс, который содержит хотя бы один абстрактный метод
+# Абстрактный класс - это класс, который содержит хотя бы один абстрактный метод
 
 # from abc import ABC, abstractmethod
 #
 #
-# class Chess(ABC):
+# class Chess(ABC):  # абстрактный класс
 #     def draw(self):
-#         print("нарисовал шахматную фигуру")
+#         print("Нарисовал шахматную фигуру")
 #
-#     @abstractmethod
+#     @abstractmethod  # абстрактный метод
 #     def move(self):
-#         print("метод move() в базовом классе")
+#         print("Метод move() в базовом классе")
 #
-
 #
 # class Queen(Chess):
 #     def move(self):
 #         super().move()
-#         print("ферзь перемещен на е2е4")
+#         print("Ферзь перемещен на e2e4")
+#
 #
 # q = Queen()
 # q.draw()
 # q.move()
-#
-#
-# # q = Chess()
+
+
+# q = Chess()  # экземпляр абстрактного класса создать нельзя
 
 # from abc import ABC, abstractmethod
 #
@@ -4507,7 +4631,8 @@ import random
 #     elem.print_value()
 #     elem.draw()
 
-# интерфейс
+
+# Интерфейс
 
 # from abc import ABC, abstractmethod
 #
@@ -4537,8 +4662,7 @@ import random
 # gc.display1()
 
 
-# вложенные классы
-
+# Вложенные классы
 
 # def outer():
 #     x = 5
@@ -4607,30 +4731,30 @@ import random
 # g.display()
 
 
-# class Color:
-#     def __init__(self):
-#         self.name = "Green"
-#         self.lg = self.LightGreen()
+# class Student:
+#     def __init__(self, name):
+#         self.name = name
+#         self.note = self.Notebook()
 #
 #     def show(self):
-#         print("Name:", self.name)
+#         print(self.name, end="")
+#         self.note.show()
 #
-#     class LightGreen:
+#     class Notebook:
 #         def __init__(self):
-#             self.name = "Light Green"
+#             self.brand = "HP"
+#             self.cpu = 'i7'
+#             self.ram = 16
 #
-#         def display(self):
-#             print("Name:", self.name)
+#         def show(self):
+#             print(f" => {self.brand}, {self.cpu}, {self.ram}")
 #
 #
-# outer = Color()
-# outer.show()
-# g = outer.lg
-# g.displa
-
-#             print("Name:", self.name)
-# outer = Color
-
+# s1 = Student("Roman")
+# s2 = Student("Vladimir")
+#
+# s1.show()
+# s2.show()
 
 # class Intern:
 #     def __init__(self):
@@ -4650,7 +4774,7 @@ import random
 #         self.head = self.Head()
 #
 #     def show(self):
-#         print("Name:", self.name)
+#         print("Name:", self.name, self.intern.id)
 #         print("*" * 20)
 #
 #     class Head:
@@ -4690,7 +4814,7 @@ import random
 #             return "Intel"
 #
 #         def model(self):
-#             return "Core-17"
+#             return "Core-i7"
 #
 #
 # comp = Computer()
@@ -4712,7 +4836,7 @@ import random
 #         return f"{self.name}"
 #
 #
-# cat = [Cat("пушок")]
+# cat = [Cat("Пушок")]
 # print(cat)
 
 # class Point:
@@ -4788,7 +4912,7 @@ import random
 # print(type(a))
 
 
-# множественное наследование
+# Множественное наследование
 
 # class Creature:
 #     def __init__(self, name):
@@ -4805,7 +4929,7 @@ import random
 #
 # class Pet(Creature):
 #     def play(self):
-#         print(self.name + "is playing")
+#         print(self.name + " is playing")
 #
 #     def show(self):
 #         print("Pet")
@@ -4825,8 +4949,8 @@ import random
 # class A:
 #     def __init__(self):
 #         print("Инициализатор класса A")
-#
-#
+
+
 # class AA:
 #     def __init__(self):
 #         print("Инициализатор класса AA")
@@ -4850,7 +4974,7 @@ import random
 #
 # d = D()
 # print(D.mro())
-# # print(D.__mro__)
+# print(D.__mro__)
 
 
 # class A:
@@ -4912,11 +5036,11 @@ import random
 #         print(f"Рисование линии: {self._sp}, {self._ep}, {self._color}, {self._width}")
 #
 #
-# l1 = Line(Point(10, 10), Point(100, 100), "green", 5)
+# l1 = Line(Point(10, 10), Point(100, 100), "green", 5)  #
 # l1.draw()
 
 
-# миксины
+# Миксины
 
 # class Goods:
 #     def __init__(self, name, weight, price):
@@ -4949,19 +5073,19 @@ import random
 # n.save_sell_log()
 
 
-# перегрузка операторов
+# Перегрузка операторов
 # + - * / // %
 # ==, >, <, >=, <=
 # []
 
-# число секунд в одном дне: 24 * 60 * 60 = 86400
+# Число секунд в одном дне: 24 * 60 * 60 = 86400
 
 # class Clock:
-#     __DAY = 86400
+#     __DAY = 86400  # Число секунд в дне
 #
 #     def __init__(self, sec: int):
 #         if not isinstance(sec, int):
-#             raise ValueError("секунды должны быть целым числом")
+#             raise ValueError("Секунды должны быть целым числом")
 #         self.sec = sec % self.__DAY
 #
 #     def get_format_time(self):
@@ -4976,28 +5100,28 @@ import random
 #
 #     def __add__(self, other):
 #         if not isinstance(other, Clock):
-#             raise ArithmeticError("правый операнд должен быть типом Clock")
+#             raise ArithmeticError("Правый операнд должен быть типом Clock")
 #         return Clock(self.sec + other.sec)
 #
 #     def __sub__(self, other):
 #         if not isinstance(other, Clock):
-#             raise ArithmeticError("правый операнд должен быть типом Clock")
+#             raise ArithmeticError("Правый операнд должен быть типом Clock")
 #         return Clock(self.sec - other.sec)
 #
 #     def __eq__(self, other):
 #         if not isinstance(other, Clock):
-#             raise ArithmeticError("правый операнд должен быть типом Clock")
+#             raise ArithmeticError("Правый операнд должен быть типом Clock")
 #         return self.sec == other.sec
 #
 #     # def __ne__(self, other):
 #     #     return not self.__eq__(other)
-#     #         if not isinstance(other, Clock):
-#     #             raise ArithmeticError("правый операнд должен быть типом Clock")
-#     #         return self.sec != other.sec
+#     #     # if not isinstance(other, Clock):
+#     #     #     raise ArithmeticError("Правый операнд должен быть типом Clock")
+#     #     # return self.sec != other.sec
 #
 #
 # c1 = Clock(100)
-# c2 = Clock(200)
+# c2 = Clock(100)
 # print(c1.get_format_time())
 # print(c2.get_format_time())
 # # c3 = c1 + c2
@@ -5007,13 +5131,13 @@ import random
 # # c5 = c4 - c2
 # # print(c5.get_format_time())
 # # if c1 == c2:
-# #     print("время равно")
+# #     print("Время равно")
 # # else:
-# #     print("время не равно")
+# #     print("Время разное")
 # if c1 != c2:
-#     print("время разное")
+#     print("Время разное")
 # else:
-#     print("время равно")
+#     print("Время равно")
 
 # from random import choice, randint
 #
@@ -5037,7 +5161,7 @@ import random
 #
 #     def __add__(self, other):
 #         if self.pol != other.pol:
-#             return [Cat("No name", 0, choice(['M', 'F'])) for _ in range(randint(1, 5))]
+#             return [Cat("No name", 0, choice(['M', 'F'])) for _ in range(randint(1, 5))]  # range(0, 1) - range(0, 5)
 #         else:
 #             raise TypeError("Types are not supported!")
 #
@@ -5047,47 +5171,47 @@ import random
 # cat3 = Cat("Murzic", 3, "M")
 # print(cat1)
 # print(cat2)
-# print(cat3)
-# print(cat1 + cat2)
+# # print(cat3)
+# # print(cat1 + cat2)
 # print(cat1 + cat2)
 
 
 # class Student:
 #     def __init__(self, name, *args):
 #         self.name = name
-#         self.marks = list(args)
+#         self.marks = list(args)  # [5, 5, 3, 4, 5]
 #
 #     def __getitem__(self, item):
 #         if 0 <= item < len(self.marks):
 #             return self.marks[item]
 #         else:
-#             raise IndexError("неверный индекс")
+#             raise IndexError("Неверный индекс")
 #
 #     def __setitem__(self, key, value):
 #         if not isinstance(key, int) or key < 0:
 #             raise TypeError("Индекс должен быть целым неотрицательным числом")
 #
 #         if key >= len(self.marks):
-#             off = key + 1 - len(self.marks)
+#             off = key + 1 - len(self.marks)  # 10 + 1 - 5 => 6
 #             self.marks.extend([None] * off)
 #
 #         self.marks[key] = value
 #
 #     def __delitem__(self, key):
 #         if not isinstance(key, int):
-#             raise TypeError("индекс должен быть целым числом")
+#             raise TypeError("Индекс должен быть целым числом")
 #         del self.marks[key]
 #         # self.marks[key] = None
 #
 #
-# s1 = Student("сергей", 5, 5, 3, 4, 5)
+# s1 = Student("Сергей", 5, 5, 3, 4, 5)
 # # print(s1.marks[2])
 # print(s1[2])
 # s1[10] = 4
 # del s1[2]
 # print(s1.marks)
-#
-# a = ([5, 5, 5, 3, 4, 5])
+
+# a = [5, 5, 3, 4, 5]
 # # ch = [None] * 5
 # # print(ch)
 # a.extend([None] * 5)
@@ -5095,11 +5219,11 @@ import random
 
 
 # class Clock:
-#     __DAY = 86400
+#     __DAY = 86400  # Число секунд в дне
 #
 #     def __init__(self, sec: int):
 #         if not isinstance(sec, int):
-#             raise ValueError("секунды должны быть целым числом")
+#             raise ValueError("Секунды должны быть целым числом")
 #         self.sec = sec % self.__DAY
 #
 #     def get_format_time(self):
@@ -5114,7 +5238,7 @@ import random
 #
 #     def __getitem__(self, item):
 #         if not isinstance(item, str):
-#             raise ValueError("ключ должен быть строкой")
+#             raise ValueError("Ключ должен быть строкой")
 #
 #         if item == "hour":
 #             return self.sec // 3600 % 24
@@ -5125,10 +5249,10 @@ import random
 #
 #     def __setitem__(self, key, value):
 #         if not isinstance(key, str):
-#             raise ValueError("ключ должен быть строкой")
+#             raise ValueError("Ключ должен быть строкой")
 #
 #         if not isinstance(value, int):
-#             raise ValueError("значение должно быть числом")
+#             raise ValueError("Значение должно быть числом")
 #
 #         s = self.sec % 60
 #         m = (self.sec // 60) % 60
@@ -5136,10 +5260,10 @@ import random
 #
 #         if key == "hour":
 #             self.sec = s + 60 * m + value * 3600
-#             if key == "min":
-#                 self.sec = s + 60 * value + h * 3600
-#             if key == "sec":
-#                 self.sec = value + 60 * m + h * 3600
+#         if key == "min":
+#             self.sec = s + 60 * value + h * 3600
+#         if key == "sec":
+#             self.sec = value + 60 * m + h * 3600
 #
 #
 # c1 = Clock(80000)
@@ -5234,7 +5358,7 @@ import random
 # for animal in (cat, dog):
 #     animal.info()
 #     animal.make_sound()
-#
+
 
 # class Human:
 #     def __init__(self, surname, name, age):
@@ -5255,7 +5379,7 @@ import random
 #
 #     def info(self):
 #         super().info()
-#         print(f"{self.speciality} {self.group} {self.rating}", end=" ")
+#         print(f"{ self.speciality} {self.group} {self.rating}", end=" ")
 #
 #
 # class Teacher(Human):
@@ -5308,16 +5432,16 @@ import random
 # c1()
 # c1()
 
-# def string_string(chars):
-#     def wrap(string):
+# def string_strip(chars):
+#     def call(string):
 #         if not isinstance(string, str):
 #             raise ValueError("Аргумент должен быть строкой")
 #         return string.strip(chars)
 #
-#     return wrap
+#     return call
 #
 #
-# s1 = string_string("?;!.: ")
+# s1 = string_strip("?:!.; ")
 # print(s1(" ? Hello World! ; "))
 #
 #
@@ -5345,15 +5469,15 @@ import random
 #         return args[0].strip(self.__chars)
 #
 #
-# s3 = StringStrip("?:!.; ")
+# s3 = StringStrip1("?:!.; ")
 # print(s3(" ? Hello World! ; "))
 
 
 # def my_decorator(fn):
 #     def wrap():
-#         print("перед вызовом функции")
+#         print("Перед вызовом функции")
 #         fn()
-#         print("после вызова функции")
+#         print("После вызова функции")
 #     return wrap
 #
 #
@@ -5363,18 +5487,18 @@ import random
 #
 #
 # func()
-#
-#
-# # класс декоратор
-#
+
+
+# Класс как декоратор
+
 # class MyDecorator:
 #     def __init__(self, fn):
 #         self.fn = fn
 #
 #     def __call__(self):
-#         print("перед вызовом функции")
+#         print("Перед вызовом функции")
 #         self.fn()
-#         print("после вызова функции")
+#         print("После вызова функции")
 #
 #
 # @MyDecorator
@@ -5391,7 +5515,7 @@ import random
 #
 #     def __call__(self, a, b):
 #         res = self.fn(a, b)
-#         print("перед вызовом функции\n" + str(res) + "\nпосле вызова функции")
+#         print("Перед вызовом функции\n" + str(res) + "\nПосле вызова функции")
 #         return res
 #
 #
@@ -5437,7 +5561,7 @@ import random
 #
 # @Power
 # def mult1(a, b, c):
-#     return a * b * c
+#     return a + b - c
 #
 #
 # print(mult(2, 3))
@@ -5447,9 +5571,9 @@ import random
 # def outer(arg):
 #     def my_decorator(fn):
 #         def wrap():
-#             print(f"перед вызовом функции, выведем {arg}")
+#             print(f"Перед вызовом функции, выведем {arg}")
 #             fn()
-#             print("после вызова функции")
+#             print("После вызова функции")
 #         return wrap
 #     return my_decorator
 #
@@ -5467,15 +5591,15 @@ import random
 #
 #     def __call__(self, fn):
 #         def wrap(a, b):
-#             print("перед вызовом функции")
+#             print(f"Перед вызовом функции {self.arg}")
 #             fn(a, b)
-#             print("после вызова функции")
+#             print("После вызова функции")
 #         return wrap
 #
 #
 # @MyDecorator("test")
 # def func1(a, b):
-#     print("a, b")
+#     print(a, b)
 #
 #
 # func1(2, 5)
@@ -5496,17 +5620,17 @@ import random
 #     return a * b
 #
 #
-# print(mult(2, 3))
+# print(mult(2, 2))
 
 
-# декорирование методов
+# Декорирование методов
 
 # def dec(fn):
 #     def wrap(*args, **kwargs):
 #         print("*" * 20)
 #         fn(*args, **kwargs)
 #         print("*" * 20)
-#         return wrap
+#     return wrap
 #
 #
 # class Person:
@@ -5519,98 +5643,98 @@ import random
 #         print(f"{self.name} {self.surname}")
 #
 #
-# p1 = Person("виталий", "карасев")
+# p1 = Person("Виталий", "Карасев")
 # p1.info()
 
-from math import sqrt
-# from abc import ABC, abstractmethod
+
+# class Shape:
+#     def __init__(self, color):
+#         self.color = color
 #
+#     def get_perimeter(self):
+#         raise NotImplementedError("В дочернем классе должен быть определен метод get_perimeter()")
 #
-# class Shape(ABC):
-#     @abstractmethod
-#     def find_perimeter(self):  # нахождение периметра
-#         pass
+#     def get_area(self):
+#         raise NotImplementedError("В дочернем классе должен быть определен метод get_area()")
 #
-#     @abstractmethod
-#     def find_area(self):  # нахождение площади
-#         pass
+#     def draw(self):
+#         raise NotImplementedError("В дочернем классе должен быть определен метод draw()")
 #
-#     @abstractmethod
-#     def draw_shape(self):  # рисование фигуры
-#         pass
-#
-#     @abstractmethod
-#     def display_info(self):  # вывод информации
-#         pass
+#     def info(self):
+#         raise NotImplementedError("В дочернем классе должен быть определен метод info()")
 #
 #
 # class Square(Shape):
 #     def __init__(self, side, color):
 #         self.side = side
-#         self.color = color
+#         super().__init__(color)
 #
-#     def find_area(self):
+#     def get_perimeter(self):
+#         return self.side * 4
+#
+#     def get_area(self):
 #         return self.side * self.side
 #
-#     def find_perimeter(self):
-#         return 4 * self.side
+#     def draw(self):
+#         return ("*  " * self.side + "\n") * self.side
 #
-#     def draw_shape(self):
-#         for i in range(self.side):
-#             print('*' * self.side)
-#
-#     def display_info(self):
-#         print("===Квадрат===")
-#         print(f"Сторона: {self.side}")
-#         print(f"Цвет: {self.color}")
-#         print(f"Площадь: {self.find_area()}")
-#         print(f"Периметр: {self.find_perimeter()}")
-#         print("Рисую квадрат:")
-#         self.draw_shape()
+#     def info(self):
+#         print(f"=== Квадрат ===\nСторона: {self.side}\nЦвет: {self.color}\nПериметр: {self.get_perimeter()}"
+#               f"\nПлощадь: {self.get_area()}\n{self.draw()}")
 #
 #
 # class Rectangle(Shape):
 #     def __init__(self, length, width, color):
 #         self.length = length
 #         self.width = width
-#         self.color = color
+#         super().__init__(color)
 #
-#     def find_area(self):
+#     def get_perimeter(self):
+#         return (self.length + self.width) * 2
+#
+#     def get_area(self):
 #         return self.length * self.width
 #
-#     def find_perimeter(self):
-#         return 2 * (self.length + self.width)
+#     def draw(self):
+#         return ("*  " * self.width + "\n") * self.length
 #
-#     def draw_shape(self):
-#         for i in range(self.width):
-#             print('*' * self.length)
-#
-#     def display_info(self):
-#         print("===Прямоугольник===")
-#         print(f"Длина: {self.length}")
-#         print(f"Ширина: {self.width}")
-#         print(f"Цвет: {self.color}")
-#         print(f"Площадь: {self.find_area()}")
-#         print(f"Периметр: {self.find_perimeter()}")
-#         print("Рисую прямоугольник:")
-#         self.draw_shape()
+#     def info(self):
+#         print(f"=== Прямоугольник ===\nДлина: {self.length}\nШирина: {self.width}\nЦвет: {self.color}\nПериметр:"
+#               f" {self.get_perimeter()}\nПлощадь: {self.get_area()}\n{self.draw()}")
 #
 #
 # class Triangle(Shape):
-#     def __init__(self, base, height, color):
-#         self.base = base
-#         self.height = height
-#         self.color = color
+#     def __init__(self, side_x, side_y, side_z, color):
+#         self.side_x = side_x
+#         self.side_y = side_y
+#         self.side_z = side_z
+#         super().__init__(color)
 #
-#     def find_area(self):
-#         return 0.5 * self.base * self.height
+#     def get_perimeter(self):
+#         return (self.side_x + self.side_y + self.side_z) / 2
 #
-#     def find_perimeter(self):
-#         pass
-#     def draw_shape(self):
-#         for i in range(self.height):
-#             print(' ' * (self.height - i) + '*' * (2 * i + 1))
-
+#     def get_area(self):
+#         p = self.get_perimeter()
+#         return round(geometry.sqrt(p * (p - self.side_x) * (p - self.side_y) * (p - self.side_z)), 2)
+#
+#     def draw(self):
+#         row = []
+#         for n in range(self.side_y):
+#             row.append("   " * n + "*  " * (self.side_x - 2 * n) + "   " * n)
+#         # row.sort()
+#         # return "\n".join(row)
+#         return "\n".join(sorted(row))
+#
+#     def info(self):
+#         print(f"=== Треугольник ===\nСторона 1: {self.side_x}\nСторона 2: {self.side_y}\nСторона 3: "
+#               f"{self.side_z}\nЦвет: {self.color}\nПериметр:"
+#               f" {self.get_perimeter()}\nПлощадь: {self.get_area()}\n{self.draw()}")
+#
+#
+# figs = [Square(3, "red"), Rectangle(3, 7, "green"), Triangle(11, 6, 6, "yellow")]
+#
+# for g in figs:
+#     g.info()
 
 # def decorator(cls):
 #     class Wrapper(cls):
@@ -5629,7 +5753,7 @@ from math import sqrt
 #
 #
 # obj = ActualClass()
-# print(obj. quad(4))
+# print(obj.quad(4))
 # print(obj.doubler(4))
 
 
@@ -5649,36 +5773,36 @@ from math import sqrt
 #
 # class Person:
 #     def __init__(self, name, surname):
-#         self.__name = name
-#         self.__surname = surname
-
-# @property
-# def name(self):
-#     return self.__name
+#         self.name = String(name)
+#         self.surname = String(surname)
 #
-# @name.setter
-# def name(self, value):
-#     if not isinstance(value, str):
-#         raise TypeError(f"{value} должно быть стройкой")
-#     self.__name = value
+#     # @property
+#     # def name(self):
+#     #     return self.__name
+#     #
+#     # @name.setter
+#     # def name(self, value):
+#     #     if not isinstance(value, str):
+#     #         raise TypeError(f"{value} должно быть строкой")
+#     #     self.__name = value
+#     #
+#     # @property
+#     # def surname(self):
+#     #     return self.__surname
+#     #
+#     # @surname.setter
+#     # def surname(self, value):
+#     #     if not isinstance(value, str):
+#     #         raise TypeError(f"{value} должно быть строкой")
+#     #     self.__surname = value
 #
-# @property
-# def surname(self):
-#     return self.__surname
 #
-# @surname.setter
-# def surname(self, value):
-#     if not isinstance(value, str):
-#         raise TypeError(f"{value} должно быть стройкой")
-#     self.__surname = value
-
-
 # p = Person("Ivan", "Petrov")
 # p.name.set("Petr")
 # print(p.name.get())
 
 
-# дескриптор
+# Дескриптор
 # __get__()
 # __set()
 # __delete__()
@@ -5705,11 +5829,11 @@ from math import sqrt
 #
 #     def __init__(self, first_name, surname):
 #         self.first_name = first_name
-#         self.__surname = surname
+#         self.surname = surname
 #
 #
 # p = Person("Ivan", "Petrov")
-# p.surname = "sidorov"
+# p.surname = "Sidorov"
 # print(p.first_name)
 # print(p.surname)
 
@@ -5720,7 +5844,7 @@ from math import sqrt
 #             raise ValueError(f"Координата {coord} должно быть целым числом")
 #
 #     def __set_name__(self, owner, name):
-#         self.__name = "a" + name
+#         self.__name = "_" + name
 #
 #     def __get__(self, instance, owner):
 #         # return instance.__dict__[self.__name]
@@ -5748,7 +5872,7 @@ from math import sqrt
 # print(p1.x)
 
 
-# метаклассы
+# Метаклассы
 
 # a = 5
 # print(type(a))
@@ -5764,17 +5888,18 @@ from math import sqrt
 #     dict(get_length=lambda self: len(self))
 # )
 #
+#
 # lst = MyList()
 # lst.append(5)
 # lst.append(7)
 # lst.append(9)
 # print(lst, lst.get_length())
 
+# Создание модулей
 
-# создание модулей
-
-# import math
+# import geometry
 # import random
+# import math
 
 
 # import geometry.rect
@@ -5795,14 +5920,13 @@ from math import sqrt
 # for g in shape:
 #     print(g.get_perimeter())
 
-
 # from geometry import rect, sq, trian
-#
-# # geometry.rect
-#
-# # from geometry import *
-#
-#
+
+
+# geometry.rect
+
+# from geometry import *
+
 # def run():
 #     r1 = rect.Rectangle(1, 2)
 #     r2 = rect.Rectangle(3, 4)
@@ -5831,15 +5955,15 @@ from math import sqrt
 # e_car.show_car()
 # e_car.description_battery()
 
-# упаковка данных (сериализация)
-# распаковка данных (десериализация)
+# Упаковка данных (сериализация)
+# Распаковка данных (десериализация)
 
-# marshal (рус.)
+# marshal  (.pyc)
 # pickle
 # json
 
-
 # import pickle
+
 
 # file_name = "basket.txt"
 #
@@ -5859,12 +5983,12 @@ from math import sqrt
 
 # class Test:
 #     num = 35
-#     string = "привет"
+#     string = "Привет"
 #     lst = [1, 2, 3]
 #     tpl = (25, 98)
 #
 #     def __str__(self):
-#         return f"число: {Test.num}\nстрока: {Test.string}\nспсиок: {Test.lst}\nкортеж: {Test.tpl}"
+#         return f"Число: {Test.num}\nСтрока: {Test.string}\nСписок: {Test.lst}\nКортеж: {Test.tpl}"
 #
 #
 # obj = Test()
@@ -5893,27 +6017,27 @@ from math import sqrt
 #     def __setstate__(self, state):
 #         self.__dict__ = state
 #         self.c = lambda x: x * x
-
-
+#
+#
 # item1 = Test2()
-# # print(item1)
+# # print(item1)  # 35 test 4
 # item2 = pickle.dumps(item1)
 # print(item2)
 # item3 = pickle.loads(item2)
 # print(item3)
 
 
-import json
+# import json
 
 # data = {
-#     'name': 'ольга',
+#     'name': 'Ольга',
 #     'age': 20,
 #     20: None,
 #     1: True,
 #     False: 0,
 #     'hobbies': ('running', 'singing'),
 #     'children': {
-#         'first_name': ['алиса', 'боб'],
+#         'first_name': ['Алиса', 'Боб'],
 #         'age': [6, 12]
 #     }
 # }
@@ -5925,15 +6049,15 @@ import json
 #     data2 = json.load(f)
 #
 # print(data2)
+
+# json_string = json.dumps(data)
+# print(json_string)
+# print(type(json_string))
 #
-# # json_string = json.dumps(data)
-# # print(json_string)
-# # print(type(json_string))
-# #
-# # data3 = json.loads(json_string)
-# # print(data3)
-# # print(type(data3))
-#
+# data3 = json.loads(json_string)
+# print(data3)
+# print(type(data3))
+
 # x = {"name": "Виктор"}
 # a = json.dumps(x)
 # print(a)
@@ -5948,162 +6072,38 @@ import json
 # def gen_person():
 #     name = ''
 #     tel = ''
-#     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'e', 'f', 'g']
+#
+#     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 #     nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+#
 #     while len(name) != 7:
 #         name += choice(letters)
+#     # print(name)
+#
 #     while len(tel) != 10:
 #         tel += choice(nums)
+#     # print(tel)
+#
 #     person = {
 #         'name': name,
-#         'tel': tel
+#         "tel": tel
 #     }
-#     return person, tel
+#     return person
 #
 #
-# def write_json(person_dict, num):
+# def write_json(person_dict):
 #     try:
-#         data = json.load(open('persons1.json'))
+#         data = json.load(open('persons.json'))
 #     except FileNotFoundError:
-#         data = {}
-#     data[num] = person_dict
-#     with open('persons1.json', 'w') as f:
-#         json.dump(data, f)
+#         data = []
+#
+#     data.append(person_dict)
+#     with open('persons.json', 'w') as f:
+#         json.dump(data, f, indent=2)
 #
 #
 # for i in range(5):
-#     write_json(gen_person()[0], gen_person()[1])
-
-
-# import json
-#
-#
-# class Student:
-#     def __init__(self, name, marks):
-#         self.name = name
-#         self.marks = marks
-#
-#     def __str__(self):
-#         # st = ''
-#         # for i in self.marks:
-#         #     st += str(i) + ', '
-#         # return f"{self.name}: {st[:-2]}"
-#         st = ", ".join(map(str, self.marks))
-#         return f"{self.name}: {st}"
-#
-#     def add_mark(self, new_mark):
-#         self.marks.append(new_mark)
-#
-#     def delete_mark(self, index):
-#         self.marks.pop(index)
-#
-#     def edit_mark(self, index, new_mark):
-#         self.marks[index] = new_mark
-#
-#     def average_mark(self):
-#         return sum(self.marks) / len(self.marks)
-#
-#     def dump_to_json(self, file_name):
-#         data = {"name": self.name, "marks": self.marks}
-#         with open(file_name, "w") as f:
-#             json.dump(data, f, indent=2)
-#
-#     def load_from_file(self, file_name):
-#         with open(file_name, 'r') as f:
-#             print(json.load(f))
-#
-#
-# class Group:
-#     def __init__(self, students, group):
-#         self.students = students
-#         self.group = group
-#
-#     def __str__(self):
-#     #     st = ''
-#     #     for i in self.students:
-#     #         st += str(i) + '\n'
-#         st = "\n".join(map(str, self.students))
-#         return f"Group: {self.group}\n{st}"
-#
-#     @staticmethod
-#     def change_group(gr1, gr2, index):
-#         return gr2.add_student(gr1.remove_student(index))
-#
-#     def add_student(self, student):
-#         self.students.append(student)
-#
-#     def remove_student(self, index):
-#         return self.students.pop(index)
-#
-#     def dump_group(self, file_name):
-#         with open(file_name, 'w') as f:
-#             stud_list = []
-#             for i in self.students:
-#                 stud_list.append([i.name, i.marks])
-#             json.dump(stud_list, f, indent=2)
-#
-#     def jornal_groups(self, file_name):
-#         try:
-#             data = json.load(open(file_name))
-#         except FileNotFoundError:
-#             data = []
-#
-#         with open(file_name, 'w') as f:
-#             stud_list = []
-#             for i in self.students:
-#                 stud_list.append([i.name, i.marks])
-#             data.append(stud_list)
-#             json.dump(data, f, indent=2)
-#
-#     @staticmethod
-#     def upload_group(file_name):
-#         with open(file_name, "r") as f:
-#             print(json.load(f))
-#
-#
-# st1 = Student('Bodnya', [5, 4, 3, 4, 5, 3])
-# # print(st1)
-# # st1.add_mark(4)
-# # print(st1)
-# # st1.delete_mark(2)
-# # print(st1)
-# # st1.edit_mark(4, 5)
-# # print(st1)
-# # print(st1.average_mark())
-# # file = "student.json"
-# # st1.dump_to_json(file)
-# # st1.load_from_file(file)
-#
-
-# st2 = Student('Nikolaenko', [2, 3, 5, 4, 4, 2])
-# st3 = Student('Birukov', [3, 5, 3, 2, 5, 4])
-# sts1 = [st1, st2]
-# group1 = Group(sts1, "GK Python")
-# group1.add_student(st3)
-# # print(group1)
-# group1.remove_student(1)
-# # print(group1)
-# # print()
-# sts2 = [st2]
-# group2 = Group(sts2, "GK Web")
-# # print(group2)
-# # print("." * 20)
-# Group.change_group(group1, group2, 0)
-# # print(group1)
-# # print()
-# # print(group2)
-# # file = "group1.json"
-# # group1.dump_group(file)
-# # group1.upload_group(file)
-# #
-# # file2 = "group2.json"
-# # group2.dump_group(file2)
-# # group2.upload_group(file2)
-#
-# files_group = "journal.json"
-# # group1.jornal_groups(files_group)
-# group2.jornal_groups(files_group)
-
+#     write_json(gen_person())
 
 # import json
 #
@@ -6219,7 +6219,6 @@ import json
 #     else:
 #         print("Введен некорректный номер")
 
-
 # import requests
 # import json
 #
@@ -6272,21 +6271,21 @@ import json
 #     json.dump(filtered, f, indent=2)
 
 
-import csv
+# import csv
 
 # with open("data.csv") as f:
 #     file_reader = csv.reader(f, delimiter=";")
 #     count = 0
 #     for row in file_reader:
 #         if count == 0:
-#             print(f"файл содержит столбцы: {', '.join(row)}")
+#             print(f"Файл содержит столбцы: {', '.join(row)}")
 #         else:
-#             print(f"\t{row[0]} - {row[1]}. год рождения {row[2]}")
+#             print(f"\t{row[0]} - {row[1]}. Год рождения {row[2]}")
 #         count += 1
 
 
 # with open("data.csv") as f:
-#     field_names = ['имя', 'профессия', 'год рождения']
+#     field_names = ['Имя', 'Профессия', 'Год рождения']
 #     file_reader = csv.DictReader(f, delimiter=";", fieldnames=field_names)
 #     count = 0
 #     for row in file_reader:
@@ -6313,7 +6312,7 @@ import csv
 #     writer = csv.writer(f, delimiter=";", lineterminator="\r")
 #     # for row in data:
 #     #     writer.writerow(row)
-#     writer.writerow(data)
+#     writer.writerows(data)
 
 
 # with open("student1.csv", "w") as f:
@@ -6348,14 +6347,14 @@ import csv
 # }]
 #
 # with open("dict_writer.csv", "w") as f:
-#     writer = csv.DictReader(f, delimiter=";", lineterminator="\r", fieldnames=data)
+#     writer = csv.DictWriter(f, delimiter=";", lineterminator="\r", fieldnames=list(data[0].keys()))
 #     writer.writeheader()
 #     for d in data:
 #         writer.writerow(d)
 
 
 # fieldnames=['hostname', 'location', 'model', 'vendor']
-# print(list(data[0].keys()))
+# print(list(data[0].keys()))  # ['hostname', 'location', 'model', 'vendor']
 
 # from bs4 import BeautifulSoup
 #
@@ -6366,11 +6365,11 @@ import csv
 # row = soup.find("div", {"class": "row"})
 # row = soup.find_all("div", class_="row")[1].find("div", class_="name").text
 # row = soup.find_all("div", {"data-set": "salary"})
-# row = soup.find("div",  string="Alena").parent.parent
-# row = soup.find("div",  string="Alena").find_parent(class_="row")
-# row = soup.find("div",  id="whois3")
-# row = soup.find("div",  id="whois3").find_next_sibling()
-# row = soup.find("div",  id="whois3").find_previous_sibling()
+# row = soup.find("div", string="Alena").parent
+# row = soup.find("div", string="Alena").find_parent(class_="row")
+# row = soup.find("div", id="whois3")
+# row = soup.find("div", id="whois3").find_next_sibling()
+# row = soup.find("div", id="whois3").find_previous_sibling()
 # print(row)
 
 
@@ -6378,7 +6377,7 @@ import csv
 #
 #
 # def get_copywriter(tag):
-#     whois = tag.find('div', class_="whois")
+#     whois = tag.find('div', class_="whois").text
 #     if "Copywriter" in whois:
 #         return tag
 #     return None
@@ -6404,7 +6403,7 @@ import csv
 # def get_salary(s):
 #     pattern = r"\d+"
 #     # res = re.findall(pattern, s)[0]
-#     res = re.search(pattern, s).group()
+#     res = re.search(pattern, s).group(0)
 #     print(res)
 #
 #
@@ -6420,8 +6419,8 @@ import csv
 #
 # r = requests.get("https://ru.wordpress.org/")
 # # print(r)
-# # # print(r.status_code)
-# # # print(r.headers)
+# # print(r.status_code)
+# # print(r.headers)
 # # print(r.content)
 # print(r.text)
 
@@ -6437,7 +6436,7 @@ import csv
 #
 # def get_data(html):
 #     soup = BeautifulSoup(html, 'lxml')
-#     p1 = soup.find("header", id="masthead").find("p", claas_="site-title").text
+#     p1 = soup.find("header", id="masthead").find("p", class_="site-title").text
 #     return p1
 #
 #
@@ -6446,10 +6445,9 @@ import csv
 #     print(get_data(get_html(url)))
 #
 #
-
 # if __name__ == '__main__':
 #     main()
-
+# import csv
 #
 # import requests
 # from bs4 import BeautifulSoup
@@ -6465,10 +6463,12 @@ import csv
 #     res = re.sub(r"\D+", "", s)
 #     return res
 #
+#
 # def write_csv(data):
 #     with open("plugins.csv", "a") as f:
 #         writer = csv.writer(f, lineterminator="\r", delimiter=";")
 #         writer.writerow((data['name'], data['url'], data['rating']))
+#
 #
 # def get_data(html):
 #     soup = BeautifulSoup(html, 'lxml')
@@ -6491,8 +6491,7 @@ import csv
 #
 # if __name__ == '__main__':
 #     main()
-
-import csv
+# import csv
 #
 # import requests
 # from bs4 import BeautifulSoup
@@ -6552,6 +6551,7 @@ import csv
 #         }
 #         write_csv(data)
 #
+#
 # if __name__ == '__main__':
 #     main()
 
@@ -6568,7 +6568,7 @@ import csv
 #     main()
 
 
-import sqlite3
+# import sqlite3
 
 
 # con = sqlite3.connect("profile.db")
@@ -6578,62 +6578,485 @@ import sqlite3
 # """)
 #
 # con.close()
-#
-#
-with sqlite3.connect("profile.db") as con:
-    cur = con.cursor()
 
-    cur.execute("""CREATE TABLE IF NOT EXISTS users
-    (id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    summa REAL,
-    date BLOB)""")
 
-    # cur.execute("DROP TABLE users")
+# with sqlite3.connect("profile.db") as con:
+#     cur = con.cursor()
 #
-#
+#     cur.execute("""CREATE TABLE IF NOT EXISTS users(
+#     id INTEGER PRIMARY KEY AUTOINCREMENT,
+#     name TEXT NOT NULL,
+#     summa REAL,
+#     date BLOB)""")
+
+# cur.execute("DROP TABLE users")
+
+
 # import sqlite3
 #
 # with sqlite3.connect("users.db") as con:
 #     cur = con.cursor()
+
+# cur.execute("""CREATE TABLE IF NOT EXISTS person(
+# id INTEGER PRIMARY KEY AUTOINCREMENT,
+# name TEXT NOT NULL,
+# phone BLOB NOT NULL DEFAULT "+79090000000",
+# age INTEGER CHECK(age > 0 AND age < 100),
+# email TEXT UNIQUE
+# )""")
+
+# переименовать таблицу
+# cur.execute("""
+# ALTER TABLE person
+# RENAME TO person_table;
+# """)
+
+# добавить поле в таблицу
+# cur.execute("""
+# ALTER TABLE person_table
+# ADD COLUMN address NOT NULL DEFAULT "Москва"
+# """)
+
+# удалить столбец
+# cur.execute("""
+# ALTER TABLE person_table
+# DROP COLUMN address
+# """)
+
+# переименование поля
+# cur.execute("""
+# ALTER TABLE person_table
+# RENAME COLUMN address TO home_address
+# """)
+
+# удаление таблицы
+# cur.execute("""
+# DROP TABLE person_table
+# """)
+
+
+# import sqlite3
 #
-#     cur.execute("""CREATE TABLE IF NOT EXISTS users
-#     (id INTEGER PRIMARY KEY AUTOINCREMENT,
-#     name TEXT NOT NULL,
-#     phone BLOB NOT NULL DEFAULT "+79090000000"
-#     age INTEGER CHECK(age > 0 AND age < 100)
-#     email TEXT UNIQUE
+# with sqlite3.connect("db_3.db") as con:
+#     cur = con.cursor()
+#
+#     cur.execute("""
+#     SELECT *
+#     FROM T1
+#     LIMIT 2, 5
+#     """)
+#
+#     # for i in cur:
+#     #     print(i)
+#
+#     res = cur.fetchone()
+#     print(res)
+#
+#     res2 = cur.fetchmany(4)
+#     print(res2)
+#
+#     res3 = cur.fetchall()
+#     print(res3)
+
+
+# import sqlite3
+#
+# cars_list = [
+#     ('BMW', 54000),
+#     ('Chevrolet', 46000),
+#     ('Daewoo', 36000),
+#     ('Citroen', 29000),
+#     ('Honda', 33000),
+# ]
+#
+# with sqlite3.connect("car.db") as con:
+#     cur = con.cursor()
+#     cur.execute("""
+#     CREATE TABLE IF NOT EXISTS cars(
+#         car_id INTEGER PRIMARY KEY AUTOINCREMENT,
+#         model TEXT,
+#         price INTEGER
+#     )
+#     """)
+#
+#     cur.executescript("""
+#     DELETE FROM cars WHERE model LIKE 'B%';
+#     UPDATE cars SET price = price + 100;
+#     """)
+
+# cur.executemany("INSERT INTO cars VALUES(NULL, ?, ?)", cars_list)
+
+# for car in cars_list:
+#     cur.execute("INSERT INTO cars VALUES(NULL, ?, ?)", car)
+
+# cur.execute("INSERT INTO cars VALUES(1, 'Renault', 22000)")
+# cur.execute("INSERT INTO cars VALUES(2, 'Volvo', 29000)")
+# cur.execute("INSERT INTO cars VALUES(3, 'Mercedes', 57000)")
+# cur.execute("INSERT INTO cars VALUES(4, 'Bentley', 35000)")
+# cur.execute("INSERT INTO cars VALUES(5, 'Audi', 52000)")
+
+# con.commit()
+# con.close()
+
+
+# import sqlite3
+#
+# con = None
+# try:
+#     con = sqlite3.connect("car.db")
+#     cur = con.cursor()
+#     cur.executescript("""
+#     CREATE TABLE IF NOT EXISTS cars(
+#         car_id INTEGER PRIMARY KEY AUTOINCREMENT,
+#         model TEXT,
+#         price INTEGER
+#     );
+#     BEGIN;
+#     INSERT INTO cars VALUES(NULL, 'Renault', 22000);
+#     UPDATE cars SET price = price + 100;
+#     """)
+#     con.commit()
+# except sqlite3.Error as e:
+#     if con:
+#         con.rollback()
+#     print("Ошибка выполнения запроса")
+# finally:
+#     if con:
+#         con.close()
+
+
+# import sqlite3
+#
+# with sqlite3.connect("car.db") as con:
+#     con.row_factory = sqlite3.Row
+#     cur = con.cursor()
+#     cur.executescript("""
+#     CREATE TABLE IF NOT EXISTS cars(
+#         car_id INTEGER PRIMARY KEY AUTOINCREMENT,
+#         model TEXT,
+#         price INTEGER
+#     );
+#     CREATE TABLE IF NOT EXISTS cost(
+#         name TEXT, tr_in INTEGER, buy INTEGER
+#     );
+#     """)
+#
+#     # cur.execute("INSERT INTO cars VALUES(NULL, 'Запорожец', 1000)")
+#     # last_row_id = cur.lastrowid
+#     # buy_car_id = 2
+#     # cur.execute("INSERT INTO cost VALUES('Илья', ?, ?)", (last_row_id, buy_car_id))
+#
+#     cur.execute("SELECT model, price FROM cars")
+#
+#     # rows = cur.fetchone()
+#     # print(rows)
+#     #
+#     # rows1 = cur.fetchmany(5)
+#     # print(rows1)
+#
+#     # rows2 = cur.fetchall()
+#     # print(rows2)
+#
+#     for res in cur:
+#         # print(res[0], "->", res[1])
+#         print(res["model"], "->", res["price"])
+
+
+# import sqlite3
+#
+#
+# def read_ava(n):
+#     try:
+#         with open(f"avatars/{n}.png", "rb") as f:
+#             return f.read()
+#     except IOError as e:
+#         print(e)
+#         return False
+#
+#
+# def write_ava(name, data):
+#     try:
+#         with open(name, "wb") as f:
+#             f.write(data)
+#     except IOError as e:
+#         print(e)
+#
+#
+# with sqlite3.connect("car.db") as con:
+#     con.row_factory = sqlite3.Row
+#     cur = con.cursor()
+#
+#     cur.executescript("""
+#     CREATE TABLE IF NOT EXISTS users(
+#         name TEXT,
+#         ava BLOB,
+#         score INTEGER
 #     )""")
+#
+#     # img = read_ava(1)
+#     # if img:
+#     #     binary = sqlite3.Binary(img)
+#     #     cur.execute("INSERT INTO users VALUES('Илья', ?, 1000)", (binary,))
+#
+#     cur.execute("SELECT ava FROM users")
+#     img = cur.fetchone()['ava']
+#
+#     write_ava("out.png", img)
 
-    # переименовать таблицу
-    # cur.execute("""
-    # ALTER TABLE person
-    # RENAME TO person_table;
-    # """)
+# import sqlite3
 
-    # добавь поле в таблицу
-    # cur.execute("""
-    # ALTER TABLE person_table
-    # ADD COLUM address NOT NULL DEFAULT "Москва"
-    # """)
+# with sqlite3.connect("car.db") as con:
+#     cur = con.cursor()
+#
+#     with open("sql_dump.sql", "w") as f:
+#         for sql in con.iterdump():
+#             f.write(sql)
 
-    # удалить столбец
-    # cur.execute("""
-    # ALTER TABLE person_table
-    # DROP COLUM address
-    # """)
 
-    # переименование поля
-    # cur.execute("""
-    # ALTER TABLE person_table
-    # RENAME COLUM address TO home_address
-    # """)
+# with sqlite3.connect("car_project.db") as con:
+#     cur = con.cursor()
+#
+#     with open("sql_dump.sql", "r") as f:
+#         sql = f.read()
+#         cur.executescript(sql)
 
-    # удаление таблицы
-    # cur.execute("""
-    # DROP TABLE person_table
-    # """)
+# ORM (Object-Relational Mapping) - реляционное сопоставление объектов
+# SQLAlchemy ORM
 
-from jinja2 import Template
+
+# import os
+#
+# from sqlalchemy import and_, or_, not_, desc, func
+#
+# from models.database import DATABASE_NAME, Session
+# import create_database as db_creator
+#
+# from models.lesson import Lesson, association_table
+# from models.student import Student
+# from models.group import Group
+#
+# if __name__ == '__main__':
+#     db_is_created = os.path.exists(DATABASE_NAME)
+#     if not db_is_created:
+#         db_creator.create_database()
+#
+
+#     session = Session()
+#     # print(session.query(Lesson).all())
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(Lesson):
+#     #     print(it)
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(Lesson):
+#     #     print(it.lesson_title)
+#     # print("*" * 60)
+#     #
+#     # print(session.query(Lesson).count())
+#     # print("*" * 60)
+#     #
+#     # print(session.query(Lesson).first())
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(Lesson).filter(Lesson.id >= 3):
+#     #     print(it.lesson_title)
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(Lesson).filter(and_(Lesson.id >= 3, Lesson.lesson_title.like('Ф%'))):
+#     #     print(it.lesson_title)
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(Lesson).filter(or_(Lesson.id >= 3, Lesson.lesson_title.like('Ф%'))):
+#     #     print(it.lesson_title)
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(Lesson).filter(not_(Lesson.id >= 3), not_(Lesson.lesson_title.like('М%'))):
+#     #     print(it.lesson_title)
+#     # print("*" * 60)
+#     #
+#     # print(session.query(Lesson).filter(Lesson.lesson_title is not None).all())
+#     # print("*" * 60)
+#     #
+#     # print(session.query(Lesson).filter(Lesson.lesson_title.in_(['Математика', 'Линейная алгебра'])).all())
+#     # print("*" * 60)
+#     #
+#     # print(session.query(Lesson).filter(Lesson.lesson_title.notin_(['Математика', 'Линейная алгебра'])).all())
+#     # print("*" * 60)
+#     #
+#     # print(session.query(Student).filter(Student.age.between(16, 17)).all())
+#     # print("*" * 60)
+#     #
+#     # print(session.query(Student).filter(not_(Student.age.between(17, 24))).all())
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(Student).filter(Student.age.like("1%")).limit(4).offset(3):
+#     #     print(it)
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(Student).order_by(desc(Student.surname)):
+#     #     print(it)
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(Student).join(Group).filter(Group.group_name == 'MDA-9'):
+#     #     print(it)
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(func.count(Student.surname),Group.group_name).join(Group).group_by(Group.group_name):
+#     #     print(it)
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(func.count(Student.surname), Group.group_name).join(Group).group_by(
+#     #         Group.group_name).having(func.count(Student.surname) < 25):
+#     #     print(it)
+#     # print("*" * 60)
+#     #
+#     # for it in session.query(Student.age).filter(Student.age < 20).distinct():
+#     #     print(it)
+#     # print("*" * 60)
+#
+#     # for it in session.query(Lesson):
+#     #     print(it)
+#     # print("*" * 60)
+#     #
+#     # i = session.query(Lesson).first()
+#     # i.lesson_title = "Информатика"
+#     # session.add(i)
+#     # session.commit()
+#
+#     for it in session.query(Lesson):
+#         print(it)
+#     print("*" * 60)
+#
+#     # session.add(Lesson(lesson_title="Математика"))
+#     # session.commit()
+#
+#     i = session.query(Lesson).filter(Lesson.lesson_title == "Математика").first()
+#     session.delete(i)
+#     session.commit()
+#
+#     for it in session.query(Lesson):
+#         print(it)
+#     print("*" * 60)
+
+# Шаблонизатор (Jinja)
+#
+# from jinja2 import Template
+#
+# # name = "Игорь"
+# # age = 25
+# per = {'name': "Игорь", 'age': 25}
+#
+# tm = Template("Мне {{ p['age'] }} лет. Меня зовут {{ p.name }}.")
+# msg = tm.render(p=per)
+# # msg = tm.render(n=name, a=age)
+#
+# print(msg)
+
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+#     def get_name(self):
+#         return self.name
+#
+#
+# per = Person("Игорь", 25)
+#
+# tm = Template("Мне {{ p['age'] }} лет. Меня зовут {{ p.get_name() }}.")
+# msg = tm.render(p=per)
+#
+# print(msg)
+
+# cities = [
+#     {'id': 1, 'city': 'Москва'},
+#     {'id': 2, 'city': 'Сочи'},
+#     {'id': 3, 'city': 'Минск'},
+#     {'id': 4, 'city': 'Ярославль'},
+#     {'id': 5, 'city': 'Смоленск'},
+# ]
+#
+# link = """<select name="cities">
+#     {% for c in cities -%}
+#         {% if c.id > 3 -%}
+#             <option value="{{ c['id'] }}">{{ c['city'] }}</option>
+#         {% elif c.city == "Москва" %}
+#             <option>{{ c['city'] }}</option>
+#         {% else -%}
+#             {{ c['city'] }}
+#         {% endif -%}
+#     {% endfor -%}
+# </select>"""
+#
+# tm = Template(link)
+# msg = tm.render(cities=cities)
+#
+# print(msg)
+
+# cars = [
+#     {'model': 'Audi', 'price': 23000},
+#     {'model': 'Skoda', 'price': 17300},
+#     {'model': 'Renault', 'price': 44300},
+#     {'model': 'Wolksvagen', 'price': 21300}
+# ]
+#
+# # tpl = "Сумма: {{ cs | sum(attribute='price' }}"
+# # tpl = "{{ cs | max(attribute='price' }}"
+# # tpl = "{{ (cs | min(attribute='price')).model }}"
+# # tpl = "{{ cs | random }}"
+# tpl = "{{ cs | replace('model', 'drand') }}"
+#
+#
+# tm = Template(tpl)
+# msg = tm.render(cs=cars)
+#
+# print(msg)
+
+# макроопределение
+
+# html = """
+# {% macro input_func(name, value, type="text", size=40) %}
+#     <input type="{{ type }}" name="{{ name }}" value="{{ value }}" size="{{ size }}">
+# {% endmacro %}
+#
+# <p>{{ input_func('name', 'Введите имя') }}</p>
+# <p>{{ input_func('psw', 'Пароль', 'password') }}</p>
+# <p>{{ input_func('email', 'Электронная почта', 'email') }}</p>
+# """
+
+# tm = Template(html)
+# msg = tm.render()
+#
+# print(msg)
+
+
+# from jinja2 import Environment, FileSystemLoader
+#
+# persons = [
+#     {"name": "Алексей", "year": 18, "weight": 78.5},
+#     {"name": "Никита", "year": 28, "weight": 82.3},
+#     {"name": "Виталий", "year": 33, "weight": 94.0}
+# ]
+#
+#
+# file_loader = FileSystemLoader('templates')
+# env = Environment(loader=file_loader)
+#
+# tm = env.get_template('about.html')
+# msg = tm.render(users=persons, title="About Jinja")
+#
+# print(msg)
+
+
+
+
+
+
+
+
+
+
 
 
