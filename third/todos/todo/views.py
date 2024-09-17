@@ -22,9 +22,10 @@ def signupuser(request):
             except IntegrityError:
                 return render(request, 'todo/signupuser.html',
                               {'form': UserCreationForm(),
-                               'error': 'Такое имя пользователя уже существует. Задайте другое'})
+                                        'error': 'Такое имя пользователя уже существует. Задайте другое.'})
         else:
-            return render(request, 'todo/signupuser.html', {'form': UserCreationForm(), 'error': 'Пароли не совпадают'})
+            return render(request, 'todo/signupuser.html', {'form': UserCreationForm(),
+                                                                                'error': 'Пароли не совпадают'})
 
 
 @login_required
@@ -51,8 +52,8 @@ def loginuser(request):
         user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
         if user is None:
             return render(request, 'todo/loginuser.html',
-                          {'form': AuthenticationForm(),
-                           'error': 'Неверные данные для входа'})
+                   {'form': AuthenticationForm(),
+                            'error': 'Неверные данные для входа'})
         else:
             login(request, user)
             return redirect('currenttodos')
@@ -71,8 +72,8 @@ def createtodo(request):
             return redirect('currenttodos')
         except ValueError:
             return render(request, 'todo/createtodo.html',
-                          {'form': TodoForm(),
-                           'error': 'Переданы неверные данные. Попробуйте еще раз'})
+                    {'form': TodoForm(),
+                             'error': 'Переданы неверные данные. Попробуйте ещё раз'})
 
 
 @login_required
