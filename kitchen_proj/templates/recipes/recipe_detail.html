@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-8">
+            <h1>{{ recipe.title }}</h1>
+            {% if recipe.image %}
+                <img src="{{ recipe.image.url }}" class="img-fluid mb-3" alt="{{ recipe.title }}">
+            {% endif %}
+            <p>{{ recipe.description }}</p>
+            <h3>Ингредиенты:</h3>
+            {% for ingredient in ingredients %}
+                <p>{{ ingredient }}</p>
+            {% endfor %}
+            <h3>Инструкции:</h3>
+            {% for step in instructions %}
+                <p>{{ step }}</p>
+            {% endfor %}
+            <p>Автор: <a href="{% url 'user_recipes' recipe.author.username %}">{{ recipe.author.username }}</a></p>
+            <p>Дата создания: {{ recipe.created_at }}</p>
+            <p>Теги:
+                {% for tag in recipe.tags.all %}
+                    <span class="badge bg-secondary">{{ tag.name }}</span>
+                {% endfor %}
+            </p>
+            <form action="{% url 'like_recipe' recipe.pk %}" method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-outline-primary">
+                    {% if user in recipe.likes.all %}
+                        Убрать лайк
+                    {% else %}
+                        Лайк
+                    {% endif %}
+                    ({{ recipe.likes.count }})
+                </button>
+            </form>
+            {% if user == recipe.author %}
+                <a href="{% url 'recipe_edit' recipe.pk %}" class="btn btn-secondary mt-2">Редактировать</a>
+                <a href="{% url 'recipe_delete' recipe.pk %}" class="btn btn-danger mt-2">Удалить</a>
+            {% endif %}
+        </div>
+        <div class="col-md-4">
+            <h3>Комментарии</h3>
+            {% for comment in comments %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ comment.author.username }}</h5>
+                        <p class="card-text">{{ comment.text }}</p>
+                        <p class="card-text"><small class="text-muted">{{ comment.created_at }}</small></p>
+                    </div>
+                </div>
+            {% empty %}
+                <p>Комментариев пока нет.</p>
+            {% endfor %}
+
+            {% if user.is_authenticated %}
+                <h4>Добавить комментарий</h4>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ comment_form.as_p }}
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            {% else %}
+                <p>Чтобы оставить комментарий, пожалуйста, <a href="{% url 'login' %}">войдите</a> или
+                    <a href="{% url 'register' %}">зарегистрируйтесь</a>.</p>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
